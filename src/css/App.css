@@ -29,3 +29,7 @@ span, .nav {
 .nav-item::before {
     content: ''
 }
+
+.slick-list {
+    border: none!important;
+}

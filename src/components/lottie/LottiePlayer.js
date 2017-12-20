@@ -21,7 +21,7 @@ core = {
 
 animationController = (action) => {
     let
-    current = anims.tests[action],
+    current = anims[action[0]][action[1]],
     startTimeF = toFrames(current.time_start),
     endTimeF = toFrames(current.time_end),
     startTimeMS = toMS(current.time_start),
@@ -34,6 +34,8 @@ animationController = (action) => {
     navButtonsDisabled ? disableNavButtons(this.core) : enableNavButtons(this.core);
     // Plays segment via frame location.
     shouldLoop ? lottie.loop = true : lottie.loop = false;
+    console.log(startTimeF);
+    console.log(endTimeF);
     lottie.playSegments([startTimeF, endTimeF], true);
     //Enable Buttons after animation completion.
 
@@ -50,7 +52,7 @@ animationController = (action) => {
             //Should Post Animation Loop
             postShouldLoop ? lottie.loop = true : lottie.loop = false;
 
-            lottie.playSegments([postStartTimeF, postEndTimeF], true);
+            lottie.playSegments([postStartTimeF, postEndTimeF], false);
         }, runTime);
 
     }
@@ -68,6 +70,10 @@ componentDidMount() {
         autoplay: false,
         path: ('./lottieFiles/two_way_move/data.json')  // the path to the animation json
     });
+    setTimeout(() => {
+        this.animationController(['tests', 'start']);
+    }, 1000)
+
 }
 
     render() {
@@ -77,8 +83,8 @@ componentDidMount() {
             [
             <div key='lottie' className='lottie' ref={(div) => { this.lottieContainer = div; }}></div>,
             <WideCarousel key='lottieControls'>
-                <div><button className={this.props.navButtonsDisabled ? 'disabled' : ''} disabled={this.props.navButtonsDisabled} onClick={() => {this.clickHandler('toX')}}>toX</button></div>
-                <div><button className={this.props.navButtonsDisabled ? 'disabled' : ''} disabled={this.props.navButtonsDisabled} onClick={() => {this.clickHandler('xToPlate')}}>xToPlate</button></div>
+                <div><button className={this.props.navButtonsDisabled ? 'disabled' : ''} disabled={this.props.navButtonsDisabled} onClick={() => {this.clickHandler(['tests', 'toX'])}}>toX</button></div>
+                <div><button className={this.props.navButtonsDisabled ? 'disabled' : ''} disabled={this.props.navButtonsDisabled} onClick={() => {this.clickHandler(['tests', 'xToPlate'])}}>xToPlate</button></div>
                 <div><button className={this.props.navButtonsDisabled ? 'disabled' : ''} disabled={this.props.navButtonsDisabled} onClick={() => {this.clickHandler('Bottom_Right')}}>Bottom Right!</button></div>
                 <div><button className={this.props.navButtonsDisabled ? 'disabled' : ''} disabled={this.props.navButtonsDisabled} onClick={() => {this.clickHandler('Bottom_Right')}}>Bottom Right!</button></div>
              </WideCarousel>

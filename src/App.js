@@ -16,7 +16,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <div className="container">
+                {/*<div className="container">*/}
                     <div className="paper">
                         <div className='header'>
                             <h3>The film</h3>
@@ -35,7 +35,7 @@ class App extends Component {
                             navButtonsDisabled={this.state.navButtonsDisabled}
                             disableNavButtonsHandler={this.disableNavButtonsHandler} />
                     </div>
-                </div>
+                {/*</div>*/}
             </div>
         );
     }
