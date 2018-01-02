@@ -4,8 +4,9 @@ import ReactDOM from 'react-dom';
 // Data for Animation
 import {anims} from './anims'
 // Import Bodymovin
-import WideCarousel from '../carousel/WideCarousel';
+
 import bodymovin from 'lottie-web';
+import {LottieNav} from './LottieNav';
 import {disableNavButtons, enableNavButtons, toFrames, toMS} from './lottieHelpers'
 let lottie;
 let core;
@@ -13,6 +14,9 @@ let core;
 
 
 class LottiePlayer extends Component {
+state = {
+    navButtons: anims.start
+};
 
 core = {
     disableNavButtonsHandler: this.props.disableNavButtonsHandler,
@@ -20,6 +24,7 @@ core = {
 };
 
 animationController = (action) => {
+    console.log(action);
     let
     current = anims[action[0]][action[1]],
     startTimeF = toFrames(current.time_start),
@@ -29,7 +34,14 @@ animationController = (action) => {
     runTime = (endTimeMS - startTimeMS),
     shouldLoop = current.shouldLoop,
     navButtonsDisabled = current.disableNavButtons,
-    post = current.post;
+    post = current.post,
+    hover = current.hover,
+    navButtons = current.navButtons,
+    overlay = current.overlay;
+
+    if (navButtons) {
+        this.setState({navButtons: navButtons})
+    }
 
     navButtonsDisabled ? disableNavButtons(this.core) : enableNavButtons(this.core);
     // Plays segment via frame location.
@@ -58,8 +70,31 @@ animationController = (action) => {
     }
 }
 
+overlayController = (action) => {
+    lottie.loop = false;
+    let startTimeF = toFrames(action.time_start),
+    endTimeF = toFrames(action.time_end);
+
+    if (action.mouse === 'enter') {
+        console.log('hovered!');
+        lottie.playSegments([startTimeF, endTimeF], true);
+    }
+    if (action.mouse ==='leave') {
+        console.log('unhovered!');
+        lottie.playSegments([startTimeF, endTimeF], true);
+    }
+
+}
+
 clickHandler = (action) => {
-    this.animationController(action)
+    // Later will be for non overlays
+    if (Array.isArray(action)) {
+        this.animationController(action)
+    }
+    if (action.type === 'overlay') {
+        this.overlayController(action)
+    }
+
 }
 
 componentDidMount() {
@@ -70,9 +105,9 @@ componentDidMount() {
         autoplay: false,
         path: ('./lottieFiles/two_way_move/data.json')  // the path to the animation json
     });
-    setTimeout(() => {
-        this.animationController(['tests', 'start']);
-    }, 1000)
+    // setTimeout(() => {
+    //     this.animationController(['tests', 'start']);
+    // }, 1000)
 
 }
 
@@ -82,12 +117,7 @@ componentDidMount() {
         return (
             [
             <div key='lottie' className='lottie' ref={(div) => { this.lottieContainer = div; }}></div>,
-            <WideCarousel key='lottieControls'>
-                <div><button className={this.props.navButtonsDisabled ? 'disabled' : ''} disabled={this.props.navButtonsDisabled} onClick={() => {this.clickHandler(['tests', 'toX'])}}>toX</button></div>
-                <div><button className={this.props.navButtonsDisabled ? 'disabled' : ''} disabled={this.props.navButtonsDisabled} onClick={() => {this.clickHandler(['tests', 'xToPlate'])}}>xToPlate</button></div>
-                <div><button className={this.props.navButtonsDisabled ? 'disabled' : ''} disabled={this.props.navButtonsDisabled} onClick={() => {this.clickHandler('Bottom_Right')}}>Bottom Right!</button></div>
-                <div><button className={this.props.navButtonsDisabled ? 'disabled' : ''} disabled={this.props.navButtonsDisabled} onClick={() => {this.clickHandler('Bottom_Right')}}>Bottom Right!</button></div>
-             </WideCarousel>
+            <LottieNav navButtons={this.state.navButtons} navButtonsDisabled={this.props.navButtonsDisabled} clickHandler={this.clickHandler} />
          ]
         );
     }

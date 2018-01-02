@@ -17,9 +17,9 @@ class WideCarousel extends Component {
 
     settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: (this.props.buttons.length + 1),
         centerMode: false,
         slidesToScroll: 1,
         list: false,
