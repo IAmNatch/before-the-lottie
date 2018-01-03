@@ -15,7 +15,7 @@ let core;
 
 class LottiePlayer extends Component {
 state = {
-    navButtons: anims.start
+    navButtons: anims.start,
 };
 
 core = {
@@ -24,9 +24,8 @@ core = {
 };
 
 animationController = (action) => {
-    console.log(action);
     let
-    current = anims[action[0]][action[1]],
+    current = anims[action.location][action.subSection],
     startTimeF = toFrames(current.time_start),
     endTimeF = toFrames(current.time_end),
     startTimeMS = toMS(current.time_start),
@@ -37,7 +36,8 @@ animationController = (action) => {
     post = current.post,
     hover = current.hover,
     navButtons = current.navButtons,
-    overlay = current.overlay;
+    overlay = current.overlay,
+    onComplete = current.onComplete;
 
     if (navButtons) {
         this.setState({navButtons: navButtons})
@@ -46,8 +46,6 @@ animationController = (action) => {
     navButtonsDisabled ? disableNavButtons(this.core) : enableNavButtons(this.core);
     // Plays segment via frame location.
     shouldLoop ? lottie.loop = true : lottie.loop = false;
-    console.log(startTimeF);
-    console.log(endTimeF);
     lottie.playSegments([startTimeF, endTimeF], true);
     //Enable Buttons after animation completion.
 
@@ -66,7 +64,15 @@ animationController = (action) => {
 
             lottie.playSegments([postStartTimeF, postEndTimeF], false);
         }, runTime);
+    }
 
+    if (onComplete) {
+        lottie.addEventListener('complete', () => {
+            this.props.viewHandler('stop')
+            console.log(onComplete);
+            console.log('YEE');
+            lottie.removeEventListener('complete')
+        });
     }
 }
 
@@ -76,23 +82,32 @@ overlayController = (action) => {
     endTimeF = toFrames(action.time_end);
 
     if (action.mouse === 'enter') {
-        console.log('hovered!');
         lottie.playSegments([startTimeF, endTimeF], true);
     }
     if (action.mouse ==='leave') {
-        console.log('unhovered!');
         lottie.playSegments([startTimeF, endTimeF], true);
     }
 
 }
 
 clickHandler = (action) => {
-    // Later will be for non overlays
-    if (Array.isArray(action)) {
-        this.animationController(action)
-    }
     if (action.type === 'overlay') {
         this.overlayController(action)
+    }
+    // Later will be for non overlays
+    if (action.type === 'animation') {
+        this.props.viewHandler(action.view)
+        this.animationController(action)
+    }
+
+    if (action.type === 'intro') {
+        this.props.viewHandler(action.view)
+        let introData = anims[action.location][action.subSection]
+        console.log(introData);
+        this.setState({navButtons: introData.navButtons})
+    }
+    if (action.type === 'btp') {
+        this.props.viewHandler('home')
     }
 
 }
@@ -116,8 +131,12 @@ componentDidMount() {
         // Returns Button set up to app state.
         return (
             [
-            <div key='lottie' className='lottie' ref={(div) => { this.lottieContainer = div; }}></div>,
-            <LottieNav navButtons={this.state.navButtons} navButtonsDisabled={this.props.navButtonsDisabled} clickHandler={this.clickHandler} />
+            <LottieNav key='lottieNav' view={this.props.view} navButtons={this.state.navButtons} navButtonsDisabled={this.props.navButtonsDisabled} clickHandler={this.clickHandler} />,
+            <div key='lottie' style={{gridArea: "lottie"}} className='lottie'>
+                <div style={{height: '100%'}} ref={(div) => { this.lottieContainer = div; }}></div>
+            </div>
+
+
          ]
         );
     }
