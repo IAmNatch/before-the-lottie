@@ -1,9 +1,10 @@
 .App {
+overflow: hidden;
   background-color: #f4f4f4;
   font-family: lato;
   display: grid;
   width: 100%;
-  grid-template-rows: 150px 60vh 150px;
+  grid-template-rows: 20vh 60vh 20vh;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-areas: "nav lottieNav info"
                         "lottie lottie lottie"
@@ -54,6 +55,7 @@ span, .nav {
 /* Lottie */
 .lottie {
     grid-area: lottie;
+    width: 100vw;
 }
 
 /* Info */

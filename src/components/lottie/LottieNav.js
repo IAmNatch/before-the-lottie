@@ -1,5 +1,4 @@
 import React from 'react';
-import WideCarousel from '../carousel/WideCarousel';
 import {anims} from './anims';
 import ReactDOM from 'react-dom';
 import HomeButton from './svg/homeButtons';

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './css/App.css';
 import './css/Fonts.css';
 import './css/Lottie.css';
-import LottiePlayer from './components/lottie/LottiePlayer';
-import {Nav} from './components/Nav'
-import {Main} from './views/Main'
+import {Nav} from './components/Nav';
+import {Main, Donate, Contact} from './views/';
+import {Route} from 'react-router-dom';
 
 class App extends Component {
     state = {
@@ -26,16 +26,24 @@ class App extends Component {
                 <div className='header'>
                     <Nav view={this.state.view} />
                 </div>
-                <div className='info'>
-                    <h3>Film Coming</h3>
-                    <h4>Summer 2018</h4>
-                </div>
-                <Main
-                    view={this.state.view}
-                    viewHandler={this.viewHandler}
-                    navButtonsDisabled={this.state.navButtonsDisabled}
-                    disableNavButtonsHandler={this.disableNavButtonsHandler}
-                />
+
+                    <div className='info'>
+                        <h3>Film Coming</h3>
+                        <h4>Summer 2018</h4>
+                    </div>
+                    <Route path='/' exact component={() => {
+                            return (
+                                <Main
+                                view={this.state.view}
+                                viewHandler={this.viewHandler}
+                                navButtonsDisabled={this.state.navButtonsDisabled}
+                                disableNavButtonsHandler={this.disableNavButtonsHandler}
+                            />
+                            )
+                        }} />
+                    <Route path='/contact' component={Contact} />
+                    <Route path='/donate' component={Donate} />
+
             </div>
 
         );
