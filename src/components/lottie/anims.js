@@ -36,7 +36,6 @@ export const anims = {
             onComplete: 'beeBoxes'
         },
         beeBoxes: {
-
         }
     },
     beef: {
