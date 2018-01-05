@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');
+
 .App {
 overflow: hidden;
   background-color: #f4f4f4;
@@ -132,6 +134,16 @@ span, .nav {
     width: 30%;
     display: inline-block;
     cursor: pointer;
+    padding-left: 2%;
+    
+}
+
+.stopNavTop, .navLeft {
+    box-sizing: border-box;
+}
+
+.navLeft {
+    padding-right: 2%; 
 }
  .navLeft, .navLeft p, .navLeft img {
     float: right;
@@ -143,6 +155,10 @@ div.straightLine {
     width: 20%;
     display: inline-block;
     vertical-align: top;
+}
+
+.image img {
+    width: 100vw;
 }
 .tracker {
     text-align: center;
