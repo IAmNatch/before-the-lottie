@@ -8,16 +8,11 @@ import {Route} from 'react-router-dom';
 
 class App extends Component {
     state = {
-        view: 'home',
         navButtonsDisabled: false,
     };
 
     disableNavButtonsHandler = (state) => {
         this.setState({navButtonsDisabled: state})
-    }
-
-    viewHandler = (view) => {
-        this.setState({view: view});
     }
 
     render() {
@@ -34,8 +29,6 @@ class App extends Component {
                     <Route path='/' exact component={() => {
                             return (
                                 <Main
-                                view={this.state.view}
-                                viewHandler={this.viewHandler}
                                 navButtonsDisabled={this.state.navButtonsDisabled}
                                 disableNavButtonsHandler={this.disableNavButtonsHandler}
                             />

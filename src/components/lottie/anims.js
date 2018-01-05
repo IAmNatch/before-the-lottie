@@ -1,22 +1,21 @@
 export const anims = {
     start: [
-        {type: 'intro', view: 'intro', title:'Beef', location: 'beef', subSection: 'intro', overlay: {start: [10, 12], end: [13, 15]}},
-        {type: 'intro', view: 'intro', title:'Potatoes', location: 'potatoes', subSection: 'intro', overlay: {start: [20, 22], end: [23, 27]}},
-        {type: 'intro', view: 'intro', title:'Honey', location: 'honey', subSection: 'intro', overlay: {start: [20, 22], end: [22, ]}},
-        {type: 'intro', view: 'intro', title:'Milk', location: 'milk', subSection: 'intro', overlay: {start: [20, 22], end: [22, ]}},
-        {type: 'intro', view: 'intro', title:'Sunflowers', location: 'sunflowers', subSection: 'intro', overlay: {start: [20, 22], end: [22, 24]}},
+        {type: 'intro', view: 'intro', title:'Beef', location: 'beef', subSection: 'intro', overlay: {start: [10, 11], end: [13, 15]}},
+        {type: 'intro', view: 'intro', title:'Potatoes', location: 'potatoes', subSection: 'intro', overlay: {start: [12, 13], end: [23, 27]}},
+        {type: 'intro', view: 'intro', title:'Honey', location: 'honey', subSection: 'intro', overlay: {start: [14, 15], end: [22, 28]}},
+        {type: 'intro', view: 'intro', title:'Milk', location: 'milk', subSection: 'intro', overlay: {start: [16, 17], end: [22, ]}},
+        {type: 'intro', view: 'intro', title:'Sunflowers', location: 'sunflowers', subSection: 'intro', overlay: {start: [18, 19], end: [22, 24]}},
     ],
     honey: {
         intro: {
             title: 'Honey',
             type: 'intro',
             view: 'intro',
-            time_start: 20,
-            time_end: 26,
+            time_start: 14,
+            time_end: 15,
             navButtons: [
                 {type: 'animation', view: 'map', title:'Honey', location: 'honey', subSection: 'toBeeBoxesfromPlate'},
-                {type: 'btp', view: 'home', title:'Back to Plate'},
-
+                {type: 'btp', view: 'home', title:'Back to Plate'}
             ],
             internalButtons: [{}],
             location: 'honey',
@@ -31,14 +30,14 @@ export const anims = {
         toBeeBoxesfromPlate: {
             type: 'animation',
             location: 'honey',
-            time_start: 20,
-            time_end: 22,
+            time_start: 40,
+            time_end: 45,
+            shouldLoop: false,
             onComplete: 'beeBoxes'
         },
         beeBoxes: {
 
         }
-
     },
     beef: {
         intro: {

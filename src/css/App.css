@@ -52,6 +52,10 @@ span, .nav {
     grid-area: lottieNav;
 }
 
+.lottieNav path {
+    transition: 2s ease;
+}
+
 /* Lottie */
 .lottie {
     grid-area: lottie;
@@ -66,6 +70,22 @@ span, .nav {
 
 .info h3, .info h4 {
     margin: 10px 30px 0 0;
+}
+
+.sliderVis {
+    transform: translateX(0%);
+}
+
+.sliderInvis {
+    transform: translateX(100%);
+}
+
+.wrapperHigh {
+    z-index: 10
+}
+
+.wrapperLow {
+    z-index: -10
 }
 
 /* Footer */
