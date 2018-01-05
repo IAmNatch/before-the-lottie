@@ -29,11 +29,11 @@ overflow: hidden;
     padding-left: 1vw;
 }
 .nav ul a:hover {
-    color: black;
-    background-color: #f4f4f4;
+ color: black;
+background-color: #f4f4f4;
     transition: all 0.9s;
-    font-weight: 500;
 }
+
    
 
 .nav-item {
