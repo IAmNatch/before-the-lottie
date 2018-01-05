@@ -65,6 +65,21 @@ span, .nav {
     transition: 2s ease;
 }
 
+.lottieNav div {
+    padding-left: 1vw;
+    padding-right:1vw;
+
+}
+
+.lottieNav div div svg {
+    height: 7vw;
+}
+@media screen and (max-width: 1000px) {
+    .lottieNav div div svg {
+        height: 9vw;
+    }
+}
+
 /* Lottie */
 .lottie {
     grid-area: lottie;

@@ -12,7 +12,7 @@ export const LottieNav = (props) => {
     const buttonWrap = {
         display: 'flex',
         justifyContent: 'center',
-        padding: '30px 0px'
+        padding: '35px 0px'
     };
 
     const buttonStyle = {
@@ -55,12 +55,13 @@ export const LottieNav = (props) => {
             action.view = 'intro';
             buttons.push((
                 <div
+                    className='responsive-buttons'
                     key={i}
                     onClick={(e) => {props.clickHandler(e, action);}}
                     onMouseEnter={(e) => {action.overlay ? props.clickHandler(e, {type: 'overlay', mouse: 'enter', time_start: action.overlay.start[0], time_end: action.overlay.start[1]}) : '';}}
                     onMouseLeave={(e) => {action.overlay ? props.clickHandler(e, {type: 'overlay', mouse: 'leave', time_start: action.overlay.end[0], time_end: action.overlay.end[1]}) : ''; }}
                 >
-                    <HomeButton type={action.title} width={'80px'}/>
+                    <HomeButton type={action.title}/>
                 </div>
             ));
         });

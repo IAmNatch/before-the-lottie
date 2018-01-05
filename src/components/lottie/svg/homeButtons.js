@@ -3,19 +3,19 @@ import React, {Component} from 'react';
 class HomeButton extends Component {
     state = {
         primary: '#282828',
-        secondary: '#f7f7f7',
+        secondary: '#f4f4f4',
     }
 
     hoverHandler = (direction) => {
         if (direction === 'enter') {
             this.setState({
-                primary: '#f7f7f7',
+                primary: '#f4f4f4',
                 secondary: '#282828',
             })
         }if (direction === 'leave') {
             this.setState({
                 primary: '#282828',
-                secondary: '#f7f7f7',
+                secondary: '#f4f4f4',
             })
         }
 
