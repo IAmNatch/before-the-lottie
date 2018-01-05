@@ -36,7 +36,7 @@ background-color: #f4f4f4;
     transition: all 0.9s;
 }
 
-   
+
 
 .nav-item {
     text-decoration: none;
@@ -55,18 +55,18 @@ background-color: #f4f4f4;
     letter-spacing: 1px;
     padding-left: 7px;
     padding-right: 7px;
- 
-  
+
+
 }
 
 @media screen and (max-width: 700px) {
-    
+
 .nav-item  {
   font-size: 16px;
 
-  
+
 }
-} 
+}
 .nav-item::before {
     content: ''
 }
@@ -126,7 +126,7 @@ background-color: #f4f4f4;
 
 
 @media screen and (max-width: 1000px) {
-    
+
     .info h3 {
         font-size: 3vw
     }
@@ -137,17 +137,16 @@ background-color: #f4f4f4;
 
 .sliderVis {
     transform: translateX(0%);
-    height: 100vh;
+    height: 100%;
 }
 
 .sliderInvis {
     transform: translateX(100%);
-    height: 100vh;
+    height: 100%;
 }
 
 .wrapperHigh {
     z-index: 10;
-    background-color: #f4f4f4;
 }
 
 .wrapperLow {
@@ -172,21 +171,21 @@ background-color: #f4f4f4;
     grid-column: 1;
     text-align: center;
 
-  
+
 }
 
 @media screen and (max-width: 1000px) {
-    
+
     .footer .title h2 {
         margin-bottom: 10px;
-    
+
     }
 }
 @media screen and (max-width: 500px) {
-    
+
     .footer .title h2 {
         margin-bottom: 15px;
-    
+
     }
 }
 .title h1 {
@@ -195,8 +194,8 @@ background-color: #f4f4f4;
     vertical-align: bottom;
     position: relative;
     top: 45%;
-    transform: translateY(-45%); 
-    
+    transform: translateY(-45%);
+
 
 }
 .title h2 {
@@ -206,8 +205,8 @@ background-color: #f4f4f4;
     margin: 0;
     position: relative;
     top: 20%;
-    transform: translateY(-20%); 
-  
+    transform: translateY(-20%);
+
 }
 
 .byline {
@@ -216,15 +215,15 @@ background-color: #f4f4f4;
     float: right;
     grid-column: 2;
     text-align: left;
-    font-weight: 100; 
-    font-size: 1.7vw; 
+    font-weight: 100;
+    font-size: 1.7vw;
     padding-bottom: 4px;
- 
+
 }
 .byline p {
     position: relative;
     top: 45%;
-    transform: translateY(-45%); 
+    transform: translateY(-45%);
     width: 85%;
     padding-bottom: 4px;
 }
@@ -247,7 +246,7 @@ background-color: #f4f4f4;
     display: inline-block;
     cursor: pointer;
     padding-left: 2%;
-    
+
 }
 
 .stopNavTop, .navLeft {
@@ -255,7 +254,7 @@ background-color: #f4f4f4;
 }
 
 .navLeft {
-    padding-right: 2%; 
+    padding-right: 2%;
 }
  .navLeft, .navLeft p, .navLeft img {
     float: right;
