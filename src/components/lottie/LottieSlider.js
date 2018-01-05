@@ -18,6 +18,19 @@ export const LottieSlider = (props) => {
         overflowX: 'hidden'
     };
 
+    const nextHandler = () => {
+        if (props.sliderData.next === 'btp') {
+            return (
+                {type: 'btp', view: 'home', title:'Back to Plate'}
+            );
+        }
+        else {
+            return (
+                {type: 'animation', view: 'map', location: props.sliderData.location, subSection: props.sliderData.next}
+            )
+        }
+    }
+
     return (
         <div key='slider' className={props.view === 'stop' ? 'wrapperHigh' : 'wrapperLow'} style={sliderWrapStyle}>
             <div className={props.view === 'stop' ? 'sliderVis' : 'sliderInvis'} style={sliderStyle} key='1'>
@@ -26,10 +39,10 @@ export const LottieSlider = (props) => {
                 </nav>
                 <div className="straightLine"></div>
                 <nav
-                    onClick={(e) => {props.clickHandler(e, {type: 'animation', view: 'map', location: props.sliderData.location, subSection: props.sliderData.next}), console.log(props);}} 
+                    onClick={(e) => {props.clickHandler(e, nextHandler());}}
                     className="stopNavTop navLeft">
                     <img  className="right" src="./svg/fatarrows-right.svg" />
-                    <p className="right"> Next  </p>
+                    <p className="right"> {props.sliderData && props.sliderData.next === 'btp' ? 'Back to Plate' : 'Next'}  </p>
                 </nav>
 
                 {/* make me dynamic */}
