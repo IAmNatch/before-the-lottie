@@ -11,10 +11,8 @@ export const anims = {
             title: 'Honey',
             type: 'intro',
             view: 'intro',
-            time_start: 14,
-            time_end: 15,
             navButtons: [
-                {type: 'animation', view: 'map', title:'Honey', location: 'honey', subSection: 'toBeeBoxesfromPlate'},
+                {type: 'animation', view: 'map', title:'Honey', location: 'honey', subSection: 'plateToBoxes'},
                 {type: 'btp', view: 'home', title:'Back to Plate'}
             ],
             internalButtons: [{}],
@@ -27,32 +25,111 @@ export const anims = {
                 shouldLoop: true,
             }
         },
-        toBeeBoxesfromPlate: {
+        plateToBoxes: {
             type: 'animation',
             location: 'honey',
-            time_start: 40,
-            time_end: 45,
+            time_start: 60.5,
+            time_end: 66,
             shouldLoop: false,
-            onComplete: 'beeBoxes'
+            onComplete: true,
         },
-        beeBoxes: {
+        boxes: {
+        },
+        boxesToCollecting: {
+            type: 'animation',
+            location: 'honey',
+            time_start: 70.5,
+            time_end: 77,
+            shouldLoop: false,
+            onComplete: true,
         }
     },
     beef: {
         intro: {
             action: 'intro',
-            time_start: 20,
-            time_end: 24,
-            navButtons: [{type: 'animation', title: 'Go home!', location: 'beef', subSection: 'intro'}],
+            navButtons: [{type: 'animation', view: 'map', title:'Begin Adventure', location: 'beef', subSection: 'plateToCalving'},
+                {type: 'btp', view: 'home', title:'Back to Plate'}],
             internalButtons: [{}],
+            location: 'beef',
+            disableNavButtons: false,
+            shouldLoop: false
+        },
+        plateToCalving: {
+            type: 'animation',
             location: 'honey',
-            disableNavButtons: true,
+            time_start: 20.5,
+            time_end: 26,
             shouldLoop: false,
-            post: {
-                time_start: 0,
-                time_end: 10,
-                shouldLoop: true,
-            }
-        }
+            onComplete: true,
+        },
+        calving: {
+
+        },
+    },
+    milk: {
+        intro: {
+            action: 'intro',
+            navButtons: [{type: 'animation', view: 'map', title:'Begin Adventure', location: 'milk', subSection: 'plateToBarn'},
+                {type: 'btp', view: 'home', title:'Back to Plate'}],
+            internalButtons: [{}],
+            location: 'beef',
+            disableNavButtons: false,
+            shouldLoop: false
+        },
+        plateToBarn: {
+            type: 'animation',
+            location: 'honey',
+            time_start: 100.5,
+            time_end: 106,
+            shouldLoop: false,
+            onComplete: true,
+        },
+        barn: {
+
+        },
+    },
+    potatoes: {
+        intro: {
+            action: 'intro',
+            navButtons: [{type: 'animation', view: 'map', title:'Begin Adventure', location: 'potatoes', subSection: 'plateToIrrigation'},
+                {type: 'btp', view: 'home', title:'Back to Plate'}],
+            internalButtons: [{}],
+            location: 'potatoes',
+            disableNavButtons: false,
+            shouldLoop: false
+        },
+        plateToIrrigation: {
+            type: 'animation',
+            location: 'potatoes',
+            time_start: 145.5,
+            time_end: 151,
+            shouldLoop: false,
+            onComplete: ({location: 'potatoes', subSection: 'plateToIrrigation'}),
+        },
+        irrigation: {
+
+        },
+    },
+    sunflowers: {
+        intro: {
+            action: 'intro',
+            navButtons: [{type: 'animation', view: 'map', title:'Begin Adventure', location: 'sunflowers', subSection: 'plateToPlanting'},
+                {type: 'btp', view: 'home', title:'Back to Plate'}],
+            internalButtons: [{}],
+            location: 'sunflowers',
+            disableNavButtons: false,
+            shouldLoop: false
+        },
+        plateToPlanting: {
+            type: 'animation',
+            location: 'sunflowers',
+            time_start: 190.5,
+            time_end: 196,
+            shouldLoop: false,
+            onComplete: ({location: 'sunflowers', subSection: 'plateToPlanting'}),
+        },
+        planting: {
+
+        },
     }
 };

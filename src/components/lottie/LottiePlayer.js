@@ -30,6 +30,7 @@ class LottiePlayer extends Component {
     }
 
     animationController = (action) => {
+        this.viewHandler('map')
         // console.log(action);
         let
         current = anims[action.location][action.subSection],
@@ -107,6 +108,7 @@ class LottiePlayer extends Component {
             this.introController(action);
         }
         if (action.type === 'btp') {
+            lottie.playSegments([1, 2], true);
             this.viewHandler('home')
         }
     }
@@ -134,7 +136,7 @@ class LottiePlayer extends Component {
         // Returns LottiePlayer with callable ref, so bodymovin can attach as container.
         // Also returns side-slider for use during animations and the LottieNav
         return (
-            [<LottieSlider view={this.state.view}/>, <LottieNav key='lottieNav' view={this.state.view} navButtons={this.state.navButtons} navButtonsDisabled={this.props.navButtonsDisabled} clickHandler={this.clickHandler}/>,
+            [<LottieSlider view={this.state.view} clickHandler={this.clickHandler}/>, <LottieNav key='lottieNav' view={this.state.view} navButtons={this.state.navButtons} navButtonsDisabled={this.props.navButtonsDisabled} clickHandler={this.clickHandler}/>,
             <div key='lottie' style={{gridArea: "lottie"}} className='lottie'>
                 <div style={{height: '100%'}} ref={(div) => { this.lottieContainer = div; }}></div>
             </div>,

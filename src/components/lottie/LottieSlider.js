@@ -3,7 +3,7 @@ import React from 'react';
 export const LottieSlider = (props) => {
     const sliderStyle = {
         background:'#f4f4f4',
-     
+
         width: '100vw',
         transition: '1s ease'
     };
@@ -17,29 +17,22 @@ export const LottieSlider = (props) => {
         height:'100vh',
         overflowX: 'hidden'
     };
-    const straightLine = {
-    borderRight: '6px solid black',
-    height: '100px',
-    width: '20%',
-    display:  'inline-block',
-    verticalAlign: 'top'
-}
 
     return (
-        <div key='slider' className={props.view === "stop" ? 'wrapperHigh' : 'wrapperLow'} style={sliderWrapStyle}>
-            <div className={props.view === "stop" ? 'sliderVis' : 'sliderInvis'} style={sliderStyle} key='1'>
-                <nav className="stopNavTop">
-                <img src="./svg/fatarrows-left.svg" /> <p> Back to the Plate </p>
+        <div key='slider' className={props.view === 'stop' ? 'wrapperHigh' : 'wrapperLow'} style={sliderWrapStyle}>
+            <div className={props.view === 'stop' ? 'sliderVis' : 'sliderInvis'} style={sliderStyle} key='1'>
+                <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'})}} className="stopNavTop">
+                    <img src="./svg/fatarrows-left.svg" /> <p> Back to the Plate </p>
                 </nav>
                 <div className="straightLine"></div>
 
                 {/* make me dynamic */}
-               <div className="tracker">
+                <div className="tracker">
                     <h4>1 of 4</h4>
-               </div>
+                </div>
 
                 <div className="image">
-                <img src="./tester.jpg" />
+                    <img src="./tester.jpg" />
                 </div>
 
                 <div className="content-folder">
@@ -62,12 +55,12 @@ export const LottieSlider = (props) => {
                     </div>
 
                     <div className="button-holder">
-                    <img src="./svg/button-text.svg" className="button-text" />
+                        <img src="./svg/button-text.svg" className="button-text" />
                     </div>
 
                 </div>
 
             </div>
         </div>
-    )
-}
+    );
+};
