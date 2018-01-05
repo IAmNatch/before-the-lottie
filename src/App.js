@@ -3,7 +3,7 @@ import './css/App.css';
 import './css/Fonts.css';
 import './css/Lottie.css';
 import {Nav} from './components/Nav';
-import {Main, Donate, Contact} from './views/';
+import {Main, Donate, Contact, About} from './views/';
 import {Route} from 'react-router-dom';
 
 class App extends Component {
@@ -34,6 +34,7 @@ class App extends Component {
                             />
                             )
                         }} />
+                    <Route path='/about' component={About} />
                     <Route path='/contact' component={Contact} />
                     <Route path='/donate' component={Donate} />
 
