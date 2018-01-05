@@ -119,6 +119,9 @@ span, .nav {
 .stopNavTop img {
     width: 100px;
 }
+.bottomNav img {
+    width: 100px;
+}
 .stopNavTop p {
     vertical-align: top;
     display: inline-block;
@@ -129,6 +132,9 @@ span, .nav {
     width: 30%;
     display: inline-block;
     cursor: pointer;
+}
+ .navLeft, .navLeft p, .navLeft img {
+    float: right;
 }
 
 div.straightLine {
