@@ -92,7 +92,7 @@ export const anims = {
             backgroundImage: null,
             location: 'honey',
             next: 'btp',
-            previous: 'cookingToProcessing'
+            previous: 'cookingToProcessing',
         }
     },
     beef: {
@@ -103,16 +103,16 @@ export const anims = {
             internalButtons: [{}],
             location: 'beef',
             disableNavButtons: false,
-            shouldLoop: false
+            shouldLoop: false,
         },
         plateToCalving: {
             type: 'animation',
-            location: 'honey',
+            location: 'beef',
             time_start: 20.5,
             time_end: 26,
             shouldLoop: false,
             onComplete: true,
-            nextStop: 'calving'
+            nextStop: 'calving',
         },
         calving: {
             description: 'Beef farmers have specially selected breeding cows that give birth to young calves on pasture. The calves are kept with their mothers for approximately 8 months, as they usually roam outdoors and drink her milk. As the calves grow, they begin weaning off their mother’s milk and eating grass, on pasture. This stage of production is usually its own farm and is called a “cow calf” operation After about 8 months, the now larger cattle are moved to the next stage called a feedlot.',
@@ -120,8 +120,59 @@ export const anims = {
             backgroundImage: null,
             location: 'beef',
             next: 'calvingToFeedLot',
-            previous: 'calvingToPlate'
+            previous: 'calvingToPlate',
         },
+        calvingToFeedLot: {
+            type: 'animation',
+            location: 'beef',
+            time_start: 30.5,
+            time_end: 37.5,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'feedlot',
+        },
+        feedlot: {
+            description: 'Feedlots take in cattle from numerous cow calf operations and house them either in large barns or outdoors in pens. Feedlots are much larger than cow calf farms as they aggregate cattle from many cow calf operations. The cattle continue growing as they are fed a diet that varies from farm to farm but usually includes a mixture of grains and forages, which contain a higher fat percentage. The cattle reach market size between 18 months and 2 years, when they are transported for the slaughter.',
+            stepNumber: 2,
+            backgroundImage: null,
+            location: 'beef',
+            next: 'feedlotToSlaughter',
+            previous: 'feedlotToCalving',
+        },
+        feedlotToSlaughter: {
+            type: 'animation',
+            location: 'beef',
+            time_start: 40.5,
+            time_end: 45.5,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'slaughter',
+        },
+        slaughter: {
+            description: 'The cattle are loaded onto trailers that ensure the safety of the cattle while in transport. The trailers are also well ventilated to reduce stress. Once the cattle arrive at the processing facility they are herded into a specially designed lane called a chute that helps reduce stress during this stage. Modern slaughter techniques are used to ensure that the animal is unconscious immediately and feels no pain. Both of these stages have been carefully researched to ensure the most efficient and humane slaughter. People such as Temple Grandin were pioneers in this field. Butchers then cut each carcass into cuts of meat that we would recognize in a grocery store or at a restaurant.',
+            stepNumber: 3,
+            backgroundImage: null,
+            location: 'beef',
+            next: 'slaughterToCooking',
+            previous: 'slaughterToFeedlot',
+        },
+        slaughterToCooking: {
+            type: 'animation',
+            location: 'beef',
+            time_start: 40.5,
+            time_end: 45.5,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'cooking',
+        },
+        cooking: {
+            description: 'We sure as hell want to talk about the cooking process, we\'re just not sure what happned!',
+            stepNumber: 4,
+            backgroundImage: null,
+            location: 'beef',
+            next: 'btp',
+            previous: 'cookingToSlaughter',
+        }
     },
     milk: {
         intro: {

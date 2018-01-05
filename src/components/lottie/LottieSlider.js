@@ -3,9 +3,8 @@ import React from 'react';
 export const LottieSlider = (props) => {
     const sliderStyle = {
         background:'#f4f4f4',
-
         width: '100vw',
-        transition: '1s ease'
+        transition: '1s ease',
     };
 
     const sliderWrapStyle = {
@@ -14,8 +13,8 @@ export const LottieSlider = (props) => {
         left: '0',
         display:'block',
         width:'100vw',
-        height:'100vh',
-        overflowX: 'hidden'
+        height:'100%',
+        overflowX: 'hidden',
     };
 
     const nextHandler = () => {
@@ -32,7 +31,7 @@ export const LottieSlider = (props) => {
     }
 
     return (
-        <div key='slider' className={props.view === 'stop' ? 'wrapperHigh' : 'wrapperLow'} style={sliderWrapStyle}>
+        <div key='slider' className={props.view === 'stop' ? 'wrapperHigh' : 'wrapperLowNoDelay wrapperLow'} style={sliderWrapStyle}>
             <div className={props.view === 'stop' ? 'sliderVis' : 'sliderInvis'} style={sliderStyle} key='1'>
                 <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'});}} className="stopNavTop">
                     <img src="./svg/fatarrows-left.svg" /> <p>Back to Plate</p>
