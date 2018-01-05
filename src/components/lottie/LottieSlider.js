@@ -28,7 +28,7 @@ export const LottieSlider = (props) => {
                 <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'})}} className="stopNavTop navLeft">
                 <img  className="right" src="./svg/fatarrows-right.svg" />
                      <p className="right"> Next  </p>
-     
+
                 </nav>
 
                 {/* make me dynamic */}
@@ -58,9 +58,8 @@ export const LottieSlider = (props) => {
                         sometimes by accident, sometimes on purpose (injected humour and the like).
                         </p>
                     </div>
-
-                    <div className="button-holder">
-                    <img src="./svg/map-point.svg" className="button" />
+                    <div onClick={() => {props.modalHandler(true)}} className="button-holder">
+                        <img src="./svg/map-point.svg" className="button" />
                         <img src="./svg/button-text.svg" className="button-text" />
                     </div>
 

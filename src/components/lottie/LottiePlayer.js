@@ -8,6 +8,7 @@ import {anims} from './anims'
 import bodymovin from 'lottie-web';
 import {LottieNav} from './LottieNav';
 import {LottieSlider} from './LottieSlider'
+import {LottieModal} from './LottieModal'
 import {disableNavButtons, enableNavButtons, toFrames, toMS} from './lottieHelpers'
 let lottie;
 let core;
@@ -17,13 +18,18 @@ let core;
 class LottiePlayer extends Component {
     state = {
         navButtons: anims.start,
-        view: 'home'
+        view: 'home',
+        modalStatus: false
     };
 
     core = {
         disableNavButtonsHandler: this.props.disableNavButtonsHandler,
         controller: this.animationController
     };
+
+    modalHandler = (state) => {
+        this.setState({modalStatus: state})
+    }
 
     viewHandler = (view) => {
         this.setState({view: view});
@@ -136,10 +142,10 @@ class LottiePlayer extends Component {
         // Returns LottiePlayer with callable ref, so bodymovin can attach as container.
         // Also returns side-slider for use during animations and the LottieNav
         return (
-            [<LottieSlider view={this.state.view} clickHandler={this.clickHandler}/>, <LottieNav key='lottieNav' view={this.state.view} navButtons={this.state.navButtons} navButtonsDisabled={this.props.navButtonsDisabled} clickHandler={this.clickHandler}/>,
-            <div key='lottie' style={{gridArea: "lottie"}} className='lottie'>
+            [<LottieSlider key='lottieSlider' modalHandler={this.modalHandler} view={this.state.view} clickHandler={this.clickHandler}/>, <LottieNav key='lottieNav' view={this.state.view} navButtons={this.state.navButtons} navButtonsDisabled={this.props.navButtonsDisabled} clickHandler={this.clickHandler}/>,
+        <div key='lottieMain' style={{gridArea: "lottie"}} className='lottie'>
                 <div style={{height: '100%'}} ref={(div) => { this.lottieContainer = div; }}></div>
-            </div>,
+            </div>, <LottieModal key='lottieModal' modalStatus={this.state.modalStatus} modalHandler={this.modalHandler}/>
         ]
         );
     }
