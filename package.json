@@ -8,9 +8,11 @@
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.2.0",
     "react-lottie": "^0.2.4",
+    "react-modal": "^3.1.10",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "video-react": "^0.9.3"
   },
   "scripts": {
     "start": "react-scripts start",

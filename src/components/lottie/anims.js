@@ -85,7 +85,6 @@ export const anims = {
             onComplete: true,
         },
         barn: {
-
         },
     },
     potatoes: {
