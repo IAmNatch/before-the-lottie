@@ -197,8 +197,8 @@ span, .nav {
     padding: 0;
     margin: 0;
     position: relative;
-    top: 30%;
-    transform: translateY(-30%); 
+    top: 20%;
+    transform: translateY(-20%); 
   
 }
 
