@@ -19,12 +19,12 @@ export const LottieModal = (props) => {
             ariaHideApp={false}
             isOpen={props.modalStatus}
         >
-        <Video autoPlay loop muted
-           controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-           poster="http://sourceposter.jpg">
-           <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" type="video/webm" />
-       </Video>
-            <button onClick={() => {props.modalHandler(false);}}></button>
+            <Video autoPlay loop mutedtre
+                source           controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
+                poster="http://sourceposter.jpg">
+                <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" type="video/webm" />
+            </Video>
+        <button onClick={() => {props.modalHandler(false);}}></button>
         </Modal>
     );
 };

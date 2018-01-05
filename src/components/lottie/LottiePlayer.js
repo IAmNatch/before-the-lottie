@@ -27,8 +27,8 @@ class LottiePlayer extends Component {
         controller: this.animationController
     };
 
-    modalHandler = (state) => {
-        this.setState({modalStatus: state})
+    modalHandler = (state, action) => {
+        this.setState({modalStatus: state});
     }
 
     viewHandler = (view) => {
@@ -74,6 +74,7 @@ class LottiePlayer extends Component {
 
         if (onComplete) {
             lottie.addEventListener('complete', () => {
+                this.setState({sliderData: anims[current.location][current.nextStop]});
                 this.viewHandler('stop')
                 console.log(onComplete);
                 console.log('YEE');
@@ -142,7 +143,7 @@ class LottiePlayer extends Component {
         // Returns LottiePlayer with callable ref, so bodymovin can attach as container.
         // Also returns side-slider for use during animations and the LottieNav
         return (
-            [<LottieSlider key='lottieSlider' modalHandler={this.modalHandler} view={this.state.view} clickHandler={this.clickHandler}/>, <LottieNav key='lottieNav' view={this.state.view} navButtons={this.state.navButtons} navButtonsDisabled={this.props.navButtonsDisabled} clickHandler={this.clickHandler}/>,
+            [<LottieSlider key='lottieSlider' sliderData={this.state.sliderData} modalHandler={this.modalHandler} view={this.state.view} clickHandler={this.clickHandler}/>, <LottieNav key='lottieNav' view={this.state.view} navButtons={this.state.navButtons} navButtonsDisabled={this.props.navButtonsDisabled} clickHandler={this.clickHandler}/>,
         <div key='lottieMain' style={{gridArea: "lottie"}} className='lottie'>
                 <div style={{height: '100%'}} ref={(div) => { this.lottieContainer = div; }}></div>
             </div>, <LottieModal key='lottieModal' modalStatus={this.state.modalStatus} modalHandler={this.modalHandler}/>

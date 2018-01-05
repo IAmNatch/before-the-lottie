@@ -21,51 +21,53 @@ export const LottieSlider = (props) => {
     return (
         <div key='slider' className={props.view === 'stop' ? 'wrapperHigh' : 'wrapperLow'} style={sliderWrapStyle}>
             <div className={props.view === 'stop' ? 'sliderVis' : 'sliderInvis'} style={sliderStyle} key='1'>
-                <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'})}} className="stopNavTop">
-                    <img src="./svg/fatarrows-left.svg" /> <p> Last  </p>
+                <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'});}} className="stopNavTop">
+                    <img src="./svg/fatarrows-left.svg" /> <p>Back to Plate</p>
                 </nav>
                 <div className="straightLine"></div>
-                <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'})}} className="stopNavTop navLeft">
-                <img  className="right" src="./svg/fatarrows-right.svg" />
-                     <p className="right"> Next  </p>
-
+                <nav
+                    onClick={(e) => {props.clickHandler(e, {type: 'animation', view: 'map', location: props.sliderData.location, subSection: props.sliderData.next}), console.log(props);}} 
+                    className="stopNavTop navLeft">
+                    <img  className="right" src="./svg/fatarrows-right.svg" />
+                    <p className="right"> Next  </p>
                 </nav>
 
                 {/* make me dynamic */}
                 <div className="tracker">
-                    <h4>1 of 4</h4>
+                    <h4>{props.sliderData && props.sliderData.stepNumber || 0} of 4</h4>
                 </div>
 
                 <div className="image">
-                    <img src="./tester.jpg" />
+                    <img src={props.sliderData && props.sliderData.backgroundImage || "./tester.jpg"} />
                 </div>
 
                 <div className="content-folder">
 
                     <div className="text-holder">
                         <p>
-                        It is a long established fact that a reader will be distracted by the readable
-                        content of a page when looking at its layout.
-                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-                        letters, as opposed to using 'Content here, content here', making it look like readable English.
-                        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
-                         'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years,
-                        sometimes by accident, sometimes on purpose (injected humour and the like).
+                            {    props.sliderData && props.sliderData.description ||
+                            `It is a long established fact that a reader will be distracted by the readable
+                            content of a page when looking at its layout.
+                            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                            letters, as opposed to using 'Content here, content here', making it look like readable English.
+                            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
+                            'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years,
+                            sometimes by accident, sometimes on purpose (injected humour and the like).
                             <br />
-                        letters, as opposed to using 'Content here, content here', making it look like readable English.
-                        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
-                         'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years,
-                        sometimes by accident, sometimes on purpose (injected humour and the like).
+                            letters, as opposed to using 'Content here, content here', making it look like readable English.
+                            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
+                            'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years,
+                            sometimes by accident, sometimes on purpose (injected humour and the like).`}
                         </p>
                     </div>
-                    <div onClick={() => {props.modalHandler(true)}} className="button-holder">
+                    <div onClick={() => {props.modalHandler(true);}} className="button-holder">
                         <img src="./svg/map-point.svg" className="button" />
                         <img src="./svg/button-text.svg" className="button-text" />
                     </div>
 
-                <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'})}} className="bottomNav">
-                    <img src="./svg/fatarrows-left.svg" /> <p> Back to the Plate </p>
-                </nav>
+                    <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'});}} className="bottomNav">
+                        <img src="./svg/fatarrows-left.svg" /> <p> Back to the Plate </p>
+                    </nav>
 
                 </div>
 

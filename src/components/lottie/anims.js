@@ -8,11 +8,11 @@ export const anims = {
     ],
     honey: {
         intro: {
-            title: 'Honey',
+            title: 'Honey Glaze',
             type: 'intro',
             view: 'intro',
             navButtons: [
-                {type: 'animation', view: 'map', title:'Honey', location: 'honey', subSection: 'plateToBoxes'},
+                {type: 'animation', view: 'map', title:'Honey Glaze', location: 'honey', subSection: 'plateToBoxes'},
                 {type: 'btp', view: 'home', title:'Back to Plate'}
             ],
             internalButtons: [{}],
@@ -32,8 +32,15 @@ export const anims = {
             time_end: 66,
             shouldLoop: false,
             onComplete: true,
+            nextStop: 'boxes'
         },
         boxes: {
+            description: 'Bees fly freely to pollinate plants and collect pollen, which they return to specially created bee boxes. Bee boxes are strategically placed by farmers in areas with access to varied nutrition to allow the bee to create high quality honey. Bee boxes are designed to allow the farmer to harvest the honey, which is encased in the waxy honeycomb. In our case, the honey farmer places bee boxes on the corners of neighboring farm’s property - giving his bees a varied source of nutrition and giving his neighbours the pollination his bees provide. Each bee lives for approximately 6 weeks, and creates just 1/10th of a teaspoon of honey in his lifetime!',
+            stepNumber: 1,
+            backgroundImage: null,
+            location: 'honey',
+            next: 'boxesToCollecting',
+            previous: 'plateToBoxes'
         },
         boxesToCollecting: {
             type: 'animation',
@@ -42,12 +49,56 @@ export const anims = {
             time_end: 77,
             shouldLoop: false,
             onComplete: true,
+            nextStop: 'collecting'
+        },
+        collecting: {
+            description: 'Honey farmers collect the honey from the bee boxes by sliding out panels in each box. Farmers use a time-tested smoking method to calm the bees and allow the easy removal of the bee box panels. These panels are then driven back to a central plant for processing.',
+            stepNumber: 2,
+            backgroundImage: null,
+            location: 'honey',
+            next: 'collectingToProcessing',
+            previous: 'collectingToBoxes'
+        },
+        collectingToProcessing: {
+            type: 'animation',
+            location: 'honey',
+            time_start: 80.5,
+            time_end: 85,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'processing'
+        },
+        processing: {
+            description: 'The honeycomb that the bees create is scraped off the panels with a machine, dripping into a carefully positioned trough. The honeycomb substance is then placed in a spinning drum that separates the wax from the honey, and allows the honey to be collected separately. This honey is then pumped into storage barrels - from there, after being pumped into the appropriately sized container, it is ready for distribution! Some honey farmers ‘pasteurize’ their product by heating it to higher temperatures. This is done by some farmers to pump the honey through the processing plant more quickly.',
+            stepNumber: 3,
+            backgroundImage: null,
+            location: 'honey',
+            next: 'processingToCooking',
+            previous: 'processingToCollecting'
+        },
+        processingToCooking: {
+            type: 'animation',
+            location: 'honey',
+            time_start: 90.5,
+            time_end: 96,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'cooking'
+        },
+        cooking: {
+            description: 'Distribution comes in many flavors, and varies by product. Distributors store and sort foods until delivery to the end consumer, whether that is directly to the restaurant or to a supermarket. Distributors vary in size - some supply massive supermarket chains and deliver hundreds of thousands of kilograms of \
+            food each week. Some, like 100KM foods, are smaller and emphasize local delivery directly restaurants or specialty stores.',
+            stepNumber: 4,
+            backgroundImage: null,
+            location: 'honey',
+            next: 'btp',
+            previous: 'cookingToProcessing'
         }
     },
     beef: {
         intro: {
             action: 'intro',
-            navButtons: [{type: 'animation', view: 'map', title:'Begin Adventure', location: 'beef', subSection: 'plateToCalving'},
+            navButtons: [{type: 'animation', view: 'map', title:'Beef Tenderloin', location: 'beef', subSection: 'plateToCalving'},
                 {type: 'btp', view: 'home', title:'Back to Plate'}],
             internalButtons: [{}],
             location: 'beef',
@@ -69,7 +120,7 @@ export const anims = {
     milk: {
         intro: {
             action: 'intro',
-            navButtons: [{type: 'animation', view: 'map', title:'Begin Adventure', location: 'milk', subSection: 'plateToBarn'},
+            navButtons: [{type: 'animation', view: 'map', title:'Bread Sauce', location: 'milk', subSection: 'plateToBarn'},
                 {type: 'btp', view: 'home', title:'Back to Plate'}],
             internalButtons: [{}],
             location: 'beef',
@@ -91,7 +142,7 @@ export const anims = {
     potatoes: {
         intro: {
             action: 'intro',
-            navButtons: [{type: 'animation', view: 'map', title:'Begin Adventure', location: 'potatoes', subSection: 'plateToIrrigation'},
+            navButtons: [{type: 'animation', view: 'map', title:'Potatoe Tots', location: 'potatoes', subSection: 'plateToIrrigation'},
                 {type: 'btp', view: 'home', title:'Back to Plate'}],
             internalButtons: [{}],
             location: 'potatoes',
@@ -113,7 +164,7 @@ export const anims = {
     sunflowers: {
         intro: {
             action: 'intro',
-            navButtons: [{type: 'animation', view: 'map', title:'Begin Adventure', location: 'sunflowers', subSection: 'plateToPlanting'},
+            navButtons: [{type: 'animation', view: 'map', title:'Sunflower Oil', location: 'sunflowers', subSection: 'plateToPlanting'},
                 {type: 'btp', view: 'home', title:'Back to Plate'}],
             internalButtons: [{}],
             location: 'sunflowers',
