@@ -10,6 +10,7 @@ export const LottieSlider = (props) => {
         };
 
     const sliderWrapStyle = {
+<<<<<<< HEAD
             position: 'absolute',
             top: '0',
             left: '0',
@@ -18,6 +19,34 @@ export const LottieSlider = (props) => {
             height:'100vh',
             overflowX: 'hidden'
         };
+=======
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        display:'block',
+        width:'100vw',
+        height:'100vh',
+        overflowX: 'hidden'
+    };
+
+    return (
+        <div key='slider' className={props.view === 'stop' ? 'wrapperHigh' : 'wrapperLow'} style={sliderWrapStyle}>
+            <div className={props.view === 'stop' ? 'sliderVis' : 'sliderInvis'} style={sliderStyle} key='1'>
+                <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'})}} className="stopNavTop">
+                    <img src="./svg/fatarrows-left.svg" /> <p> Last  </p>
+                </nav>
+                <div className="straightLine"></div>
+                <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'})}} className="stopNavTop navLeft">
+                <img  className="right" src="./svg/fatarrows-right.svg" />
+                     <p className="right"> Next  </p>
+     
+                </nav>
+
+                {/* make me dynamic */}
+                <div className="tracker">
+                    <h4>1 of 4</h4>
+                </div>
+>>>>>>> d5fc70ede1a8c563629eae238d83f1b17930c0d3
 
     const modalStyle = {
         overlay : {
@@ -38,6 +67,7 @@ export const LottieSlider = (props) => {
                         <h4>{props.pageNumber || 0} of 4</h4>
                     </div>
 
+<<<<<<< HEAD
                     <div className="image">
                         <img src={props.background || './tester.jpg'} />
                     </div>
@@ -64,6 +94,18 @@ export const LottieSlider = (props) => {
                         <div className="button-holder">
                             <img src="./svg/button-text.svg" className="button-text" />
                         </div>
+=======
+                    <div className="button-holder">
+                    <img src="./svg/map-point.svg" className="button" />
+                        <img src="./svg/button-text.svg" className="button-text" />
+                    </div>
+
+                <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'})}} className="bottomNav">
+                    <img src="./svg/fatarrows-left.svg" /> <p> Back to the Plate </p>
+                </nav>
+
+                </div>
+>>>>>>> d5fc70ede1a8c563629eae238d83f1b17930c0d3
 
                     </div>
                     <Modal
