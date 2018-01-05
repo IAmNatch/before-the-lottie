@@ -167,5 +167,11 @@ div.straightLine {
     display: block;
     margin-left: auto;
     margin-right: auto ;
-    width: 40%;
+    width: 32%;
+}
+.button-holder .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+    width: 10%;
 }

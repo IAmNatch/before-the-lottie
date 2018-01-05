@@ -55,6 +55,7 @@ export const LottieSlider = (props) => {
                     </div>
 
                     <div className="button-holder">
+                    <img src="./svg/map-point.svg" className="button" />
                         <img src="./svg/button-text.svg" className="button-text" />
                     </div>
 
