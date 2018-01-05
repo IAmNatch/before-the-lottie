@@ -17,7 +17,8 @@ export const Main = (props) => {
                     <h1>Before the Plate</h1>
                 </div>
                 <div className='byline'>
-                The questions, the stories and the people behind where our food comes from and how it gets to our
+               <p>The questions, the stories and the people behind where 
+              our food comes from and how it gets to our plate</p>
                 </div>
             </div>]
 

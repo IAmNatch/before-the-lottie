@@ -132,10 +132,12 @@ span, .nav {
 
 .sliderVis {
     transform: translateX(0%);
+    height: 100vh;
 }
 
 .sliderInvis {
     transform: translateX(100%);
+    height: 100vh;
 }
 
 .wrapperHigh {
@@ -158,20 +160,66 @@ span, .nav {
 
 .title {
     font-family: 'Roboto', sans-serif;
-    float: left;
+    float: right;
     grid-column: 1;
     text-align: center;
+
+  
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .footer .title h2 {
+        margin-bottom: 10px;
+    
+    }
+}
+@media screen and (max-width: 500px) {
+    
+    .footer .title h2 {
+        margin-bottom: 15px;
+    
+    }
+}
+.title h1 {
+    font-weight: 900;
+    font-size: 6vw;
+    vertical-align: bottom;
+    position: relative;
+    top: 45%;
+    transform: translateY(-45%); 
+    
+
+}
+.title h2 {
+    font-weight: 100;
+    font-size: 3vw;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 33%;
+    transform: translateY(-33%); 
+  
 }
 
 .byline {
-    margin-top: 20px;
+
     font-family: 'Roboto Mono', monospace;
     float: right;
     grid-column: 2;
     text-align: left;
+    font-weight: 100; 
+    font-size: 1.7vw; 
+    padding-bottom: 4px;
+ 
 }
-
-
+.byline p {
+    position: relative;
+    top: 45%;
+    transform: translateY(-45%); 
+    width: 85%;
+    padding-bottom: 4px;
+}
 /* stop page css  */
 
 .stopNavTop img {
