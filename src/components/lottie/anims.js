@@ -112,9 +112,15 @@ export const anims = {
             time_end: 26,
             shouldLoop: false,
             onComplete: true,
+            nextStop: 'calving'
         },
         calving: {
-
+            description: 'Beef farmers have specially selected breeding cows that give birth to young calves on pasture. The calves are kept with their mothers for approximately 8 months, as they usually roam outdoors and drink her milk. As the calves grow, they begin weaning off their mother’s milk and eating grass, on pasture. This stage of production is usually its own farm and is called a “cow calf” operation After about 8 months, the now larger cattle are moved to the next stage called a feedlot.',
+            stepNumber: 1,
+            backgroundImage: null,
+            location: 'beef',
+            next: 'calvingToFeedLot',
+            previous: 'calvingToPlate'
         },
     },
     milk: {

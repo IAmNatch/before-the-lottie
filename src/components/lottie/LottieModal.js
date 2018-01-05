@@ -13,18 +13,24 @@ export const LottieModal = (props) => {
         }
     };
 
+    const videoPlayer = (
+        <Video autoPlay
+            controls={['Fullscreen', 'Seek']}
+            onEnded={() => {props.modalHandler(false);}}
+        >
+
+            <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" type="video/webm" />
+        </Video>
+    );
+
     return (
         <Modal
             style={modalStyle}
             ariaHideApp={false}
+            onRequestClose={() => {props.modalHandler(false);}}
             isOpen={props.modalStatus}
         >
-            <Video autoPlay loop mutedtre
-                source           controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-                poster="http://sourceposter.jpg">
-                <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" type="video/webm" />
-            </Video>
-        <button onClick={() => {props.modalHandler(false);}}></button>
+            {videoPlayer}
         </Modal>
     );
 };
