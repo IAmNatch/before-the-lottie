@@ -7,8 +7,9 @@ import {anims} from './anims'
 
 import bodymovin from 'lottie-web';
 import {LottieNav} from './LottieNav';
-import {LottieSlider} from './LottieSlider'
-import {LottieModal} from './LottieModal'
+import {LottieSlider} from './LottieSlider';
+import {LottieModal} from './LottieModal';
+import {LottieInstructions} from './LottieInstructions';
 import {disableNavButtons, enableNavButtons, toFrames, toMS} from './lottieHelpers'
 let lottie;
 let core;
@@ -146,7 +147,7 @@ class LottiePlayer extends Component {
             [<LottieSlider key='lottieSlider' sliderData={this.state.sliderData} modalHandler={this.modalHandler} view={this.state.view} clickHandler={this.clickHandler}/>, <LottieNav key='lottieNav' view={this.state.view} navButtons={this.state.navButtons} navButtonsDisabled={this.props.navButtonsDisabled} clickHandler={this.clickHandler}/>,
         <div key='lottieMain' style={{gridArea: "lottie"}} className='lottie'>
                 <div style={{height: '100%'}} ref={(div) => { this.lottieContainer = div; }}></div>
-            </div>, <LottieModal key='lottieModal' modalStatus={this.state.modalStatus} modalHandler={this.modalHandler}/>
+            </div>, <LottieInstructions className='LottieInstructions' key='LottieInstructions' />, <LottieModal key='lottieModal' modalStatus={this.state.modalStatus} modalHandler={this.modalHandler}/>
         ]
         );
     }

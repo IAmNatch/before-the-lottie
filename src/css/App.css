@@ -143,6 +143,12 @@ body {
     width: 100vw;
 }
 
+.LottieInstructions {
+    position: relative;
+    right: 10%;
+    top: 40%;
+}
+
 /* Info */
 .info {
     grid-area: info;
