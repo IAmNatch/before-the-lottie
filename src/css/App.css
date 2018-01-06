@@ -502,3 +502,7 @@ width: 100%;
     }
 
     }
+
+    nav.bottomNav, div.responsive-buttons, div.button-holder img{
+       cursor: pointer;
+    }
