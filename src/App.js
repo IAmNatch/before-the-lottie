@@ -16,6 +16,16 @@ class App extends Component {
         this.setState({page: page})
     }
 
+    componentWillMount() {
+        const location = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1');
+        console.log(location);
+        if (location === '') {
+            this.pageHandler('home')
+        } else {
+            this.pageHandler(location)
+        }
+    }
+
     disableNavButtonsHandler = (state) => {
         this.setState({navButtonsDisabled: state})
     }
@@ -40,7 +50,7 @@ class App extends Component {
                             />
                             )
                         }} />
-                    <Route path='/about' component={() => <About pageHandler={this.pageHandler}/>} />
+                    <Route path='/about' component={About} />
                     <Route path='/contact' component={Contact} />
                     <Route path='/donate' component={Donate} />
 
