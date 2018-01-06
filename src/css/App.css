@@ -42,8 +42,12 @@ overflow: hidden;
 .nav-item-link:hover {
     background-position: 200%;
     color: #333;
-    border-right: 1px solid black;
+    text-decoration: line-through;
+    border-right: none;
+   
+    
 }
+
 
 .nav-item-link {
     color: white;
@@ -59,7 +63,8 @@ overflow: hidden;
     background-image: linear-gradient(to right, #f4f4f4 50%, #f4f4f4, transparent, transparent 50%);
     background-position: 100% 0;
     background-size: 200% 100%;
-    transition: 499.05ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+    transition: all 1s ease; 
+ 
 }
 
 
