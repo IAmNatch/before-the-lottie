@@ -9,7 +9,12 @@ import {Route} from 'react-router-dom';
 class App extends Component {
     state = {
         navButtonsDisabled: false,
+        page: 'home'
     };
+
+    pageHandler = (page) => {
+        this.setState({page: page})
+    }
 
     disableNavButtonsHandler = (state) => {
         this.setState({navButtonsDisabled: state})
@@ -17,9 +22,9 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
+            <div className={`App ${this.state.page !== 'home' ? 'notHome' : ''}`}>
                 <div className='header'>
-                    <Nav view={this.state.view} />
+                    <Nav page={this.state.page} pageHandler={this.pageHandler} />
                 </div>
 
                     <div className='info'>
@@ -29,6 +34,7 @@ class App extends Component {
                     <Route path='/' exact component={() => {
                             return (
                                 <Main
+                                viewMirror={this.viewMirror}
                                 navButtonsDisabled={this.state.navButtonsDisabled}
                                 disableNavButtonsHandler={this.disableNavButtonsHandler}
                             />
