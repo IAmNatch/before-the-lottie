@@ -34,14 +34,14 @@ export const LottieSlider = (props) => {
         <div key='slider' className={props.view === 'stop' ? 'wrapperHigh' : 'wrapperLowNoDelay wrapperLow'} style={sliderWrapStyle}>
             <div className={props.view === 'stop' ? 'sliderVis' : 'sliderInvis'} style={sliderStyle} key='1'>
                 <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'});}} className="stopNavTop">
-                    <img src="./svg/fatarrows-left.svg" /> <p>Back to Plate</p>
+                    <img src="./svg/fatarrows-left.svg" /> <p>Last Stop</p>
                 </nav>
                 <div className="straightLine"></div>
                 <nav
                     onClick={(e) => {props.clickHandler(e, nextHandler());}}
                     className="stopNavTop navLeft">
                     <img  className="right" src="./svg/fatarrows-right.svg" />
-                    <p className="right"> {props.sliderData && props.sliderData.next === 'btp' ? 'Back to Plate' : 'Next'}  </p>
+                    <p className="right"> {props.sliderData && props.sliderData.next === 'btp' ? 'Back to Plate' : 'Next Stop'}  </p>
                 </nav>
 
                 {/* make me dynamic */}
@@ -78,7 +78,7 @@ export const LottieSlider = (props) => {
                     </div>
 
                     <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'});}} className="bottomNav">
-                        <img src="./svg/fatarrows-left.svg" /> <p> Back to the Plate </p>
+                    <p> Back to the Plate </p>
                     </nav>
 
                 </div>

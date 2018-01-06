@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 body {
     background-color: #f4f4f4;
@@ -232,14 +232,55 @@ background-color: #f4f4f4;
 .stopNavTop img {
     width: 100px;
 }
-.bottomNav img {
-    width: 100px;
+nav.bottomNav {
+    margin: auto;
+   max-width: 22%;
+  
+
+
 }
+nav.bottomNav p {
+
+    color: white;
+    background-color: black;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding:2px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+
+    
+  
+}
+
 .stopNavTop p {
     vertical-align: top;
     display: inline-block;
-    padding-top: 15px;
+    padding-top: 7%;
+    margin: 0;
+    text-transform: uppercase;
 }
+@media screen and (max-width: 500px) {
+    
+    .stopNavTop p {
+    
+        padding-top: 5%;
+        
+    }
+    }
+  
+        /* @media screen and (max-width: 1100px) {
+            
+            .stopNavTop p {
+            
+                padding-top: 9%;
+                
+            }
+            } */
 
 .stopNavTop {
     width: 30%;
@@ -252,7 +293,24 @@ background-color: #f4f4f4;
 .stopNavTop, .navLeft {
     box-sizing: border-box;
 }
+.stopNavTop img {
+    width: 20%;
+}
 
+@media screen and (max-width: 1000px) {
+    
+    .stopNavTop img {
+        width: 30%;
+    }
+    }
+    
+
+/* @media screen and (max-width: 1000px) {
+    
+    .stopNavTop img {
+        width: 40%;
+    }
+    } */
 .navLeft {
     padding-right: 2%;
 }
@@ -278,30 +336,76 @@ div.straightLine {
 .tracker h4 {
     margin: 0;
     font-family: 'Roboto Mono', monospace;
-    font-weight: 50;
-    font-size: 2vw;
+    font-weight: 300;
+    font-size: 30px;
     letter-spacing: 1.1vw;
 
 }
+
+@media screen and (max-width: 500px) {
+    
+    .tracker h4 {
+        font-size: 20px;
+     
+    
+    }
+    }
 .text-holder {
     width: 50%;
     display: inline-block;
-    padding: 30px;
+    padding: 20px 30px 10px 30px;
     box-sizing: border-box;
     vertical-align: top;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 20px;
+    padding-bottom: 10px;
 }
+
+
 .button-holder  {
     width: 50%;
     display: inline-block;
-    padding: 30px;
+    padding: 20px 30px 10px 30px;
     box-sizing: border-box;
+
 }
+@media screen and (max-width: 800px) {
+    
+      .text-holder {
+          width: 60%;
+          font-family: "Roboto";
+          font-weight: 400;
+          font-size: 15px;
+         
+      }
+      .button-holder {
+          width: 40%;
+      }
+     
+      }
 .button-holder .button-text {
     display: block;
     margin-left: auto;
     margin-right: auto ;
-    width: 32%;
+    width: 42%;
 }
+@media screen and (max-width: 1200px) {
+    .button-holder .button-text {
+    
+        width: 52%;
+    }
+   
+    }
+
+    @media screen and (max-width:800px) {
+        .button-holder .button-text {
+        
+            width: 72%;
+        }
+       
+        }
 .button-holder .button {
     display: block;
     margin-left: auto;
