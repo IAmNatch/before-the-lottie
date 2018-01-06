@@ -77,7 +77,7 @@ overflow: hidden;
     content: ''
 }
 
-.nav-item-wrap {
+/* .nav-item-wrap {
     border: none;
     width: 5vw;
     height: 93%;
@@ -88,16 +88,16 @@ overflow: hidden;
 .nav-item-wrap:hover {
     border: 1px solid;
     border-radius: 75%;
-}
+} */
 
-.nav-svg {
+/* .nav-svg {
     position: relative;
     left: -19%;
 }
 
 .nav-svg-symbol {
     transition: none;
-}
+} */
 
 /* Lottie Nav */
 .lottieNav {
