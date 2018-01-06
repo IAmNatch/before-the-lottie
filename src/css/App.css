@@ -421,3 +421,50 @@ div.straightLine {
     left: 1%;
     right: 1%;
 }
+
+
+/* food and plate home page buttons  */
+.food-button {
+    border-right: solid thin black;
+    text-align: right;
+}
+.plate-button {
+    margin-right:160px;
+}
+
+.food-button button, .plate-button button {
+ background-color: #f4f4f4;
+ border: none;
+ font-family: "Roboto";
+ font-size: 35px;
+ font-weight: 900;
+ vertical-align: top;
+
+
+}
+.plate-button button {
+    cursor: e-resize;
+}
+.food-button button {
+    cursor: w-resize
+}
+
+.food-button p, .plate-button p {
+margin: 0;
+font-family: "Roboto";
+font-size: 24px;
+font-weight: 100;
+letter-spacing: 3px;
+width: 100%;
+
+}
+.food-button p {
+    text-align: right;
+}
+.plate-button img {
+    margin-left: 20px;
+}
+ .food-button img {
+    margin-right: 20px;
+
+} 

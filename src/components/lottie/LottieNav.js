@@ -43,7 +43,8 @@ export const LottieNav = (props) => {
                 if (buttonType === 'btp') {
                     console.log('btp ran motha');
                     return ([
-                        <p key={`journey${i}`}> Back to </p>,
+                         
+                        <p key={`journey${i}`}> Back to the</p>,
                         <button
                             key={i}
                             className={props.navButtonsDisabled ? 'disabled' : ''}
@@ -54,12 +55,15 @@ export const LottieNav = (props) => {
                         >
                             {action.title}
                         </button>,
+                        <img key={`fatArrow${i}`} src="./svg/fatarrows-right.svg" width="100"/>,
                     ]);
                 }
                 else if (buttonType === 'animation') {
                     console.log('hungry AF');
                     return ([
+                        
                         <p key={`journey${i}`}> Begin Journey for </p>,
+                        <img key={`fatArrow${i}`} src="./svg/fatarrows-left.svg" width="100"/>,
                         <button
                             key={i}
                             className={props.navButtonsDisabled ? 'disabled' : ''}
@@ -76,7 +80,7 @@ export const LottieNav = (props) => {
 
             }
             buttons.push((
-                <div key={`{buttonParent${i}}`} className="food-button">
+                <div key={`{buttonParent${i}}`} className={action.type === 'animation' ? 'food-button' : 'plate-button'}>
                     {text = JSXButton(action.type)}
                 </div>
             ));
