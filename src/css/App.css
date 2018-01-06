@@ -599,3 +599,12 @@ width: 100%;
 
         line-height: 90%;
       }
+      div.block div {
+          width:33.3%;
+          display: inline-block;
+          margin-top: 10%;
+          text-align: center;
+      }
+      div.block div p {
+          margin: 0 8%;
+      }
