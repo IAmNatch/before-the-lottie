@@ -27,10 +27,10 @@ class App extends Component {
                     <Nav page={this.state.page} pageHandler={this.pageHandler} />
                 </div>
 
-                    <div className='info'>
+                    {this.state.page === 'home' ? (<div className='info'>
                         <h3>Film Coming</h3>
                         <h4>Summer 2018</h4>
-                    </div>
+                    </div>) : ''}
                     <Route path='/' exact component={() => {
                             return (
                                 <Main
@@ -40,7 +40,7 @@ class App extends Component {
                             />
                             )
                         }} />
-                    <Route path='/about' component={About} />
+                    <Route path='/about' component={() => <About pageHandler={this.pageHandler}/>} />
                     <Route path='/contact' component={Contact} />
                     <Route path='/donate' component={Donate} />
 
