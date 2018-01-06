@@ -2,10 +2,13 @@ import React from 'react';
 
 export const About = (props) => {
     return (
-        <div>
+     <div>  <div className="teaser">
+        <button> Watch the Teaser </button>
+        </div>
             <div className="title-holder">
                 <h1> About </h1>
                 <h2>Before the Plate</h2>
+           
             </div>
             <div className="block">
             <div className="Farmers"><h4>Farmers</h4> <p> Follow the people who dedicate their lives to growing the food we eat as we answer some of the most pressing questions about modern farming.</p></div>

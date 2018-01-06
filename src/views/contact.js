@@ -1,9 +1,6 @@
 import React from 'react';
 
 export const Contact = (props) => {
-    () => {
-
-    }
     return (
         <div>
             <form method="POST" action="http://formspree.io/info@sweettoothdigital.com">

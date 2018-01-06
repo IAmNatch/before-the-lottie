@@ -568,9 +568,9 @@ width: 100%;
       /* about page css */
 
       div.block{
-          margin-top:300px;
+          margin-top:4%;
         background: #83bd8a;
-        height: 600px;
+        height:500px;
         position: relative;
         transform: skew(6deg) rotate(-10deg);
         -webkit-transform: skew(-10deg) rotate(-10deg);
@@ -586,7 +586,7 @@ width: 100%;
           z-index: 12000;
           position: absolute;
           left: 45%;
-          top: 20%;
+          top: 15%;
       }
 
       .title-holder h1, .title-holder h2 {
@@ -614,7 +614,7 @@ width: 100%;
       div.block div {
           width:33.3%;
           display: inline-block;
-          margin-top: 14%;
+          margin-top: 10%;
           text-align: center;
           vertical-align: top;
       }
@@ -630,4 +630,31 @@ width: 100%;
           text-transform: uppercase;
           font-weight: 400;
           letter-spacing: 4px;
+      }
+
+      div.teaser {
+          margin-left: 20%;
+          position: relative;
+          margin-top: 6%;
+      }
+
+      div.teaser button {
+        background: rgba(0, 0, 0, 0);
+          
+          border: thin solid black;
+          padding: 4%;
+          font-size: 1.3vw;
+          font-weight: 600;
+          letter-spacing: 2px;
+          cursor: pointer;
+          border: 0;
+          transition: all 0.3s ease 0s;
+          border: thin solid black;
+          border-radius: 20px;
+         
+      }
+
+      div.teaser button:hover {
+        box-shadow: inset 0 0 0 5px black;
+        border-radius: 20px;
       }
