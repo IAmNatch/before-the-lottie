@@ -557,11 +557,11 @@ width: 100%;
 
       div.block{
           margin-top: 200px;
-        background: rgb(122, 206, 122);
-        height: 400px;
-        width: 100%;
+        background: #83bd8a;
+        height: 600px;
+        width: 102%;
         transform: skew(6deg) rotate(-10deg);
-        -webkit-transform: skew(-6deg) rotate(-10deg);
+        -webkit-transform: skew(-10deg) rotate(-10deg);
         -moz-transform: skew(6deg) rotate(-10deg);
       }
   
