@@ -12,7 +12,7 @@ export const Nav = (props) => {
         const navList = [{link: 'about', title: 'about'}, {link: 'contact', title: 'contact'}, {link: 'donate', title: 'donate'}];
         nav = [];
         const navItems = navList.map((item, i) => {
-            nav.push(<li key={`navItem${i}`} className='nav-item'><Link className='nav-item nav-item-link' onClick={() => {props.pageHandler(item.title)}} to={`/${item.link}`}>{item.title}</Link></li>)
+            nav.push(<li key={`navItem${i}`} className={`nav-item ${props.page === item.title ? 'nav-item-active' : ''}`}><Link className='nav-item nav-item-link' onClick={() => {props.pageHandler(item.title)}} to={`/${item.link}`}>{item.title}</Link></li>)
         })
     }
 

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './css/App.css';
 import './css/Fonts.css';
-import './css/Lottie.css';
+// Nav Bar
 import {Nav} from './components/Nav';
+// All views
 import {Main, Donate, Contact, About} from './views/';
+// React Router
 import {Route} from 'react-router-dom';
 
 class App extends Component {
