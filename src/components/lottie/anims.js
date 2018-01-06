@@ -13,7 +13,7 @@ export const anims = {
             view: 'intro',
             navButtons: [
                 {type: 'animation', view: 'map', title:'Honey Glaze', location: 'honey', subSection: 'plateToBoxes'},
-                {type: 'btp', view: 'home', title:'Back to Plate'}
+                {type: 'btp', view: 'home', title:'Plate'}
             ],
             internalButtons: [{}],
             location: 'honey',
@@ -99,7 +99,7 @@ export const anims = {
         intro: {
             action: 'intro',
             navButtons: [{type: 'animation', view: 'map', title:'Beef Tenderloin', location: 'beef', subSection: 'plateToCalving'},
-                {type: 'btp', view: 'home', title:'Back to Plate'}],
+                {type: 'btp', view: 'home', title:'Plate'}],
             internalButtons: [{}],
             location: 'beef',
             disableNavButtons: false,
@@ -178,7 +178,7 @@ export const anims = {
         intro: {
             action: 'intro',
             navButtons: [{type: 'animation', view: 'map', title:'Bread Sauce', location: 'milk', subSection: 'plateToBarn'},
-                {type: 'btp', view: 'home', title:'Back to Plate'}],
+                {type: 'btp', view: 'home', title:'Plate'}],
             internalButtons: [{}],
             location: 'milk',
             disableNavButtons: false,
@@ -257,7 +257,7 @@ export const anims = {
         intro: {
             action: 'intro',
             navButtons: [{type: 'animation', view: 'map', title:'Potatoe Tots', location: 'potatoes', subSection: 'plateToIrrigation'},
-                {type: 'btp', view: 'home', title:'Back to Plate'}],
+                {type: 'btp', view: 'home', title:'Plate'}],
             internalButtons: [{}],
             location: 'potatoes',
             disableNavButtons: false,
@@ -336,7 +336,7 @@ export const anims = {
         intro: {
             action: 'intro',
             navButtons: [{type: 'animation', view: 'map', title:'Sunflower Oil', location: 'sunflowers', subSection: 'plateToPlanting'},
-                {type: 'btp', view: 'home', title:'Back to Plate'}],
+                {type: 'btp', view: 'home', title:'Plate'}],
             internalButtons: [{}],
             location: 'sunflowers',
             disableNavButtons: false,

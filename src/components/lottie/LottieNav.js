@@ -43,7 +43,7 @@ export const LottieNav = (props) => {
                 if (buttonType === 'btp') {
                     console.log('btp ran motha');
                     return ([
-                        <p key={`journey${i}`}> Back to plate! </p>,
+                        <p key={`journey${i}`}> Back to </p>,
                         <button
                             key={i}
                             className={props.navButtonsDisabled ? 'disabled' : ''}
