@@ -4,7 +4,7 @@ body {
     background-color: #f4f4f4;
 }
 .App {
-overflow: hidden;
+/* overflow: hidden; */
   background-color: #f4f4f4;
   font-family: lato;
   display: grid;
@@ -18,7 +18,7 @@ overflow: hidden;
 
 .notHome {
     display: block;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 /* Nav */
