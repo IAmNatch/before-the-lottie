@@ -535,3 +535,10 @@ width: 100%;
     }
 
     }
+    button:focus {
+        outline: none;
+      }
+
+      .button-holder img, .bottomNav, .nav-item-wrap {
+        cursor: pointer;
+      }
