@@ -9,13 +9,16 @@ export const LottieModal = (props) => {
             zIndex: 15
         },
         content: {
-
+            padding: '0',
+            background: '',
+            border: 'none',
         }
     };
 
     const videoPlayer = (
         <Video autoPlay
             controls={['Fullscreen', 'Seek']}
+            poster='#'
             onEnded={() => {props.modalHandler(false);}}
         >
 
