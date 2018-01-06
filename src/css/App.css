@@ -77,6 +77,24 @@ overflow: hidden;
     content: ''
 }
 
+.nav-item-wrap {
+    border: 1px solid;
+    border-radius: 75%;
+    width: 59%;
+    height: 93%;
+    position: relative;
+    left: 20%;
+}
+
+.nav-svg {
+    position: relative;
+    left: -19%;
+}
+
+.nav-svg-symbol {
+    transition: none;
+}
+
 /* Lottie Nav */
 .lottieNav {
     grid-area: lottieNav;
