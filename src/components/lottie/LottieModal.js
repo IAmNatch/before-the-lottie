@@ -22,7 +22,7 @@ export const LottieModal = (props) => {
             onEnded={() => {props.modalHandler(false);}}
         >
 
-            <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" type="video/webm" />
+            <source src="https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Dairy+Barn.mp4" type="video/webm" />
         </Video>
     );
 

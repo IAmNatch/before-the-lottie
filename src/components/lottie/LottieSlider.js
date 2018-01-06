@@ -41,7 +41,7 @@ export const LottieSlider = (props) => {
                     onClick={(e) => {props.clickHandler(e, nextHandler());}}
                     className="stopNavTop navLeft">
                     <img  className="right" src="./svg/fatarrows-right.svg" />
-                    <p className="right"> {props.sliderData && props.sliderData.next === 'btp' ? 'Back to Plate' : 'Next Stop'}  </p>
+                    <p className="right"> {props.sliderData && props.sliderData.next === 'btp' ? 'Back to Plate' : `${props.sliderData && props.sliderData.nextTitle}`}  </p>
                 </nav>
 
                 {/* make me dynamic */}
