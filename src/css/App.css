@@ -616,6 +616,7 @@ width: 100%;
           display: inline-block;
           margin-top: 14%;
           text-align: center;
+          vertical-align: top;
       }
       div.block div p {
           margin: 2% 8%;
