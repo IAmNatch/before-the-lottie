@@ -37,19 +37,47 @@ export const LottieNav = (props) => {
     };
     if (props.view === 'intro') {
         props.navButtons.map((action, i) => {
+            let text;
+            const JSXButton = (buttonType) => {
+                console.log(buttonType);
+                if (buttonType === 'btp') {
+                    console.log('btp ran motha');
+                    return ([
+                        <p key={`journey${i}`}> Back to plate! </p>,
+                        <button
+                            key={i}
+                            className={props.navButtonsDisabled ? 'disabled' : ''}
+                            disabled={props.navButtonsDisabled}
+                            onMouseEnter={(e) => {action.overlay ? props.clickHandler(e, {type: 'overlay', mouse: 'enter', time_start: action.overlay.start[0], time_end: action.overlay.start[1]}) : '';}}
+                            onMouseLeave={(e) => {action.overlay ? props.clickHandler(e, {type: 'overlay', mouse: 'leave', time_start: action.overlay.end[0], time_end: action.overlay.end[1]}) : ''; }}
+                            onClick={(e) => {props.clickHandler(e, action);}}
+                        >
+                            {action.title}
+                        </button>,
+                    ]);
+                }
+                else if (buttonType === 'animation') {
+                    console.log('hungry AF');
+                    return ([
+                        <p key={`journey${i}`}> Begin Journey for </p>,
+                        <button
+                            key={i}
+                            className={props.navButtonsDisabled ? 'disabled' : ''}
+                            disabled={props.navButtonsDisabled}
+                            onMouseEnter={(e) => {action.overlay ? props.clickHandler(e, {type: 'overlay', mouse: 'enter', time_start: action.overlay.start[0], time_end: action.overlay.start[1]}) : '';}}
+                            onMouseLeave={(e) => {action.overlay ? props.clickHandler(e, {type: 'overlay', mouse: 'leave', time_start: action.overlay.end[0], time_end: action.overlay.end[1]}) : ''; }}
+                            onClick={(e) => {props.clickHandler(e, action);}}
+                        >
+                            {action.title}
+                        </button>,
+                    ])
+                }
+
+
+            }
             buttons.push((
-                <div className="food-button">
-                <p> Begin Journey for </p> 
-                <button
-                    key={i}
-                    className={props.navButtonsDisabled ? 'disabled' : ''}
-                    disabled={props.navButtonsDisabled}
-                    onMouseEnter={(e) => {action.overlay ? props.clickHandler(e, {type: 'overlay', mouse: 'enter', time_start: action.overlay.start[0], time_end: action.overlay.start[1]}) : '';}}
-                    onMouseLeave={(e) => {action.overlay ? props.clickHandler(e, {type: 'overlay', mouse: 'leave', time_start: action.overlay.end[0], time_end: action.overlay.end[1]}) : ''; }}
-                    onClick={(e) => {props.clickHandler(e, action);}}
-                >
-                    {action.title}
-                </button>
+                <div key={`{buttonParent${i}}`} className="food-button">
+                    {text = JSXButton(action.type)}
                 </div>
             ));
         });

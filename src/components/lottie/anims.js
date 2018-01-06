@@ -317,7 +317,7 @@ export const anims = {
         processingToCooking: {
             type: 'animation',
             location: 'potatoes',
-            time_start: 175,
+            time_start: 174,
             time_end: 180,
             shouldLoop: false,
             onComplete: true,
