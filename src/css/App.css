@@ -16,6 +16,10 @@ overflow: hidden;
                         'footer footer footer'
 }
 
+.notHome {
+    display: block;
+}
+
 /* Nav */
 
 .nav {
