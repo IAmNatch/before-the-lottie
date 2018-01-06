@@ -38,6 +38,8 @@ export const LottieNav = (props) => {
     if (props.view === 'intro') {
         props.navButtons.map((action, i) => {
             buttons.push((
+                <div className="food-button">
+                <p> Begin Journey for </p> 
                 <button
                     key={i}
                     className={props.navButtonsDisabled ? 'disabled' : ''}
@@ -48,6 +50,7 @@ export const LottieNav = (props) => {
                 >
                     {action.title}
                 </button>
+                </div>
             ));
         });
     } else if (props.view === 'home') {
