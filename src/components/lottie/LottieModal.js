@@ -17,7 +17,7 @@ export const LottieModal = (props) => {
 
     const videoPlayer = (
         <Video autoPlay
-            controls={['Fullscreen', 'Seek']}
+            controls={['Fullscreen', 'Seek', 'Volume']}
             poster='#'
             onEnded={() => {props.modalHandler(false);}}
         >
