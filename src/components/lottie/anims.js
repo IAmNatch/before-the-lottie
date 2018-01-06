@@ -180,43 +180,149 @@ export const anims = {
             navButtons: [{type: 'animation', view: 'map', title:'Bread Sauce', location: 'milk', subSection: 'plateToBarn'},
                 {type: 'btp', view: 'home', title:'Back to Plate'}],
             internalButtons: [{}],
-            location: 'beef',
+            location: 'milk',
             disableNavButtons: false,
-            shouldLoop: false
+            shouldLoop: false,
         },
         plateToBarn: {
             type: 'animation',
-            location: 'honey',
+            location: 'milk',
             time_start: 100.5,
             time_end: 106,
             shouldLoop: false,
             onComplete: true,
+            nextStop: 'barn',
         },
         barn: {
-
+            description: 'Dairy cows are born and spend a few hours with their mothers while they are licked off to stimulate blood flow. Once the calf has been cleaned off it is then moved to calving pens where the calves can more closely cared for and monitored. As soon as this is done, the cow is then milked and the mother\'s milk is given to the calf that is full of the essential vitamins and nutrients the calf needs. This milk given to the calf directly after birth is called colostrum. The mother cow will be carefully monitored and then return to the milking herd. Male calves are usually sent to other farms where they can be raised for veal or breeding purposes. Female calves are kept and raised until they have their first calf at about two years of age to continue the cycle.',
+            stepNumber: 1,
+            backgroundImage: null,
+            location: 'milk',
+            next: 'barnToMilk',
+            previous: 'barnToPlate',
         },
+        barnToMilk: {
+            type: 'animation',
+            location: 'milk',
+            time_start: 110.5,
+            time_end: 117.5,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'milk'
+        },
+        milk: {
+            description: 'On this farm, each of their 400 cows are milked three times per day to closely simulate the natural cycles of the cow and a calf. Each cow is logged in a computer system to check for vital health signs and cannot be milked if she has an infection or is on antibiotics. The milking parlour (where cows are milked) milks 24 cows at a time. The 24 cows are milked and are then released back into the herd to sleep and eat for the rest of the day.',
+            stepNumber: 2,
+            backgroundImage: null,
+            location: 'milk',
+            next: 'milkToTruck',
+            previous: 'milkToBarn',
+        },
+        milkToTruck: {
+            type: 'animation',
+            location: 'milk',
+            time_start: 120,
+            time_end: 125.5,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'truck'
+        },
+        truck: {
+            description: 'The truck arrives at the plant and is then tested again for contaminants.  The milk is offloaded and pasteurized for safety purposes. Essential vitamins are added to the milk and it is then processed into cream, skim and other dairy products such as ice cream and butter. For the use of our dish we used buttermilk which has bacterial cultures added to it, in order to give it a unique taste.',
+            stepNumber: 3,
+            backgroundImage: null,
+            location: 'milk',
+            next: 'truckToCooking',
+            previous: 'truckToMilk',
+        },
+        truckToCooking: {
+            type: 'animation',
+            location: 'milk',
+            time_start: 130,
+            time_end: 136.5,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'cooking'
+        },
+        cooking: {
+            description: 'We sure as hell want to talk about the cooking process, we\'re just not sure what happned!',
+            stepNumber: 4,
+            backgroundImage: null,
+            location: 'beef',
+            next: 'btp',
+            previous: 'cookingToTruck',
+        }
     },
     potatoes: {
         intro: {
             action: 'intro',
-            navButtons: [{type: 'animation', view: 'map', title:'Potatoe Tots', location: 'potatoes', subSection: 'plateToIrrigation'},
+            navButtons: [{type: 'animation', view: 'map', title:'Potatoe Tots', location: 'potatoes', subSection: 'plateToPlanting'},
                 {type: 'btp', view: 'home', title:'Back to Plate'}],
             internalButtons: [{}],
             location: 'potatoes',
             disableNavButtons: false,
             shouldLoop: false
         },
-        plateToIrrigation: {
+        plateToPlanting: {
             type: 'animation',
             location: 'potatoes',
             time_start: 145.5,
             time_end: 151,
             shouldLoop: false,
-            onComplete: ({location: 'potatoes', subSection: 'plateToIrrigation'}),
+            onComplete: true,
+            nextStop: 'planting'
+        },
+        planting: {
+            description: 'A potato seed is a small chunk of an existing potato, cut to size and buried in the field with a specialized planter in the early spring. The seed piece of potato begins growing under the soil for several weeks.',
+            stepNumber: 1,
+            backgroundImage: null,
+            location: 'potatoes',
+            next: 'plantingToIrrigation',
+            previous: 'plantingToPlate',
+        },
+        plantingToIrrigation: {
+            type: 'animation',
+            location: 'potatoes',
+            time_start: 155.5,
+            time_end: 163,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'irrigation'
         },
         irrigation: {
-
+            description: 'At the beginning of the potato’s growth, potato farmers ‘hill’ the dirt over the potato, providing it with a much needed cover to protect it from the elements and keep the seed well buried. Farmers also use this time to monitor their fields for pests or disease, and may use pesticides as appropriate to help keep the crop healthy. Potatoes are irrigated as needed throughout the hottest parts of the summer.',
+            stepNumber: 2,
+            backgroundImage: null,
+            location: 'potatoes',
+            next: 'irrigationToHarvest',
+            previous: 'irrigationToPlanting',
         },
+        irrigationToHarvest: {
+            type: 'animation',
+            location: 'potatoes',
+            time_start: 157,
+            time_end: 163,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'harvest'
+        },
+        harvest: {
+            description: ' Potatoes are pulled out of the ground using a specialized harvesting machine that pulls them by their roots. They are sized and sorted on the harvester and uniform or damaged potatoes are spread back on the field. The potatoes are then transferred to large crates that are then sent to the processing facility.',
+            stepNumber: 3,
+            backgroundImage: null,
+            location: 'potatoes',
+            next: 'harvestToCooking',
+            previous: 'harvestToIrrigation',
+        },
+        harvestToCooking: {
+            type: 'animation',
+            location: 'potatoes',
+            time_start: 164,
+            time_end: 170,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'cooking'
+        }
     },
     sunflowers: {
         intro: {
@@ -235,9 +341,66 @@ export const anims = {
             time_end: 196,
             shouldLoop: false,
             onComplete: ({location: 'sunflowers', subSection: 'plateToPlanting'}),
+            nextStop: 'planting',
         },
         planting: {
-
+            description: 'Sunflowers are planted in early spring using a similar planter to other crops. It is towed behind a tractors and plants many rows of flowers at a time. The planter also puts a precise amount of fertilizer with each seed to help the plant start growth.',
+            stepNumber: 1,
+            backgroundImage: null,
+            location: 'sunflowers',
+            next: 'plantingToBlooming',
+            previous: 'plantingToPlate',
+        },
+        plantingToBlooming: {
+            type: 'animation',
+            location: 'sunflowers',
+            time_start: 200,
+            time_end: 208,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'blooming',
+        },
+        blooming: {
+            description: 'Sunflowers in bloom - in mid august the sunflowers are in full bloom and look like the flowers we all know and recognize. They are then left until late fall to dry and be harvested.',
+            stepNumber: 2,
+            backgroundImage: null,
+            location: 'sunflowers',
+            next: 'bloomingToHarvest',
+            previous: 'bloomingToPlanting',
+        },
+        bloomingToHarvest: {
+            type: 'animation',
+            location: 'sunflowers',
+            time_start: 209.5,
+            time_end: 215.5,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'harvest',
+        },
+        harvest: {
+            description: 'Sunflowers in bloom - in mid august the sunflowers are in full bloom and look like the flowers we all know and recognize. They are then left until late fall to dry ',
+            stepNumber: 3,
+            backgroundImage: null,
+            location: 'sunflowers',
+            next: 'harvestToCooking',
+            previous: 'harvestToBlooming',
+        },
+        harvestToCooking: {
+            type: 'animation',
+            location: 'sunflowers',
+            time_start: 220,
+            time_end: 226,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'cooking',
+        },
+        cooking: {
+            description: 'We sure as hell want to talk about the cooking process, we\'re just not sure what happned!',
+            stepNumber: 4,
+            backgroundImage: null,
+            location: 'sunflowers',
+            next: 'btp',
+            previous: 'cookingToHarvest',
         },
     }
 };
