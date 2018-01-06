@@ -2,9 +2,12 @@ import React from 'react';
 
 export const About = (props) => {
     return (
-<<<<<<< HEAD
-        <div className="block"></div>
+        <div>
+            <div className="title-holder">
+                <h1> About </h1>
+                <h2>Before the Plate</h2>
+            </div>
+            <div class="block"></div>
+        </div>
     );
 };
-=======
->>>>>>> 3326d45197c51e489ad646fe98822e6169bf9187
