@@ -30,12 +30,6 @@ overflow: hidden;
     margin: 0;
     padding-left: 1vw;
 }
-.nav ul a:hover {
- color: black;
-background-color: #f4f4f4;
-    transition: all 0.9s;
-}
-
 
 
 .nav-item {
@@ -45,7 +39,13 @@ background-color: #f4f4f4;
     margin: 10px 5px;
 }
 
-.nav-item a {
+.nav-item-link:hover {
+    background-position: 200%;
+    color: #333;
+    border-right: 1px solid black;
+}
+
+.nav-item-link {
     color: white;
     background-color: black;
     /* padding: 3px; */
@@ -55,9 +55,15 @@ background-color: #f4f4f4;
     letter-spacing: 1px;
     padding-left: 7px;
     padding-right: 7px;
-
-
+    color: #f4f4f4;
+    background-image: linear-gradient(to right, #f4f4f4 50%, #f4f4f4, transparent, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 250ms ease-in 0ms;
 }
+
+
+
 
 @media screen and (max-width: 700px) {
 
@@ -461,18 +467,18 @@ width: 100%;
 }
 @media screen and (max-width:920px) {
     .food-button p, .plate-button p {
-  
+
         font-size: 14px;
-    
-        
+
+
         }
     }
     @media screen and (max-width:450px) {
         .food-button p, .plate-button p {
-      
+
             font-size: 9px;
-        
-            
+
+
             }
         }
 
@@ -484,18 +490,18 @@ width: 100%;
     width: 6vw;
 }
  .food-button img {
-    margin-right: 20px; 
+    margin-right: 20px;
      width: 6vw;
-   
 
-} 
+
+}
 @media screen and (max-width:1200px) {
     .food-button img, .plate-button img {
-  
+
        display: none;
-      
-       
-       
+
+
+
        }
        .plate-button {
         margin-right:120px;

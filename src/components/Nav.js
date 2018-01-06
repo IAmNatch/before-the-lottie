@@ -6,13 +6,11 @@ export const Nav = (props) => {
         nav = '';
     }
     else {
-        nav = (
-            <ul>
-                <li className='nav-item'><a className='nav-item' href="/about">about</a></li>
-                <li className='nav-item'><a className='nav-item' href="/contact">contact</a></li>
-                <li className='nav-item'><a className='nav-item' href="/donate">donate</a></li>
-            </ul>
-        );
+        const navList = ['about', 'contact', 'donate'];
+        nav = [];
+        const navItems = navList.map((item, i) => {
+            nav.push(<li key={`navItem${i}`} className='nav-item'><a className='nav-item nav-item-link' href={`/${item}`}>{item}</a></li>)
+        })
     }
 
     return (
