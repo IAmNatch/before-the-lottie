@@ -556,12 +556,45 @@ width: 100%;
       /* about page css */
 
       div.block{
-          margin-top: 300px;
+          margin-top:300px;
         background: #83bd8a;
         height: 600px;
-        width: 102%;
+        position: relative;
         transform: skew(6deg) rotate(-10deg);
         -webkit-transform: skew(-10deg) rotate(-10deg);
         -moz-transform: skew(6deg) rotate(-10deg);
+        max-width: 99.2%; 
+        z-index: 10;
+      }
+
+      .title-holder {
+          text-align: right;
+          margin: 0;
+          margin-right: 100px;
+          z-index: 12000;
+          position: absolute;
+          left: 40%;
+          top: 20%;
       }
   
+      .title-holder h1, .title-holder h2 {
+          margin: 0;
+          padding: 0;
+      }
+      .title-holder h1 {
+          font-family: 'Roboto';
+          font-weight: 900;
+          text-transform: uppercase;
+          font-size: 10em;
+         
+         
+      }
+      .title-holder h2 {
+        font-family: 'Roboto';
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 6em;
+        color: white;
+        position: relative;
+        top:-50px;
+      }
