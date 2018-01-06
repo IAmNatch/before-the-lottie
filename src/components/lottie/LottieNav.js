@@ -55,7 +55,7 @@ export const LottieNav = (props) => {
                         >
                             {action.title}
                         </button>,
-                        <img key={`fatArrow${i}`} src="./svg/fatarrows-right.svg" width="100"/>,
+                        <img key={`fatArrow${i}`} src="./svg/fatarrows-right.svg" />,
                     ]);
                 }
                 else if (buttonType === 'animation') {
@@ -63,7 +63,7 @@ export const LottieNav = (props) => {
                     return ([
                         
                         <p key={`journey${i}`}> Begin Journey for </p>,
-                        <img key={`fatArrow${i}`} src="./svg/fatarrows-left.svg" width="100"/>,
+                        <img key={`fatArrow${i}`} src="./svg/fatarrows-left.svg" />,
                         <button
                             key={i}
                             className={props.navButtonsDisabled ? 'disabled' : ''}

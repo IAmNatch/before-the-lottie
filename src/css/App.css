@@ -436,12 +436,13 @@ div.straightLine {
  background-color: #f4f4f4;
  border: none;
  font-family: "Roboto";
- font-size: 35px;
+ font-size: 3vw;
  font-weight: 900;
  vertical-align: top;
 
 
 }
+
 .plate-button button {
     cursor: e-resize;
 }
@@ -458,13 +459,46 @@ letter-spacing: 3px;
 width: 100%;
 
 }
+@media screen and (max-width:920px) {
+    .food-button p, .plate-button p {
+  
+        font-size: 14px;
+    
+        
+        }
+    }
+    @media screen and (max-width:450px) {
+        .food-button p, .plate-button p {
+      
+            font-size: 9px;
+        
+            
+            }
+        }
+
 .food-button p {
     text-align: right;
 }
 .plate-button img {
     margin-left: 20px;
+    width: 6vw;
 }
  .food-button img {
-    margin-right: 20px;
+    margin-right: 20px; 
+     width: 6vw;
+   
 
 } 
+@media screen and (max-width:1200px) {
+    .food-button img, .plate-button img {
+  
+       display: none;
+      
+       
+       
+       }
+       .plate-button {
+        margin-right:120px;
+    }
+
+    }
