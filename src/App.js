@@ -43,7 +43,7 @@ class App extends Component {
                         <h3>Film Coming</h3>
                         <h4>Summer 2018</h4>
                     </div>) : ''}
-                    <Route path='/' exact component={() => {
+                    <Route path={'/'} exact component={() => {
                             return (
                                 <Main
                                 viewMirror={this.viewMirror}
