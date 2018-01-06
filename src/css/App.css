@@ -489,7 +489,7 @@ width: 100%;
    
 
 } 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1500px) {
     .food-button img, .plate-button img {
   
        display: none;
