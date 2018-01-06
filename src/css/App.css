@@ -546,3 +546,17 @@ width: 100%;
       .button-holder img, .bottomNav, .nav-item-wrap {
         cursor: pointer;
       }
+
+
+      /* about page css */
+
+      div.block{
+          margin-top: 200px;
+        background: rgb(122, 206, 122);
+        height: 400px;
+        width: 100%;
+        transform: skew(6deg) rotate(-10deg);
+        -webkit-transform: skew(-6deg) rotate(-10deg);
+        -moz-transform: skew(6deg) rotate(-10deg);
+      }
+  
