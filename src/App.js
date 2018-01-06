@@ -20,7 +20,6 @@ class App extends Component {
 
     componentWillMount() {
         const location = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1');
-        console.log(location);
         if (location === '') {
             this.pageHandler('home')
         } else {

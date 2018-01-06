@@ -4,16 +4,15 @@ import ReactDOM from 'react-dom';
 // Data for Animation
 import {anims} from './anims'
 // Import Bodymovin
-
 import bodymovin from 'lottie-web';
-import {LottieNav} from './LottieNav';
-import {LottieSlider} from './LottieSlider';
-import {LottieModal} from './LottieModal';
-import {LottieInstructions} from './LottieInstructions';
+//Lottie Sub-Components
+import {LottieNav, LottieSlider, LottieModal, LottieInstructions} from './'
+// Lottie Helpers
 import {disableNavButtons, enableNavButtons, toFrames, toMS} from './lottieHelpers'
+
+// Initilize Globals
 let lottie;
 let core;
-
 
 
 class LottiePlayer extends Component {
@@ -23,10 +22,10 @@ class LottiePlayer extends Component {
         modalStatus: false
     };
 
-    core = {
-        disableNavButtonsHandler: this.props.disableNavButtonsHandler,
-        controller: this.animationController
-    };
+    // core = {
+    //     disableNavButtonsHandler: this.props.disableNavButtonsHandler,
+    //     controller: this.animationController
+    // };
 
     modalHandler = (state, action) => {
         this.setState({modalStatus: state});
@@ -38,7 +37,6 @@ class LottiePlayer extends Component {
 
     animationController = (action) => {
         this.viewHandler('map')
-        // console.log(action);
         let
         current = anims[action.location][action.subSection],
         startTimeF = toFrames(current.time_start),
@@ -53,8 +51,6 @@ class LottiePlayer extends Component {
         navButtons = current.navButtons,
         overlay = current.overlay,
         onComplete = current.onComplete;
-        console.log(current);
-
 
         // // Plays segment via frame location.
         lottie.loop = false;
@@ -77,8 +73,6 @@ class LottiePlayer extends Component {
             lottie.addEventListener('complete', () => {
                 this.setState({sliderData: anims[current.location][current.nextStop]});
                 this.viewHandler('stop')
-                console.log(onComplete);
-                console.log('YEE');
                 lottie.removeEventListener('complete')
             });
         }
