@@ -256,42 +256,25 @@ export const anims = {
     potatoes: {
         intro: {
             action: 'intro',
-            navButtons: [{type: 'animation', view: 'map', title:'Potatoe Tots', location: 'potatoes', subSection: 'plateToPlanting'},
+            navButtons: [{type: 'animation', view: 'map', title:'Potatoe Tots', location: 'potatoes', subSection: 'plateToIrrigation'},
                 {type: 'btp', view: 'home', title:'Back to Plate'}],
             internalButtons: [{}],
             location: 'potatoes',
             disableNavButtons: false,
             shouldLoop: false
         },
-        plateToPlanting: {
+        plateToIrrigation: {
             type: 'animation',
             location: 'potatoes',
             time_start: 145.5,
             time_end: 151,
             shouldLoop: false,
             onComplete: true,
-            nextStop: 'planting'
-        },
-        planting: {
-            description: 'A potato seed is a small chunk of an existing potato, cut to size and buried in the field with a specialized planter in the early spring. The seed piece of potato begins growing under the soil for several weeks.',
-            stepNumber: 1,
-            backgroundImage: null,
-            location: 'potatoes',
-            next: 'plantingToIrrigation',
-            previous: 'plantingToPlate',
-        },
-        plantingToIrrigation: {
-            type: 'animation',
-            location: 'potatoes',
-            time_start: 155.5,
-            time_end: 163,
-            shouldLoop: false,
-            onComplete: true,
             nextStop: 'irrigation'
         },
         irrigation: {
             description: 'At the beginning of the potato’s growth, potato farmers ‘hill’ the dirt over the potato, providing it with a much needed cover to protect it from the elements and keep the seed well buried. Farmers also use this time to monitor their fields for pests or disease, and may use pesticides as appropriate to help keep the crop healthy. Potatoes are irrigated as needed throughout the hottest parts of the summer.',
-            stepNumber: 2,
+            stepNumber: 1,
             backgroundImage: null,
             location: 'potatoes',
             next: 'irrigationToHarvest',
@@ -308,20 +291,45 @@ export const anims = {
         },
         harvest: {
             description: ' Potatoes are pulled out of the ground using a specialized harvesting machine that pulls them by their roots. They are sized and sorted on the harvester and uniform or damaged potatoes are spread back on the field. The potatoes are then transferred to large crates that are then sent to the processing facility.',
-            stepNumber: 3,
+            stepNumber: 2,
             backgroundImage: null,
             location: 'potatoes',
-            next: 'harvestToCooking',
+            next: 'harvestToProcessing',
             previous: 'harvestToIrrigation',
         },
-        harvestToCooking: {
+        harvestToProcessing: {
             type: 'animation',
             location: 'potatoes',
             time_start: 164,
             time_end: 170,
             shouldLoop: false,
             onComplete: true,
+            nextStop: 'processing',
+        },
+        processing: {
+            description: 'Potatoes are pulled out of the ground using a specialized harvesting machine that pulls them by their roots. They are sized and sorted on the harvester and uniform or damaged potatoes are spread back on the field. The potatoes are then transferred to large crates that are then sent to the processing facility.',
+            stepNumber: 3,
+            backgroundImage: null,
+            location: 'potatoes',
+            next: 'processingToCooking',
+            previous: 'harvestToIrrigation',
+        },
+        processingToCooking: {
+            type: 'animation',
+            location: 'potatoes',
+            time_start: 175,
+            time_end: 180,
+            shouldLoop: false,
+            onComplete: true,
             nextStop: 'cooking'
+        },
+        cooking: {
+            description: 'We sure as hell want to talk about the cooking process, we\'re just not sure what happned!',
+            stepNumber: 4,
+            backgroundImage: null,
+            location: 'potatoes',
+            next: 'btp',
+            previous: 'cookingToHarvest',
         }
     },
     sunflowers: {
