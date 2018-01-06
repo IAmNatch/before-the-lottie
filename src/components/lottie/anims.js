@@ -42,6 +42,7 @@ export const anims = {
             nextTitle: 'Collection',
             next: 'boxesToCollecting',
             previous: 'plateToBoxes',
+            previousTitle: 'Plate',
         },
         boxesToCollecting: {
             type: 'animation',
@@ -59,7 +60,8 @@ export const anims = {
             location: 'honey',
             nextTitle: 'Processing',
             next: 'collectingToProcessing',
-            previous: 'collectingToBoxes'
+            previousTitle: 'Bee Boxes',
+            previous: 'collectingToBoxes',
         },
         collectingToProcessing: {
             type: 'animation',
@@ -77,7 +79,8 @@ export const anims = {
             location: 'honey',
             nextTitle: 'Cooking',
             next: 'processingToCooking',
-            previous: 'processingToCollecting'
+            previous: 'processingToCollecting',
+            previousTitle: 'Collection',
         },
         processingToCooking: {
             type: 'animation',
@@ -89,14 +92,14 @@ export const anims = {
             nextStop: 'cooking',
         },
         cooking: {
-            description: 'Distribution comes in many flavors, and varies by product. Distributors store and sort foods until delivery to the end consumer, whether that is directly to the restaurant or to a supermarket. Distributors vary in size - some supply massive supermarket chains and deliver hundreds of thousands of kilograms of \
-            food each week. Some, like 100KM foods, are smaller and emphasize local delivery directly restaurants or specialty stores.',
+            description: 'Distribution comes in many flavors, and varies by product. Distributors store and sort foods until delivery to the end consumer, whether that is directly to the restaurant or to a supermarket. Distributors vary in size - some supply massive supermarket chains and deliver hundreds of thousands of kilograms of food each week. Some, like 100KM foods, are smaller and emphasize local delivery directly restaurants or specialty stores.',
             stepNumber: 4,
             backgroundImage: null,
             location: 'honey',
             next: 'btp',
             nextTitle: 'Back to Plate',
             previous: 'cookingToProcessing',
+            previousTitle: 'Processing',
         }
     },
     beef: {
@@ -126,6 +129,7 @@ export const anims = {
             nextTitle: 'Feedlot',
             next: 'calvingToFeedLot',
             previous: 'calvingToPlate',
+            previousTitle: 'Plate',
         },
         calvingToFeedLot: {
             type: 'animation',
@@ -144,6 +148,7 @@ export const anims = {
             nextTitle: 'Slaughter',
             next: 'feedlotToSlaughter',
             previous: 'feedlotToCalving',
+            previousTitle: 'Calving',
         },
         feedlotToSlaughter: {
             type: 'animation',
@@ -162,6 +167,7 @@ export const anims = {
             nextTitle: 'Cooking',
             next: 'slaughterToCooking',
             previous: 'slaughterToFeedlot',
+            previousTitle: 'Feedlot'
         },
         slaughterToCooking: {
             type: 'animation',
@@ -180,6 +186,7 @@ export const anims = {
             nextTitle: 'Back to Plate',
             next: 'btp',
             previous: 'cookingToSlaughter',
+            previousTitle: 'Slaughter',
         }
     },
     milk: {
@@ -209,6 +216,7 @@ export const anims = {
             nextTitle: 'Milk Parlour',
             next: 'barnToMilk',
             previous: 'barnToPlate',
+            previousTitle: 'Plate',
         },
         barnToMilk: {
             type: 'animation',
@@ -227,6 +235,7 @@ export const anims = {
             nextTitle: 'Milk truck',
             next: 'milkToTruck',
             previous: 'milkToBarn',
+            previousTitle: 'Barn',
         },
         milkToTruck: {
             type: 'animation',
@@ -245,6 +254,7 @@ export const anims = {
             nextTitle: 'Cooking',
             next: 'truckToCooking',
             previous: 'truckToMilk',
+            previousTitle: 'Milking Parlour',
         },
         truckToCooking: {
             type: 'animation',
@@ -263,6 +273,7 @@ export const anims = {
             nextTitle: 'Back to Plate',
             next: 'btp',
             previous: 'cookingToTruck',
+            previousTitle: 'Milk Truck',
         }
     },
     potatoes: {
@@ -292,6 +303,7 @@ export const anims = {
             nextTitle: 'Harvest',
             next: 'irrigationToHarvest',
             previous: 'irrigationToPlanting',
+            previousTitle: 'Planting',
         },
         irrigationToHarvest: {
             type: 'animation',
@@ -310,6 +322,7 @@ export const anims = {
             nextTitle: 'Processing',
             next: 'harvestToProcessing',
             previous: 'harvestToIrrigation',
+            previousTitle: 'Irrigation',
         },
         harvestToProcessing: {
             type: 'animation',
@@ -327,7 +340,8 @@ export const anims = {
             location: 'potatoes',
             nextTitle: 'Cooking',
             next: 'processingToCooking',
-            previous: 'harvestToIrrigation',
+            previous: 'ProccessingToHarvest',
+            previousTitle: 'Harvest'
         },
         processingToCooking: {
             type: 'animation',
@@ -345,7 +359,8 @@ export const anims = {
             location: 'potatoes',
             nextTitle: 'Back to Plate',
             next: 'btp',
-            previous: 'cookingToHarvest',
+            previous: 'cookingToProcessing',
+            previousTitle: 'Processing',
         }
     },
     sunflowers: {
@@ -375,6 +390,7 @@ export const anims = {
             nextTitle: 'Blooming',
             next: 'plantingToBlooming',
             previous: 'plantingToPlate',
+            previousTitle: 'Plate',
         },
         plantingToBlooming: {
             type: 'animation',
@@ -393,6 +409,7 @@ export const anims = {
             nextTitle: 'Harvest',
             next: 'bloomingToHarvest',
             previous: 'bloomingToPlanting',
+            previousTitle: 'Planting',
         },
         bloomingToHarvest: {
             type: 'animation',
@@ -411,6 +428,7 @@ export const anims = {
             nextTitle: 'Cooking',
             next: 'harvestToCooking',
             previous: 'harvestToBlooming',
+            previousTitle: 'Blooming',
         },
         harvestToCooking: {
             type: 'animation',
@@ -429,6 +447,7 @@ export const anims = {
             nextTitle: 'Back to Plate',
             next: 'btp',
             previous: 'cookingToHarvest',
+            previousTitle: 'Harvest',
         },
     }
 };
