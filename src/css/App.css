@@ -59,7 +59,7 @@ overflow: hidden;
     background-image: linear-gradient(to right, #f4f4f4 50%, #f4f4f4, transparent, transparent 50%);
     background-position: 100% 0;
     background-size: 200% 100%;
-    transition: all 250ms ease-in 0ms;
+    transition: 499.05ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
 }
 
 
@@ -78,12 +78,16 @@ overflow: hidden;
 }
 
 .nav-item-wrap {
-    border: 1px solid;
-    border-radius: 75%;
-    width: 59%;
+    border: none;
+    width: 5vw;
     height: 93%;
     position: relative;
     left: 20%;
+}
+
+.nav-item-wrap:hover {
+    border: 1px solid;
+    border-radius: 75%;
 }
 
 .nav-svg {
