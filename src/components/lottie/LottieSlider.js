@@ -30,13 +30,22 @@ export const LottieSlider = (props) => {
         }
     }
 
+    const prevHandler = () => {
+        return (
+            {type: 'animation', view: 'map', location: props.sliderData.location, subSection: props.sliderData.previous}
+        )
+    }
+
     return (
         <div key='slider' className={props.view === 'stop' ? 'wrapperHigh' : 'wrapperLowNoDelay wrapperLow'} style={sliderWrapStyle}>
             <div className={props.view === 'stop' ? 'sliderVis' : 'sliderInvis'} style={sliderStyle} key='1'>
-                <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'});}} className="stopNavTop">
+                {/*Buttons*/}
+                {/*Previous*/}
+                <nav onClick={(e) => {props.clickHandler(e, prevHandler());}} className="stopNavTop">
                     <img src="./svg/fatarrows-left.svg" /> <p>{props.sliderData && props.sliderData.previousTitle}</p>
                 </nav>
                 <div className="straightLine"></div>
+                {/*Next*/}
                 <nav
                     onClick={(e) => {props.clickHandler(e, nextHandler());}}
                     className="stopNavTop navLeft">
@@ -44,7 +53,6 @@ export const LottieSlider = (props) => {
                     <p className="right"> {props.sliderData && props.sliderData.next === 'btp' ? 'Back to Plate' : `${props.sliderData && props.sliderData.nextTitle}`}  </p>
                 </nav>
 
-                {/* make me dynamic */}
                 <div className="tracker">
                     <h4>{props.sliderData && props.sliderData.stepNumber || 0} of 4</h4>
                 </div>

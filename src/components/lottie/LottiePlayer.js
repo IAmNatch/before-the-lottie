@@ -36,6 +36,7 @@ class LottiePlayer extends Component {
     }
 
     animationController = (action) => {
+
         this.viewHandler('map')
         let
         current = anims[action.location][action.subSection],
@@ -71,8 +72,13 @@ class LottiePlayer extends Component {
 
         if (onComplete) {
             lottie.addEventListener('complete', () => {
-                this.setState({sliderData: anims[current.location][current.nextStop]});
-                this.viewHandler('stop')
+                if (current.nextStop === 'btp') {
+                    console.log('backtoplate happened');
+                    this.viewHandler('home')
+                } else {
+                    this.setState({sliderData: anims[current.location][current.nextStop]});
+                    this.viewHandler('stop')
+                }
                 lottie.removeEventListener('complete')
             });
         }
