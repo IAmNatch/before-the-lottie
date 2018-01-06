@@ -34,7 +34,7 @@ export const LottieSlider = (props) => {
         <div key='slider' className={props.view === 'stop' ? 'wrapperHigh' : 'wrapperLowNoDelay wrapperLow'} style={sliderWrapStyle}>
             <div className={props.view === 'stop' ? 'sliderVis' : 'sliderInvis'} style={sliderStyle} key='1'>
                 <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'});}} className="stopNavTop">
-                    <img src="./svg/fatarrows-left.svg" /> <p>Last Stop</p>
+                    <img src="./svg/fatarrows-left.svg" /> <p>{props.sliderData && props.sliderData.previousTitle}</p>
                 </nav>
                 <div className="straightLine"></div>
                 <nav
@@ -78,7 +78,7 @@ export const LottieSlider = (props) => {
                     </div>
 
                     <nav onClick={(e) => {props.clickHandler(e, {type: 'btp', view: 'home', title:'Back to Plate'});}} className="bottomNav">
-                    <p> Back to the Plate </p>
+                        <p> Back to the Plate </p>
                     </nav>
 
                 </div>
