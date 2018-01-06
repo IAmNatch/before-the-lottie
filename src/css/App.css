@@ -506,3 +506,8 @@ width: 100%;
     nav.bottomNav, div.responsive-buttons, div.button-holder img{
        cursor: pointer;
     }
+    button:active {
+        outline: none;
+        border: none;
+        }
+     
