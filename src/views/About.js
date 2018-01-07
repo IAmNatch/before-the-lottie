@@ -33,7 +33,12 @@ export const About = (props) => {
              questions related to farming in our society. </p>
              </div>
 
-      
+             <div className="block block-2">
+             <h3 className="people">  Who is behind this project? </h3>
+                <div className="person"> <h3> Producer </h3><h4> Dylan Sher</h4> <p>Sher, creative mind behind Before The Plate started the project as a result of experiencing the misinformation about the farming industry first hand. Growing up just outside of Toronto, Dylan’s initial impression of farming came from urban information sources that had a very negative view of modern agricultural practices. After enrolling at the University of Guelph for agricultural business, Dylan has realized the weight and scale of false information that consumers are exposed to which sheds farmers in a bad light. Dylan plans to use his urban upbringing as an advantage to the project as he has a better understanding of areas that are of concern in the cities and what social implications those carry.  </p></div>
+                <div className="person"> <h3>Director</h3><h4> Sagi Kahane-Rapport</h4> <p> Sagi Kahane-Rapport, director of Before The Plate, is an independent filmmaker with a passion for telling stories. Sagi brings his professional work experience in the film industry to the project, including commercial work for clients such as Nike and Telus, and music videos for eOne and Sony Music. Since founding and running his growing film production company, he has directed projects across the spectrum of film, including a TV pilot which was successfully picked up by Rogers Cable Canada. His love of film has taken him and his projects around the world, and he hopes to bring Before The Plate to as wide an audience as possible. </p> </div>
+            </div>
+           
 
         </div>
 
