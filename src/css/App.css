@@ -476,6 +476,8 @@ div.straightLine {
 .video-trailer {
     bottom: 10%;
     top: 10%;
+    left: 1%;
+    right: 1%;
 }
 
 .video-slider {
@@ -491,6 +493,7 @@ div.straightLine {
     left: 1%;
     font-size: 3em;
     font-weight: 700;
+    z-index: 20;
 }
 
 .invisible {
