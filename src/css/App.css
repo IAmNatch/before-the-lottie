@@ -1003,3 +1003,13 @@ width: 100%;
             color: black;
         }
     }
+
+    form.payPall-button {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+  
+    }
+    form.payPall-button input {
+        border-bottom: none;
+    }
