@@ -974,8 +974,8 @@ width: 100%;
   textarea#content {
       resize: none;
   }
-
+/* 
   .form-holder {
     position: relative; 
     top: -100px;
-  }
+  } */
