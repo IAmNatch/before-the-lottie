@@ -189,18 +189,19 @@ body {
     }
 }
 
-.sliderVis {
+div.sliderVis {
     transform: translateX(0%);
-    height: 100%;
+    height: 900px;
 }
 
-.sliderInvis {
+div.sliderInvis {
     transform: translateX(100%);
     height: 100%;
 }
 
 .wrapperHigh {
     z-index: 10;
+
 }
 
 .wrapperLow {
@@ -732,7 +733,7 @@ width: 100%;
         border-bottom-right-radius: 10px;
         margin: auto;
         padding: 70px;
-        margin-bottom: 100px;
+  
         margin-top: 0;
 
 
@@ -945,3 +946,7 @@ width: 100%;
       resize: none;
   }
   
+
+  div.sliderVis {
+    height: 900px;
+  }

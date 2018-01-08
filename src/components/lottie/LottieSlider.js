@@ -13,7 +13,6 @@ export const LottieSlider = (props) => {
         left: '0',
         display:'block',
         width:'100vw',
-        height:'100%',
         overflowX: 'hidden',
     };
 
