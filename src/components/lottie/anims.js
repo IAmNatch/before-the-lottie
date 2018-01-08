@@ -2,9 +2,9 @@ export const anims = {
     start: [
         {type: 'intro', view: 'intro', title:'Beef', location: 'beef', subSection: 'intro', overlay: {start: [10, 11], end: [13, 15]}},
         {type: 'intro', view: 'intro', title:'Potatoes', location: 'potatoes', subSection: 'intro', overlay: {start: [12, 13], end: [23, 27]}},
-        {type: 'intro', view: 'intro', title:'Honey', location: 'honey', subSection: 'intro', overlay: {start: [14, 15], end: [22, 28]}},
+        {type: 'intro', view: 'intro', title:'Honey', location: 'honey', subSection: 'intro', overlay: {start: [18, 19], end: [22, 28]}},
         {type: 'intro', view: 'intro', title:'Milk', location: 'milk', subSection: 'intro', overlay: {start: [16, 17], end: [22, ]}},
-        {type: 'intro', view: 'intro', title:'Sunflowers', location: 'sunflowers', subSection: 'intro', overlay: {start: [18, 19], end: [22, 24]}},
+        {type: 'intro', view: 'intro', title:'Sunflowers', location: 'sunflowers', subSection: 'intro', overlay: {start: [14, 15], end: [22, 24]}},
     ],
     honey: {
         intro: {

@@ -4,7 +4,8 @@ import './css/Fonts.css';
 // Nav Bar
 import {Nav} from './components/Nav';
 // All views
-import {Main, Donate, Contact, About} from './views/';
+import {Main, Donate, Contact} from './views/';
+import About from './views/About';
 // React Router
 import {Route} from 'react-router-dom';
 
