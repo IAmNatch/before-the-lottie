@@ -2,8 +2,8 @@ import React from 'react';
 
 export const Contact = (props) => {
     return (
-        <div>
-              <div className="contact-us"> <h2> Contact us! </h2>
+        <div  className="form-holder">
+              <div className="contact-us"> <h2> CONTACT </h2>
         </div>
             <div className="contact">
 
@@ -17,19 +17,22 @@ export const Contact = (props) => {
               <label>Title</label>
                </div>
 
-                <div class="group">      
+            <div class="group">      
           <input id="author" type="email" name="email" required />
           <span class="highlight"></span>
           <span class="bar"></span>
           <label>Email</label>
             </div>
 
-
-                <input type="subject" name="subject" placeholder="Subject" />
-               
-
+            <div class="group">      
+          <input id="title" type="subject" name="subject" required />
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Subject</label>
+            </div>
+            
                 <div class="group">     
-                <textarea  name="message" id="content" type="text" rows="4" cols="32" placeholder="Entry" required></textarea>
+                <textarea  name="message" id="content" type="text" rows="4" cols="32" placeholder="Message" required></textarea>
                 </div>
 
                 <button type="submit" id="button1" class="hvr-bubble-float-top">Submit</button>
