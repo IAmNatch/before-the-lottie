@@ -793,7 +793,7 @@ width: 100%;
     /* form starting stylings ------------------------------- */
 .group 			  {
     position:relative;
-    margin-bottom:30px;
+    margin-bottom:50px;
     box-sizing:border-box;
 
   }
@@ -843,6 +843,7 @@ width: 100%;
 
 
   input {
+      font-weight: 00;
   
        color: black;
   }
@@ -852,6 +853,7 @@ width: 100%;
     top:-30px;
     font-size:30px;
     color: black;
+    font-weight: 100;
   }
 
   /* BOTTOM BARS ================================= */
@@ -982,6 +984,7 @@ width: 100%;
     top: -100px;
   } 
 
+
   @media screen and (max-width:1400px) {
     .form-holder {
         width: 55%;
@@ -990,4 +993,13 @@ width: 100%;
        top: -100px;
      } 
 
+     input			{
+        font-size:30px;
+    }
+
+        input:focus ~ label, input:valid ~ label {
+            top: -15px;
+            font-size: 20px;
+            color: black;
+        }
     }
