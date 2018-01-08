@@ -470,10 +470,34 @@ div.straightLine {
 /* Video For Modal */
 .rh5v-DefaultPlayer_component {
     position: fixed!important;
+}
+
+.video-slider {
     top: 1%;
     bottom: 1%;
     left: 1%;
     right: 1%;
+}
+
+.video-trailer {
+    top: 20%;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+}
+
+.video-x {
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    z-index: 20;
+    font-size: 2em;
+    font-weight: 870;
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
 }
 
 
@@ -595,7 +619,7 @@ width: 100%;
           text-align: right;
           margin: 0;
           margin-right: 100px;
-          z-index: 12000;
+          z-index: 10;
           position: absolute;
           left: 45%;
           top: 15%;
@@ -653,7 +677,7 @@ width: 100%;
 
       div.teaser button {
         background: rgba(0, 0, 0, 0);
-          
+
           border: thin solid black;
           padding: 4%;
           font-size: 1.3vw;
@@ -665,7 +689,7 @@ width: 100%;
           border: 4px solid black;
           border-radius: 20px;
           text-decoration: none;
-         
+
       }
 
       div.teaser button:hover {
@@ -679,7 +703,7 @@ width: 100%;
       }
 
       h3.doc {
-       
+
         text-align: center;
         font-weight: 900;
         text-transform: uppercase;
@@ -692,7 +716,7 @@ width: 100%;
       }
       .description p {
           width: 75%;
-          
+
           margin: auto;
           font-size: 19px;
           line-height: 22px;
@@ -740,11 +764,11 @@ width: 100%;
     }
 
     /* form starting stylings ------------------------------- */
-.group 			  { 
-    position:relative; 
-    margin-bottom:45px; 
-    box-sizing:border-box; 
-  
+.group 			  {
+    position:relative;
+    margin-bottom:45px;
+    box-sizing:border-box;
+
   }
   input			{
     font-size:50px;
@@ -753,11 +777,11 @@ width: 100%;
     width:400px;
     border:none;
     border-bottom:1px solid #757575;
-    box-sizing:border-box; 
-  
+    box-sizing:border-box;
+
   }
   textarea {
-      
+
       font-size:25px;
       color: white;
       background-color: #363635;
@@ -765,87 +789,87 @@ width: 100%;
       border-right: none;
       border-top:none;
       border-color: #999;
-   
-  
+
+
   }
-  
-  
-  
+
+
+
   input:focus 		{ outline:none; }
-  
+
   /* LABEL ======================================= */
   label 				 {
-    color:#999; 
+    color:#999;
     font-size:18px;
     font-weight:normal;
     position:absolute;
     pointer-events:none;
     left:5px;
     top:10px;
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
     -webkit-transition:0.2s ease all;
-    box-sizing:border-box; 
+    box-sizing:border-box;
     font-family: Helvetica, sans-serif;
-  
+
   }
-  
-  
+
+
   input {
        background:#363635;
        color: white;
   }
-  
+
   /* active state */
   input:focus ~ label, input:valid ~ label 		{
     top:-30px;
     font-size:30px;
     color:white;
   }
-  
+
   /* BOTTOM BARS ================================= */
   .bar 	{ position:relative; display:block; width:400px; }
   .bar:before, .bar:after 	{
     content:'';
-    height:5px; 
+    height:5px;
     width:0;
-    bottom:1px; 
+    bottom:1px;
     position:absolute;
-    background: white; 
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
+    background: white;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
     -webkit-transition:0.2s ease all;
   }
   .bar:before {
     left:50%;
   }
   .bar:after {
-    right:50%; 
+    right:50%;
   }
-  
+
   /* active state */
   input:focus ~ .bar:before, input:focus ~ .bar:after {
     width:50%;
   }
-  
+
   /* HIGHLIGHTER ================================== */
   .highlight {
     position:absolute;
-    height:60%; 
-    width: 400px; 
-    top:25%; 
+    height:60%;
+    width: 400px;
+    top:25%;
     left:0;
     pointer-events:none;
     opacity:0.5;
   }
-  
+
   /* active state */
   input:focus ~ .highlight {
     -webkit-animation:inputHighlighter 0.3s ease;
     -moz-animation:inputHighlighter 0.3s ease;
     animation:inputHighlighter 0.3s ease;
   }
-  
+
   /* ANIMATIONS ================ */
   @-webkit-keyframes inputHighlighter {
       from { background:#5264AE; }
@@ -905,7 +929,7 @@ width: 100%;
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
-  
+
   .clearfix:after {
     visibility: hidden;
     display: block;
@@ -919,8 +943,7 @@ width: 100%;
   * html .clearfix { height: 1%; }
   .clearfix { display: block; }
   /* close commented backslash hack */
-  
+
   textarea#content {
       resize: none;
   }
-  
