@@ -726,11 +726,32 @@ width: 100%;
 
     .contact {
         width: 500px;
-        height: 500px;
+        height: 100%;
         background-color: white;
-        border-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         margin: auto;
+        padding: 70px;
+        margin-bottom: 100px;
+        margin-top: 0;
 
+
+    }
+
+    .contact-us {
+        background-color: black;
+        color: #f4f4f4;
+        margin-bottom: 0;
+        width: 500px;
+        height: 100%; 
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin:auto;
+        padding: 70px;
+       
+    }
+    .contact-us h2 {
+        margin:0;
     }
     form input, form button, form textarea {
         display: block;
