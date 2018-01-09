@@ -1055,7 +1055,7 @@ width: 100%;
 
     .payPall-button {
         position: relative;
-        top: -110px;
+        top: -140px;
     }
     @media screen and (max-width:1500px) {
      
@@ -1089,6 +1089,12 @@ p.donate-text {
 }
 
  
+}
+@media screen and (max-width:600px) {
+    .donate-now h1 {
+        margin-left: 10px;
+    }
+
 }
 @media screen and (max-width:500px) {
     
