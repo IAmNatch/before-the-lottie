@@ -750,16 +750,14 @@ width: 100%;
 
     .contact {
         /* width: 35%; */
-        height: 100%;
+        height: 0em;
         background-color: white;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         margin: auto;
-        padding: 7%;
-
+        padding: 0;
+        overflow: hidden;
         margin-top: 0;
-
-
     }
 
     .contact-us {
@@ -774,9 +772,15 @@ width: 100%;
         padding: 3%;
         text-align: center;
         letter-spacing: 3px;
-      
 
+        cursor: pointer;
     }
+
+    .contact-us:hover {
+        background-color: #ff5f5f;
+        color: black;
+    }
+
     .contact-us h2 {
         margin:0;
         font-family: 'Roboto Mono', monospace;
@@ -816,7 +820,7 @@ width: 100%;
       border-right: none;
       border-top:none;
       border-color: #999;
-      
+
 
 
   }
@@ -844,7 +848,7 @@ width: 100%;
 
   input {
       font-weight: 00;
-  
+
        color: black;
   }
 
@@ -928,7 +932,7 @@ width: 100%;
     transition-property: transform;
     background-color: #e1e1e1 ;
     padding: 10px;
-  
+
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
@@ -982,7 +986,7 @@ width: 100%;
     position: relative;
     left: 30%;
     top: -100px;
-  } 
+  }
 
 
   @media screen and (max-width:1400px) {
@@ -991,7 +995,7 @@ width: 100%;
        position: relative;
        left: 25%;
        top: -100px;
-     } 
+     }
 
      input			{
         font-size:30px;
@@ -1006,7 +1010,7 @@ width: 100%;
 
     form.payPall-button {
         width: 70%;
-        
+
         margin: auto;
         padding: 0;
     }
@@ -1018,7 +1022,7 @@ width: 100%;
     div.donate-intro {
        width: 65%;
        border-bottom: solid black;
-     margin-left: 3%; 
+     margin-left: 3%;
        -webkit-transform: rotate(-90deg);
        -moz-transform: rotate(-90deg);
        -o-transform: rotate(-90deg);
@@ -1058,7 +1062,7 @@ width: 100%;
         top: -70px;
     }
     @media screen and (max-width:1500px) {
-     
+
     .payPall-button {
         position: relative;
         top: -60px;
@@ -1066,18 +1070,18 @@ width: 100%;
 }
 
 @media screen and (max-width:1100px) {
- 
+
 .payPall-button {
     position: relative;
     top: -40px;
 }
 }
 @media screen and (max-width:800px) {
-    
+
    .payPall-button {
        position: relative;
        top: -50px;
-       
+
    }
    .donate-now p {
     font-size: 3vw;
@@ -1088,7 +1092,7 @@ p.donate-text {
 
 }
 
- 
+
 }
 @media screen and (max-width:600px) {
     .donate-now h1 {
@@ -1097,7 +1101,7 @@ p.donate-text {
 
 }
 @media screen and (max-width:500px) {
-    
+
    .payPall-button {
        position: relative;
        top: -30px;
@@ -1106,7 +1110,7 @@ p.donate-text {
     font-size: 3vw;
 }
 
- 
+
 }
     p.donate-text {
         width: 90%;
@@ -1115,3 +1119,14 @@ p.donate-text {
         letter-spacing: 1px;
         line-height: 117%;
     }
+
+/*Animation*/
+
+.contactAnimation {
+    transition: height 500ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+}
+
+.contactClicked {
+    padding: 6%;
+    height: 36em;
+}
