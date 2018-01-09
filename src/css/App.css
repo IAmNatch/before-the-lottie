@@ -1130,3 +1130,22 @@ p.donate-text {
     padding: 6%;
     height: 36em;
 }
+
+
+.arrow {
+    width: 35%;
+    position:  absolute;
+    left: 98%;
+    top: 40px;
+}
+
+@media screen and (max-width:1000px) {
+    
+   
+.arrow {
+    width: 35%;
+    position:  absolute;
+    left: 98%;
+    top: 20px;
+}
+}

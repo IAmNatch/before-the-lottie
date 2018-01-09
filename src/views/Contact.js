@@ -11,7 +11,7 @@ class Contact extends Component {
     render() {
         return (
             <div  className="form-holder">
-                  <div onClick={() => {this.contactHandler()}} className="contact-us"> <h2> CONTACT </h2><h2> US </h2>
+                  <div onClick={() => {this.contactHandler()}} className="contact-us"> <h2> CONTACT </h2>
             </div>
                 <div className={`contact contactAnimation ${this.state.contactOpen ? 'contactClicked' : ''}`}>
 
@@ -44,6 +44,11 @@ class Contact extends Component {
 
                     <button type="submit" id="button1" class="hvr-bubble-float-top">Submit</button>
                 </form>
+                </div>
+
+                <div className="arrow"> 
+                    <img src="./svg/chat.svg" />
+                
                 </div>
 
             </div>
