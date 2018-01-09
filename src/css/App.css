@@ -1005,11 +1005,107 @@ width: 100%;
     }
 
     form.payPall-button {
-        width: 100px;
-        height: 100px;
+        width: 70%;
+        
         margin: auto;
-  
+        padding: 0;
     }
     form.payPall-button input {
         border-bottom: none;
+        cursor: pointer;
+    }
+
+    div.donate-intro {
+       width: 65%;
+       border-bottom: solid black;
+     margin-left: 3%; 
+       -webkit-transform: rotate(-90deg);
+       -moz-transform: rotate(-90deg);
+       -o-transform: rotate(-90deg);
+       -ms-transform: rotate(-90deg);
+       transform: rotate(-90deg);
+    }
+
+
+    div.donate-intro h3{
+        letter-spacing: 1.5px;
+        padding-bottom: 7px;
+    }
+
+
+    .donate-now {
+        float: right;
+        width: 60%;
+        position: relative;
+        top: -120px;
+    }
+    .donate-now h1 {
+        text-align: left;
+        font-size: 9vw;
+        font-family: "Roboto";
+        font-weight: 900;
+    }
+    .donate-now p {
+        text-align: center;
+        letter-spacing: 10px;
+        font-size: 2vw;
+        width: 70%;
+        text-transform: uppercase;
+    }
+
+    .payPall-button {
+        position: relative;
+        top: -110px;
+    }
+    @media screen and (max-width:1500px) {
+     
+    .payPall-button {
+        position: relative;
+        top: -90px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+ 
+.payPall-button {
+    position: relative;
+    top: -70px;
+}
+}
+@media screen and (max-width:800px) {
+    
+   .payPall-button {
+       position: relative;
+       top: -50px;
+       
+   }
+   .donate-now p {
+    font-size: 3vw;
+}
+p.donate-text {
+
+    font-size: 15px;
+
+}
+
+ 
+}
+@media screen and (max-width:500px) {
+    
+   .payPall-button {
+       position: relative;
+       top: -30px;
+   }
+   .donate-now p {
+    font-size: 3vw;
+}
+
+ 
+}
+    p.donate-text {
+        width: 90%;
+        margin: auto;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 117%;
     }
