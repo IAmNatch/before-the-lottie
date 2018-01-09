@@ -9,7 +9,7 @@ export const Nav = (props) => {
     }
     else {
         const navList = [{link: '/about', title: 'about'}, {link: '/contact', title: 'contact'}, {link: '/donate', title: 'donate'}];
-        const navListWithHome = [{link: '/about', title: 'about'}, {link: '/contact', title: 'contact'}, {link: '/donate', title: 'donate'}, {link: '/', title: 'home'}];
+        const navListWithHome = [{link: '/', title: 'home'}, {link: '/about', title: 'about'}, {link: '/contact', title: 'contact'}, {link: '/donate', title: 'donate'}];
 
         nav = [];
         if (props.page === 'home') {
