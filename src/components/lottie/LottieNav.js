@@ -43,11 +43,11 @@ export const LottieNav = (props) => {
                 if (buttonType === 'btp') {
                     console.log('btp ran motha');
                     return ([
-                         
+
                         <p key={`journey${i}`}> Back to the</p>,
                         <button
                             key={i}
-                            className={props.navButtonsDisabled ? 'disabled' : ''}
+                            className={''}
                             disabled={props.navButtonsDisabled}
                             onMouseEnter={(e) => {action.overlay ? props.clickHandler(e, {type: 'overlay', mouse: 'enter', time_start: action.overlay.start[0], time_end: action.overlay.start[1]}) : '';}}
                             onMouseLeave={(e) => {action.overlay ? props.clickHandler(e, {type: 'overlay', mouse: 'leave', time_start: action.overlay.end[0], time_end: action.overlay.end[1]}) : ''; }}
@@ -61,7 +61,7 @@ export const LottieNav = (props) => {
                 else if (buttonType === 'animation') {
                     console.log('hungry AF');
                     return ([
-                        
+
                         <p key={`journey${i}`}> Begin Journey for </p>,
                         <img key={`fatArrow${i}`} src="./svg/fatarrows-left.svg" />,
                         <button
@@ -107,7 +107,7 @@ export const LottieNav = (props) => {
 
     return (
         <div>
-            <div className='lottieNav' style={buttonWrap} >
+            <div className='lottieNav animated fadeInDown' style={buttonWrap} >
                 {buttons}
             </div>
         </div>

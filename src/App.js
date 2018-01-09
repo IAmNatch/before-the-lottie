@@ -39,10 +39,13 @@ class App extends Component {
                     <Nav page={this.state.page} pageHandler={this.pageHandler} />
                 </div>
 
-                    {this.state.page === 'home' ? (<div className='info'>
-                        <h3>Film Coming</h3>
-                        <h4>Summer 2018</h4>
-                    </div>) : ''}
+                    {this.state.page === 'home' ? (
+                        <div className='info animated fadeInRight'>
+                            <h3>Film Coming</h3>
+                            <h4>Summer 2018</h4>
+                        </div>) : ''}
+
+
                     <Route path={'/'} exact component={() => {
                             return (
                                 <Main

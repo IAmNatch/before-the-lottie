@@ -8,7 +8,7 @@ export const Nav = (props) => {
         nav = '';
     }
     else {
-        const navList = [{link: '/about', title: 'about'}, {link: '/contact', title: 'contact'}, {link: '/donate', title: 'donate'}];
+        const navList = [{link: '/', title: 'home'}, {link: '/about', title: 'about'}, {link: '/contact', title: 'contact'}, {link: '/donate', title: 'donate'}];
         const navListWithHome = [{link: '/', title: 'home'}, {link: '/about', title: 'about'}, {link: '/contact', title: 'contact'}, {link: '/donate', title: 'donate'}];
 
         nav = [];
@@ -25,7 +25,7 @@ export const Nav = (props) => {
     }
 
     return (
-        <div className='nav'>
+        <div className='nav animated fadeInLeft'>
             {nav}
         </div>
     );
