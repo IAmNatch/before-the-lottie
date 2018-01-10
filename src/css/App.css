@@ -151,19 +151,135 @@ body {
 
 .lottie-instructions {
     position: absolute;
-    right: 7%;
-    top: 40%;
-    width: 170px;
+    right: 14%;
+    top: 17%;
+    width:180px;
     color: white;
 }
+
+@media screen and (max-width: 1250px) {
+    .lottie-instructions {
+        position: absolute;
+        right: 10%;
+        top: 20%;
+        width:180px;
+        color: white;
+    }
+                   
+      }
+
+      @media screen and (max-width: 900px) {
+        .lottie-instructions {
+            position: absolute;
+            right: 3%;
+            top: 13%;
+            width:180px;
+            color: white;
+        }
+        .lottie-instructions p { 
+            font-size: .7em;
+        } 
+            
+     
+          }
+          @media screen and (max-width: 500px) {
+            .lottie-instructions {
+                position: absolute;
+                right: -4%;
+                top: 10%;
+                width:180px;
+                color: white;
+            }
+            .lottie-instructions p { 
+                font-size: .7em;
+            } 
+                
+         
+              }
 
 .lottie-instructions p {
     background-color: black;
     display: inline-block;
     margin: 3px;
-    font-size: 1.3em;
+
     padding: 5px;
+    font-family: "Roboto Mono";
+    font-weight: 100;
+    letter-spacing: 1px;
 }
+.lottie-instructions img {
+    left: -25%;
+    position: relative;
+    top: 25px;
+    width: 4vw;
+}
+@media screen and (max-width: 1500px) {
+    .lottie-instructions img {
+        left: -20%;
+        position: relative;
+        top: 25px;
+        width: 4vw;
+    }
+    
+    }
+
+    @media screen and (max-width: 1250px) {
+        .lottie-instructions img {
+            left: -17%;
+            position: relative;
+            top: 20px;
+            width: 4vw;
+        }
+        
+        }
+        @media screen and (max-width: 1000px) {
+            .lottie-instructions img {
+                left: -13%;
+                position: relative;
+                top: 15px;
+                width: 4vw;
+            }
+            
+            }
+
+   @media screen and (max-width: 600px) {
+ .lottie-instructions img {
+     left: -8%;
+     position: relative;
+     top: 10px;
+      width: 4vw;
+     }
+                
+   }
+   @media screen and (max-width: 500px) {
+    .lottie-instructions img {
+        left: -7%;
+        position: relative;
+        top: 10px;
+         width: 4vw;
+        }
+                   
+      }
+
+.test {
+    animation: MoveUpDown 1.3s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  
+  @keyframes MoveUpDown {
+    0% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 6px;
+    }
+    100% {
+      bottom: 0;
+    }
+  }
+
 
 /* Info */
 .info {
