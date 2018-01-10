@@ -40,7 +40,7 @@ export const LottieSlider = (props) => {
             <div className={props.view === 'stop' ? 'sliderVis' : 'sliderInvis'} style={sliderStyle} key='1'>
                 {/*Buttons*/}
                 {/*Previous*/}
-                <nav onClick={(e) => {props.clickHandler(e, prevHandler());}} className="stopNavTop">
+                <nav style={{opacity: '0'}} className="stopNavTop">
                     <img src="./svg/fatarrows-left.svg" /> <p>{props.sliderData && props.sliderData.previousTitle}</p>
                 </nav>
                 <div className="straightLine"></div>
