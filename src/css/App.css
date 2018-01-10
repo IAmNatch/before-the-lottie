@@ -149,10 +149,20 @@ body {
     width: 100vw;
 }
 
-.LottieInstructions {
-    position: relative;
-    right: 10%;
+.lottie-instructions {
+    position: absolute;
+    right: 7%;
     top: 40%;
+    width: 170px;
+    color: white;
+}
+
+.lottie-instructions p {
+    background-color: black;
+    display: inline-block;
+    margin: 3px;
+    font-size: 1.3em;
+    padding: 5px;
 }
 
 /* Info */
@@ -1142,11 +1152,10 @@ p.donate-text {
 
 @media screen and (max-width:1000px) {
 
-
 .arrow {
     width: 35%;
     position:  absolute;
     left: 98%;
     top: 20px;
-}
+    }
 }

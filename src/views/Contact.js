@@ -15,7 +15,7 @@ class Contact extends Component {
             </div>
                 <div className={`contact contactAnimation ${this.state.contactOpen ? 'contactClicked' : ''}`}>
 
-                <form method="POST" action="http://formspree.io/info@sweettoothdigital.com">
+                <form method="POST" action="http://formspree.io/dylansher@gmail.com">
 
                     <div class="group">
                  <input id="title" type="text" name="name" required />
@@ -46,9 +46,9 @@ class Contact extends Component {
                 </form>
                 </div>
 
-                <div className="arrow"> 
+                <div className="arrow">
                     <img src="./svg/chat.svg" />
-                
+
                 </div>
 
             </div>

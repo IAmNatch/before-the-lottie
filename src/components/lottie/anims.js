@@ -244,6 +244,15 @@ export const anims = {
             onComplete: true,
             nextStop: 'barn',
         },
+        barnToPlate: {
+            type: 'animation',
+            location: 'milk',
+            time_start: 364,
+            time_end: 370,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'btp',
+        },
         barn: {
             description: 'Dairy cows are born and spend a few hours with their mothers while they are licked off to stimulate blood flow. Once the calf has been cleaned off it is then moved to calving pens where the calves can more closely cared for and monitored. As soon as this is done, the cow is then milked and the mother\'s milk is given to the calf that is full of the essential vitamins and nutrients the calf needs. This milk given to the calf directly after birth is called colostrum. The mother cow will be carefully monitored and then return to the milking herd. Male calves are usually sent to other farms where they can be raised for veal or breeding purposes. Female calves are kept and raised until they have their first calf at about two years of age to continue the cycle.',
             stepNumber: 1,
@@ -263,6 +272,15 @@ export const anims = {
             onComplete: true,
             nextStop: 'milk'
         },
+        milkToBarn: {
+            type: 'animation',
+            location: 'milk',
+            time_start: 352,
+            time_end: 360,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'barn'
+        },
         milk: {
             description: 'On this farm, each of their 400 cows are milked three times per day to closely simulate the natural cycles of the cow and a calf. Each cow is logged in a computer system to check for vital health signs and cannot be milked if she has an infection or is on antibiotics. The milking parlour (where cows are milked) milks 24 cows at a time. The 24 cows are milked and are then released back into the herd to sleep and eat for the rest of the day.',
             stepNumber: 2,
@@ -271,7 +289,7 @@ export const anims = {
             nextTitle: 'Milk truck',
             next: 'milkToTruck',
             previous: 'milkToBarn',
-            previousTitle: 'Barn',
+            previousTitle: 'barn',
         },
         milkToTruck: {
             type: 'animation',
@@ -281,6 +299,15 @@ export const anims = {
             shouldLoop: false,
             onComplete: true,
             nextStop: 'truck'
+        },
+        truckToMilk: {
+            type: 'animation',
+            location: 'milk',
+            time_start: 345,
+            time_end: 350,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'milk'
         },
         truck: {
             description: 'The truck arrives at the plant and is then tested again for contaminants.  The milk is offloaded and pasteurized for safety purposes. Essential vitamins are added to the milk and it is then processed into cream, skim and other dairy products such as ice cream and butter. For the use of our dish we used buttermilk which has bacterial cultures added to it, in order to give it a unique taste.',
@@ -301,11 +328,20 @@ export const anims = {
             onComplete: true,
             nextStop: 'cooking'
         },
+        cookingToTruck: {
+            type: 'animation',
+            location: 'milk',
+            time_start: 335,
+            time_end: 340,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'truck'
+        },
         cooking: {
             description: 'We sure as hell want to talk about the cooking process, we\'re just not sure what happned!',
             stepNumber: 4,
             backgroundImage: null,
-            location: 'beef',
+            location: 'milk',
             nextTitle: 'Back to Plate',
             next: 'btp',
             previous: 'cookingToTruck',
@@ -331,6 +367,15 @@ export const anims = {
             onComplete: true,
             nextStop: 'irrigation'
         },
+        irrigationToPlate: {
+            type: 'animation',
+            location: 'potatoes',
+            time_start: 435,
+            time_end: 440,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'btp'
+        },
         irrigation: {
             description: 'At the beginning of the potato’s growth, potato farmers ‘hill’ the dirt over the potato, providing it with a much needed cover to protect it from the elements and keep the seed well buried. Farmers also use this time to monitor their fields for pests or disease, and may use pesticides as appropriate to help keep the crop healthy. Potatoes are irrigated as needed throughout the hottest parts of the summer.',
             stepNumber: 1,
@@ -338,14 +383,23 @@ export const anims = {
             location: 'potatoes',
             nextTitle: 'Harvest',
             next: 'irrigationToHarvest',
-            previous: 'irrigationToPlanting',
-            previousTitle: 'Planting',
+            previous: 'irrigationToPlate',
+            previousTitle: 'Plate',
         },
         irrigationToHarvest: {
             type: 'animation',
             location: 'potatoes',
             time_start: 157,
             time_end: 163,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'harvest'
+        },
+        harvestToIrrigation: {
+            type: 'animation',
+            location: 'potatoes',
+            time_start: 395,
+            time_end: 400,
             shouldLoop: false,
             onComplete: true,
             nextStop: 'harvest'
@@ -369,6 +423,15 @@ export const anims = {
             onComplete: true,
             nextStop: 'processing',
         },
+        proccessingToHarvest: {
+            type: 'animation',
+            location: 'potatoes',
+            time_start: 390,
+            time_end: 495,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'processing',
+        },
         processing: {
             description: 'Potatoes are pulled out of the ground using a specialized harvesting machine that pulls them by their roots. They are sized and sorted on the harvester and uniform or damaged potatoes are spread back on the field. The potatoes are then transferred to large crates that are then sent to the processing facility.',
             stepNumber: 3,
@@ -376,7 +439,7 @@ export const anims = {
             location: 'potatoes',
             nextTitle: 'Cooking',
             next: 'processingToCooking',
-            previous: 'ProccessingToHarvest',
+            previous: 'proccessingToHarvest',
             previousTitle: 'Harvest'
         },
         processingToCooking: {
@@ -384,6 +447,15 @@ export const anims = {
             location: 'potatoes',
             time_start: 174,
             time_end: 180,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'cooking'
+        },
+        cookingToProcessing: {
+            type: 'animation',
+            location: 'potatoes',
+            time_start: 380,
+            time_end: 385,
             shouldLoop: false,
             onComplete: true,
             nextStop: 'cooking'
