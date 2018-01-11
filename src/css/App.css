@@ -152,7 +152,7 @@ body {
 .lottie-instructions {
     position: absolute;
     right: 14%;
-    top: 17%;
+    top: 19%;
     width:180px;
     color: white;
 }
@@ -182,11 +182,11 @@ body {
             
      
           }
-          @media screen and (max-width: 500px) {
+          @media screen and (max-width: 600px) {
             .lottie-instructions {
                 position: absolute;
                 right: -4%;
-                top: 10%;
+                top: 22%;
                 width:180px;
                 color: white;
             }
@@ -196,6 +196,18 @@ body {
                 
          
               }
+              @media screen and (max-width: 500px) {
+                .lottie-instructions {
+                    position: absolute;
+                    right: -13%;
+                    top: 22%;
+                    width:180px;
+                    color: white;
+                }
+                .lottie-instructions p { 
+                    font-size: .4em;
+                } 
+            }
 
 .lottie-instructions p {
     background-color: black;
@@ -242,9 +254,17 @@ body {
             
             }
 
+    @media screen and (max-width: 800px) {
+          .lottie-instructions img {
+            left: -12%;
+             position: relative;
+             top: 10px;
+              width: 4vw;
+               }
+      }
    @media screen and (max-width: 600px) {
  .lottie-instructions img {
-     left: -8%;
+     left: -9%;
      position: relative;
      top: 10px;
       width: 4vw;
