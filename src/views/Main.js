@@ -11,6 +11,9 @@ export const Main = (props) => {
                 navButtonsDisabled={props.navButtonsDisabled}
                 disableNavButtonsHandler={props.disableNavButtonsHandler}
             />,
+            <div className='mobile-warning'>
+                <p>This experience is optimized for desktop and tablet displays. Please try again on a compatible device.</p>
+            </div>,
             <div key='footer' className='footer'>
                 <div className='title'>
                     <h2>The Film</h2>

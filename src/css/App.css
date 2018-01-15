@@ -143,6 +143,24 @@ body {
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .lottieNav, .lottie-instructions, .lottie {
+        display: none!important;
+    }
+}
+@media only screen and (min-width: 500px) {
+    .mobile-warning {
+        display: none;
+    }
+}
+
+.mobile-warning {
+    grid-area: lottie;
+    margin: 0 70px;
+    text-align: center;
+
+}
+
 /* Lottie */
 .lottie {
     grid-area: lottie;
