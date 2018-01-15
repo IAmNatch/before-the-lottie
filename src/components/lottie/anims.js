@@ -100,6 +100,15 @@ export const anims = {
             nextTitle: 'Back to Plate',
             previous: 'cookingToProcessing',
             previousTitle: 'Processing',
+        },
+        btp: {
+            type: 'animation',
+            location: 'beef',
+            time_start: 240,
+            time_end: 243,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'btp',
         }
     },
     beef: {
@@ -223,7 +232,16 @@ export const anims = {
             next: 'btp',
             previous: 'cookingToSlaughter',
             previousTitle: 'Slaughter',
-        }
+        },
+        btp: {
+            type: 'animation',
+            location: 'beef',
+            time_start: 240,
+            time_end: 243,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'btp',
+        },
     },
     milk: {
         intro: {
@@ -346,7 +364,16 @@ export const anims = {
             next: 'btp',
             previous: 'cookingToTruck',
             previousTitle: 'Milk Truck',
-        }
+        },
+        btp: {
+            type: 'animation',
+            location: 'beef',
+            time_start: 240,
+            time_end: 243,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'btp',
+        },
     },
     potatoes: {
         intro: {
@@ -469,7 +496,16 @@ export const anims = {
             next: 'btp',
             previous: 'cookingToProcessing',
             previousTitle: 'Processing',
-        }
+        },
+        btp: {
+            type: 'animation',
+            location: 'beef',
+            time_start: 240,
+            time_end: 243,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'btp',
+        },
     },
     sunflowers: {
         intro: {
@@ -556,6 +592,15 @@ export const anims = {
             next: 'btp',
             previous: 'cookingToHarvest',
             previousTitle: 'Harvest',
+        },
+        btp: {
+            type: 'animation',
+            location: 'beef',
+            time_start: 240,
+            time_end: 243,
+            shouldLoop: false,
+            onComplete: true,
+            nextStop: 'btp',
         },
     }
 };

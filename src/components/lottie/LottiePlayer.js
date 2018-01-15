@@ -79,6 +79,7 @@ class LottiePlayer extends Component {
                     this.setState({sliderData: anims[current.location][current.nextStop]});
                     this.viewHandler('stop')
                 }
+
                 lottie.removeEventListener('complete')
             });
         }
@@ -116,7 +117,7 @@ class LottiePlayer extends Component {
             this.introController(action);
         }
         if (action.type === 'btp') {
-            lottie.playSegments([1, 2], true);
+            lottie.playSegments([240, 245], true);
             this.viewHandler('home')
         }
     }
@@ -133,6 +134,7 @@ class LottiePlayer extends Component {
             path: ('./lottieFiles/two_way_move/data.json')  // the path to the animation json
         });
         // Initilize Lottie On Screen by playing 1 frame of the animation and then pausing.
+        lottie.setSpeed(1.2);
         lottie.playSegments([1, 2], true);
         setTimeout(() => {
             lottie.pause()

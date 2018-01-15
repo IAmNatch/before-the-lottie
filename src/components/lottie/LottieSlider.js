@@ -17,16 +17,9 @@ export const LottieSlider = (props) => {
     };
 
     const nextHandler = () => {
-        if (props.sliderData.next === 'btp') {
-            return (
-                {type: 'btp', view: 'home', title:'Back to Plate'}
-            );
-        }
-        else {
-            return (
-                {type: 'animation', view: 'map', location: props.sliderData.location, subSection: props.sliderData.next}
-            )
-        }
+        return (
+            {type: 'animation', view: 'map', location: props.sliderData.location, subSection: props.sliderData.next}
+        )
     }
 
     const prevHandler = () => {
