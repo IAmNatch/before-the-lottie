@@ -80,7 +80,7 @@ export const LottieNav = (props) => {
 
             }
             buttons.push((
-                <div key={`{buttonParent${i}}`} className={action.type === 'animation' ? 'food-button' : 'plate-button'}>
+                <div key={`{buttonParent${i}}`} className={`animated fadeInDown ${action.type === 'animation' ? 'food-button' : 'plate-button'}`}>
                     {text = JSXButton(action.type)}
                 </div>
             ));
