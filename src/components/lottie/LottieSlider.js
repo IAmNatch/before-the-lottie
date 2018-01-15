@@ -50,7 +50,7 @@ export const LottieSlider = (props) => {
                 </div>
 
                 <div className="image">
-                    <img src={props.sliderData && props.sliderData.backgroundImage || "./calving.jpg"} />
+                    <img src={props.sliderData && props.sliderData.backgroundImage || "./calving-testing.jpg"} />
                 </div>
 
                 <div className="content-folder">
