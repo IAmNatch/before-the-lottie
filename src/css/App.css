@@ -125,7 +125,7 @@ body {
 }
 
 .lottieNav path {
-    transition: 2s ease;
+    transition: 1s cubic-bezier(0.74, 0.38, 0.4, 0.93);
 }
 
 .lottieNav div {
@@ -826,7 +826,7 @@ width: 100%;
           font-size:1.4vw;
           font-weight: 300;
       }
-     
+
 
       div.block div h4 {
           font-size:1.8vw;
@@ -835,7 +835,7 @@ width: 100%;
           font-weight: 400;
           letter-spacing: 4px;
       }
-      
+
 
       div.teaser {
           margin-left: 20%;
@@ -920,7 +920,7 @@ width: 100%;
             margin: 2% 8%;
             font-size:2.8vw;
             font-weight: 300;
-        } 
+        }
         div.block div h4 {
             font-size: 2.3vw;
             margin: 0;
@@ -1362,21 +1362,21 @@ p.donate-text {
 
 @media screen and (max-width:600px) {
     label, textarea{
-       
-        font-size: 15px; 
+
+        font-size: 15px;
     }
 }
 
 
 @media screen and (max-width:500px) {
     .title h2 {
-       
+
         top: 34%;
     }
 
     .mobile-warning {
         margin-top: 10%;
-        
+
     }
     .mobile-warning p {
         font-family: 'Roboto';
@@ -1384,17 +1384,17 @@ p.donate-text {
         font-size: 7vw;
         margin: 0;
         padding: 0;
-        
+
     }
     .byline p {
         width: 89%;
-       
+
 
     }
     .mobile-warning h2 {
         font-family: 'Roboto';
         font-weight: 900;
-        font-size: 50px; 
+        font-size: 50px;
         letter-spacing: 6px;
         margin: 0;
         padding: 0;
@@ -1406,9 +1406,9 @@ p.donate-text {
     }
 
     p.donate-text {
-      
+
         font-size: 16px;
-       
+
     }
     .contactClicked {
         padding: 4%;
@@ -1416,18 +1416,18 @@ p.donate-text {
     }
 }
   /* responsiveness for portrait ipad here*/
-  @media only screen 
-  and (min-device-width : 768px) 
-  and (max-device-width : 1024px) 
-  and (orientation : portrait) { 
-     
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : portrait) {
+
     .title h2 {
-    
+
         top: 30%;
         }
 
         .lottie-instructions {
-          
+
             top: 15%;
         }
         .lottieNav div div svg {
@@ -1444,13 +1444,13 @@ p.donate-text {
         div.block div p {
 
             font-size: 2vw;
-            
+
         }
 
         div.block div h4 {
             font-size: 2.4vw;
         }
-        
+
     div.teaser button {
         font-size: 1.8vw
     }
@@ -1465,7 +1465,7 @@ p.donate-text {
         box-sizing: border-box;
         font-size: 2vw;
     }
-    
+
     .info h4 {
         font-weight: 100;
         font-size: 2.7vw;
@@ -1487,9 +1487,9 @@ p.donate-text {
             padding-bottom: 7px;}
 
             .food-button button, .plate-button button {
-             
+
                 font-size: 4vw;}
-                
+
 
                 div.sliderVis {
                     height: 100vh;
@@ -1502,26 +1502,25 @@ p.donate-text {
                     max-width: 25%;
                 }
                 .text-holder {
-                   
+
                     font-size: 18px;
                     line-height: 112%;}
-        
+
     }
 
-    @media only screen 
-    and (min-device-width : 1024px) 
-    and (max-device-width : 1366px) 
-    and (orientation : portrait) { 
+    @media only screen
+    and (min-device-width : 1024px)
+    and (max-device-width : 1366px)
+    and (orientation : portrait) {
         .stopNavTop p {
             font-size: 2vw;
             padding-top: .8vh;
         }
         .text-holder {
-                   
+
             font-size: 22px;
         line-height: 110%;}
         nav.bottomNav p {
-        
+
             font-size: 37px;}
     }
-   
