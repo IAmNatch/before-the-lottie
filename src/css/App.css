@@ -156,7 +156,7 @@ body {
 
 .mobile-warning {
     grid-area: lottie;
-    margin: 0 70px;
+    margin: 0 90px;
     text-align: center;
 
 }
@@ -481,6 +481,9 @@ nav.bottomNav p {
     padding-top: 7%;
     margin: 0;
     text-transform: uppercase;
+    font-family: Roboto,monospace;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 @media screen and (max-width: 500px) {
 
@@ -835,7 +838,7 @@ width: 100%;
       div.teaser {
           margin-left: 20%;
           position: relative;
-          margin-top: 3%;
+          margin-top: 8%;
       }
 
       div.teaser button {
