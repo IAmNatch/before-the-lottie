@@ -36,7 +36,7 @@ export const anims = {
         },
         boxes: {
             description: 'Bees fly freely to pollinate plants and collect pollen, which they return to specially created bee boxes. Bee boxes are strategically placed by farmers in areas with access to varied nutrition to allow the bee to create high quality honey. Bee boxes are designed to allow the farmer to harvest the honey, which is encased in the waxy honeycomb. In our case, the honey farmer places bee boxes on the corners of neighboring farm’s property - giving his bees a varied source of nutrition and giving his neighbours the pollination his bees provide. Each bee lives for approximately 6 weeks, and creates just 1/10th of a teaspoon of honey in his lifetime!',
-            stepNumber: '1, 2',
+            stepNumber: 1,
             backgroundImage: null,
             location: 'honey',
             nextTitle: 'Proccessing',
@@ -51,11 +51,11 @@ export const anims = {
             time_end: 78,
             shouldLoop: false,
             onComplete: true,
-            nextStop: 'processing', 
+            nextStop: 'processing',
         },
         processing: {
             description: 'The honeycomb that the bees create is scraped off the panels with a machine, dripping into a carefully positioned trough. The honeycomb substance is then placed in a spinning drum that separates the wax from the honey, and allows the honey to be collected separately. This honey is then pumped into storage barrels - from there, after being pumped into the appropriately sized container, it is ready for distribution! Some honey farmers ‘pasteurize’ their product by heating it to higher temperatures. This is done by some farmers to pump the honey through the processing plant more quickly.',
-            stepNumber: 3,
+            stepNumber: 2,
             backgroundImage: null,
             location: 'honey',
             nextTitle: 'Cooking',
@@ -74,7 +74,7 @@ export const anims = {
         },
         cooking: {
             description: 'Distribution comes in many flavors, and varies by product. Distributors store and sort foods until delivery to the end consumer, whether that is directly to the restaurant or to a supermarket. Distributors vary in size - some supply massive supermarket chains and deliver hundreds of thousands of kilograms of food each week. Some, like 100KM foods, are smaller and emphasize local delivery directly restaurants or specialty stores.',
-            stepNumber: 4,
+            stepNumber: 3,
             backgroundImage: null,
             location: 'honey',
             next: 'btp',
