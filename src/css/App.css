@@ -355,7 +355,7 @@ body {
 
 div.sliderVis {
     transform: translateX(0%);
-    height: 900px;
+    height: 100%;
 }
 
 div.sliderInvis {
@@ -1415,3 +1415,113 @@ p.donate-text {
         height: 33em;
     }
 }
+  /* responsiveness for portrait ipad here*/
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) 
+  and (orientation : portrait) { 
+     
+    .title h2 {
+    
+        top: 30%;
+        }
+
+        .lottie-instructions {
+          
+            top: 15%;
+        }
+        .lottieNav div div svg {
+            height: 9.3vw;
+        }
+        .plate-button {
+            margin-right: 0px;
+        }
+
+        .food-button p, .plate-button p {
+            font-size: 24px;
+        }
+
+        div.block div p {
+
+            font-size: 2vw;
+            
+        }
+
+        div.block div h4 {
+            font-size: 2.4vw;
+        }
+        
+    div.teaser button {
+        font-size: 1.8vw
+    }
+
+    .stopNavTop p {
+      font-size: 2vw;
+        padding-top: 1.6vh;
+
+    }
+    .navLeft, .tracker {
+        margin-top: 20px;
+        box-sizing: border-box;
+        font-size: 2vw;
+    }
+    
+    .info h4 {
+        font-weight: 100;
+        font-size: 2.7vw;
+    }
+    .info h3 {
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 2.9vw;
+    }
+    .lottieNav div div svg {
+        height: 10vw;
+    }
+    div.teaser {
+        margin-left: 15%;}
+
+        .byline p {
+            font-size: 2vw;
+            width: 90%;
+            padding-bottom: 7px;}
+
+            .food-button button, .plate-button button {
+             
+                font-size: 4vw;}
+                
+
+                div.sliderVis {
+                    height: 100vh;
+                }
+                .tracker h4 {
+                    margin-top:90px;
+                }
+                nav.bottomNav {
+                    margin: auto;
+                    max-width: 25%;
+                }
+                .text-holder {
+                   
+                    font-size: 18px;
+                    line-height: 112%;}
+        
+    }
+
+    @media only screen 
+    and (min-device-width : 1024px) 
+    and (max-device-width : 1366px) 
+    and (orientation : portrait) { 
+        .stopNavTop p {
+            font-size: 2vw;
+            padding-top: .8vh;
+        }
+        .text-holder {
+                   
+            font-size: 22px;
+        line-height: 110%;}
+        nav.bottomNav p {
+        
+            font-size: 37px;}
+    }
+   
