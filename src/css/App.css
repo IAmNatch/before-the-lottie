@@ -1505,14 +1505,10 @@ p.donate-text {
 
                     font-size: 18px;
                     line-height: 112%;}
-<<<<<<< HEAD
                     div.sliderVis {
                         height: 100vh;
                     }
         
-=======
-
->>>>>>> d806a5c5a7643a9b8309b67402adcb961553f9e9
     }
 
     @media only screen
@@ -1531,7 +1527,6 @@ p.donate-text {
 
             font-size: 37px;}
     }
-<<<<<<< HEAD
   
 
     @media only screen 
@@ -1540,5 +1535,3 @@ p.donate-text {
     and (orientation : landscape)  { div.sliderVis {
     height: 100%;
 }}
-=======
->>>>>>> d806a5c5a7643a9b8309b67402adcb961553f9e9
