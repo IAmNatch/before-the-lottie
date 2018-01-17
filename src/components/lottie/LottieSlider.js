@@ -82,7 +82,7 @@ export const LottieSlider = (props) => {
                         </p>
                     </div>
                     <div onClick={() => {props.modalHandler(true);}} className="button-holder">
-                        <img src="./svg/map-point.svg" className="button" />
+                        <img src="./svg/play-button.svg" className="button" />
                         <img src="./svg/button-text.svg" className="button-text" />
                     </div>
 

@@ -579,8 +579,8 @@ div.straightLine {
     vertical-align: top;
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 19px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 25px;
     padding-bottom: 10px;
 }
 
@@ -1381,7 +1381,7 @@ p.donate-text {
     .mobile-warning p {
         font-family: 'Roboto';
         font-weight: 300;
-        font-size: 7vw;
+        font-size: 6vw;
         margin: 0;
         padding: 0;
 
@@ -1456,8 +1456,8 @@ p.donate-text {
     }
 
     .stopNavTop p {
-      font-size: 2vw;
-        padding-top: 1.6vh;
+      font-size: 1.6vw;
+        padding-top: 1.8vh;
 
     }
     .navLeft, .tracker {
@@ -1533,7 +1533,7 @@ p.donate-text {
     and (min-device-width : 768px)
     and (max-device-width : 1024px)
     and (orientation : landscape)  { div.sliderVis {
-    height: 100vh;
+    height: 100%;
 }}
 
 @media only screen
@@ -1542,3 +1542,69 @@ and (max-device-width : 1366px)
 and (orientation : landscape)  { div.sliderVis {
 height: 100vh;
 }}
+
+@media screen and (max-width:1250px) {
+
+    .button-holder .button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%;
+    }
+  
+}
+
+@media screen and (max-width:1000px) {
+
+    .text-holder {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .button-holder .button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
+  
+}
+
+@media screen and (max-width:600px) {
+
+  
+    .button-holder .button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    nav.bottomNav p {
+        
+        font-size: 20px;
+    }
+
+    .text-holder p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and (max-device-width: 1366px) and (min-device-width: 1024px) and (orientation: landscape){
+    div.sliderVis {
+        height: 1024px;
+    }
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)  { div.sliderVis {
+height: 1024px;
+}
+.stopNavTop p {
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 5%;}
+
+}
