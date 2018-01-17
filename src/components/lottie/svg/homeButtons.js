@@ -30,10 +30,10 @@ class HomeButton extends Component {
           <text transform="matrix(1.1 0 0 1 46.5 53.853)" font-size="27" font-family="Roboto-Light" fill={this.state.secondary}>
             BEEF
           </text>
-          <path class="st4" fill='none' stroke={this.state.secondary} d="M50.7 72.2h-8.5c-3.6 1.2 0 3.6 0 3.6l5.1 4.1c.6.5.9 1.2.9 1.9v9.5c0 1 .3 1.9.8 2.7 2.7 4.1 11.7 15.3 22.5 0 .6-.8.9-1.9.9-2.9v-9.5c0-.7.3-1.3.8-1.7l4.6-3.7c.3-.3.7-.5 1.1-.7.8-.4 2-1.4.1-2.9-.4-.3-.8-.5-1.3-.5h-9l-.6-.1"/>
+          <path class="st4" fill='none' stroke-width="2" stroke={this.state.secondary} d="M50.7 72.2h-8.5c-3.6 1.2 0 3.6 0 3.6l5.1 4.1c.6.5.9 1.2.9 1.9v9.5c0 1 .3 1.9.8 2.7 2.7 4.1 11.7 15.3 22.5 0 .6-.8.9-1.9.9-2.9v-9.5c0-.7.3-1.3.8-1.7l4.6-3.7c.3-.3.7-.5 1.1-.7.8-.4 2-1.4.1-2.9-.4-.3-.8-.5-1.3-.5h-9l-.6-.1"/>
           <circle class="st5" fill={this.state.secondary} stroke={this.state.primary} cx="55.6" cy="87.9" r="1.8"/>
           <circle class="st5" fill={this.state.secondary} stroke={this.state.primary} cx="64" cy="87.9" r="1.8"/>
-          <path stroke={this.state.secondary} fill='none' d="M60.4 69.8c-7.3-6.3-9.4-.2-9.7 1.8-.1.3.1.7.3.9 1.7 1.7 9.3 8.6 16.7.8.3-.4.6-.9.6-1.4 0-2.4-.8-8.7-9.1-2.2M59.2 102.4l2.2 21.2c.1 1.3 1 2.3 2.2 2.7 1.2.3 2.8.3 4-.9 1.9-1.9 2.3-9.1 2.4-12.1 0-.7.6-1.2 1.3-1.2h29.2c.6 0 1.1.4 1.4 1l3.9 10.7c.4 1.2 1.5 2 2.8 2.1 1.9.1 4.4-.4 5.1-4.1 1.1-5.4.2-29.7 0-35.2 0-.6 0-1.1.1-1.7.3-1.9.5-7.2-8.6-6.6H77l-3.3 1.4"/>
+          <path stroke={this.state.secondary} stroke-width="2" fill='none' d="M60.4 69.8c-7.3-6.3-9.4-.2-9.7 1.8-.1.3.1.7.3.9 1.7 1.7 9.3 8.6 16.7.8.3-.4.6-.9.6-1.4 0-2.4-.8-8.7-9.1-2.2M59.2 102.4l2.2 21.2c.1 1.3 1 2.3 2.2 2.7 1.2.3 2.8.3 4-.9 1.9-1.9 2.3-9.1 2.4-12.1 0-.7.6-1.2 1.3-1.2h29.2c.6 0 1.1.4 1.4 1l3.9 10.7c.4 1.2 1.5 2 2.8 2.1 1.9.1 4.4-.4 5.1-4.1 1.1-5.4.2-29.7 0-35.2 0-.6 0-1.1.1-1.7.3-1.9.5-7.2-8.6-6.6H77l-3.3 1.4"/>
           <path d="M113 80s8.5 2.4 8.5 15.7" stroke={this.state.secondary} stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"/>
         </svg>
           );

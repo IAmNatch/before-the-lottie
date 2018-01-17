@@ -117,7 +117,8 @@ class LottiePlayer extends Component {
             this.introController(action);
         }
         if (action.type === 'btp') {
-            lottie.playSegments([240, 245], true);
+            lottie.loop = false;
+            lottie.playSegments([1, 2], true);
             this.viewHandler('home')
         }
     }
