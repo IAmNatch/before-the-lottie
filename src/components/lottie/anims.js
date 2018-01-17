@@ -37,7 +37,7 @@ export const anims = {
         boxes: {
             description: 'Bees fly freely to pollinate plants and collect pollen, which they return to specially created bee boxes. Bee boxes are strategically placed by farmers in areas with access to varied nutrition to allow the bee to create high quality honey. Bee boxes are designed to allow the farmer to harvest the honey, which is encased in the waxy honeycomb. In our case, the honey farmer places bee boxes on the corners of neighboring farm’s property - giving his bees a varied source of nutrition and giving his neighbours the pollination his bees provide. Each bee lives for approximately 6 weeks, and creates just 1/10th of a teaspoon of honey in his lifetime!',
             stepNumber: 1,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/honey-jpgs/honey-beeboxes-finished.jpg',
             location: 'honey',
             nextTitle: 'Proccessing',
             next: 'boxesToProccessing',
@@ -56,7 +56,7 @@ export const anims = {
         processing: {
             description: 'The honeycomb that the bees create is scraped off the panels with a machine, dripping into a carefully positioned trough. The honeycomb substance is then placed in a spinning drum that separates the wax from the honey, and allows the honey to be collected separately. This honey is then pumped into storage barrels - from there, after being pumped into the appropriately sized container, it is ready for distribution! Some honey farmers ‘pasteurize’ their product by heating it to higher temperatures. This is done by some farmers to pump the honey through the processing plant more quickly.',
             stepNumber: 2,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/honey-jpgs/honey-processing-finished.jpg',
             location: 'honey',
             nextTitle: 'Cooking',
             next: 'processingToCooking',
@@ -75,7 +75,7 @@ export const anims = {
         cooking: {
             description: 'Distribution comes in many flavors, and varies by product. Distributors store and sort foods until delivery to the end consumer, whether that is directly to the restaurant or to a supermarket. Distributors vary in size - some supply massive supermarket chains and deliver hundreds of thousands of kilograms of food each week. Some, like 100KM foods, are smaller and emphasize local delivery directly restaurants or specialty stores.',
             stepNumber: 3,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/honey-jpgs/Honey-cooking-finished.jpg',
             location: 'honey',
             next: 'btp',
             nextTitle: 'Back to Plate',
@@ -123,7 +123,7 @@ export const anims = {
         calving: {
             description: 'Beef farmers have specially selected breeding cows that give birth to young calves on pasture. The calves are kept with their mothers for approximately 8 months, as they usually roam outdoors and drink her milk. As the calves grow, they begin weaning off their mother’s milk and eating grass, on pasture. This stage of production is usually its own farm and is called a “cow calf” operation After about 8 months, the now larger cattle are moved to the next stage called a feedlot.',
             stepNumber: 1,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/beef-jpgs/beef-calving-finished.jpg',
             location: 'beef',
             nextTitle: 'Feedlot',
             next: 'calvingToFeedLot',
@@ -151,7 +151,7 @@ export const anims = {
         feedlot: {
             description: 'Feedlots take in cattle from numerous cow calf operations and house them either in large barns or outdoors in pens. Feedlots are much larger than cow calf farms as they aggregate cattle from many cow calf operations. The cattle continue growing as they are fed a diet that varies from farm to farm but usually includes a mixture of grains and forages, which contain a higher fat percentage. The cattle reach market size between 18 months and 2 years, when they are transported for the slaughter.',
             stepNumber: 2,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/beef-jpgs/beef-feedlot-finished.jpg',
             location: 'beef',
             nextTitle: 'Slaughtery',
             next: 'feedlotToSlaughter',
@@ -179,7 +179,7 @@ export const anims = {
         slaughter: {
             description: 'The cattle are loaded onto trailers that ensure the safety of the cattle while in transport. The trailers are also well ventilated to reduce stress. Once the cattle arrive at the processing facility they are herded into a specially designed lane called a chute that helps reduce stress during this stage. Modern slaughter techniques are used to ensure that the animal is unconscious immediately and feels no pain. Both of these stages have been carefully researched to ensure the most efficient and humane slaughter. People such as Temple Grandin were pioneers in this field. Butchers then cut each carcass into cuts of meat that we would recognize in a grocery store or at a restaurant.',
             stepNumber: 3,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/beef-jpgs/beef-slaughtery-finished.jpg',
             location: 'beef',
             nextTitle: 'Cooking',
             next: 'slaughterToCooking',
@@ -207,7 +207,7 @@ export const anims = {
         cooking: {
             description: 'We sure as hell want to talk about the cooking process, we\'re just not sure what happned!',
             stepNumber: 4,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/beef-jpgs/beef-cooking-finishedtif.jpg',
             location: 'beef',
             nextTitle: 'Back to Plate',
             next: 'btp',
@@ -255,7 +255,7 @@ export const anims = {
         barn: {
             description: 'Dairy cows are born and spend a few hours with their mothers while they are licked off to stimulate blood flow. Once the calf has been cleaned off it is then moved to calving pens where the calves can more closely cared for and monitored. As soon as this is done, the cow is then milked and the mother\'s milk is given to the calf that is full of the essential vitamins and nutrients the calf needs. This milk given to the calf directly after birth is called colostrum. The mother cow will be carefully monitored and then return to the milking herd. Male calves are usually sent to other farms where they can be raised for veal or breeding purposes. Female calves are kept and raised until they have their first calf at about two years of age to continue the cycle.',
             stepNumber: 1,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/Milk-jpgs/Milk-Bran-Finished+.jpg',
             location: 'milk',
             nextTitle: 'Milking Parlour',
             next: 'barnToMilk',
@@ -283,7 +283,7 @@ export const anims = {
         milk: {
             description: 'On this farm, each of their 400 cows are milked three times per day to closely simulate the natural cycles of the cow and a calf. Each cow is logged in a computer system to check for vital health signs and cannot be milked if she has an infection or is on antibiotics. The milking parlour (where cows are milked) milks 24 cows at a time. The 24 cows are milked and are then released back into the herd to sleep and eat for the rest of the day.',
             stepNumber: 2,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/Milk-jpgs/Milk-Milking+Parlour-finished.jpg',
             location: 'milk',
             nextTitle: 'Milking truck',
             next: 'milkToTruck',
@@ -311,7 +311,7 @@ export const anims = {
         truck: {
             description: 'The truck arrives at the plant and is then tested again for contaminants.  The milk is offloaded and pasteurized for safety purposes. Essential vitamins are added to the milk and it is then processed into cream, skim and other dairy products such as ice cream and butter. For the use of our dish we used buttermilk which has bacterial cultures added to it, in order to give it a unique taste.',
             stepNumber: 3,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/Milk-jpgs/milk-Milk+Truck-finished.jpg',
             location: 'milk',
             nextTitle: 'Cooking',
             next: 'truckToCooking',
@@ -339,7 +339,7 @@ export const anims = {
         cooking: {
             description: 'We sure as hell want to talk about the cooking process, we\'re just not sure what happned!',
             stepNumber: 4,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/Milk-jpgs/+milk-Cooking-finished.jpg',
             location: 'milk',
             nextTitle: 'Back to Plate',
             next: 'btp',
@@ -387,7 +387,7 @@ export const anims = {
         irrigation: {
             description: 'At the beginning of the potato’s growth, potato farmers ‘hill’ the dirt over the potato, providing it with a much needed cover to protect it from the elements and keep the seed well buried. Farmers also use this time to monitor their fields for pests or disease, and may use pesticides as appropriate to help keep the crop healthy. Potatoes are irrigated as needed throughout the hottest parts of the summer.',
             stepNumber: 1,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/potato-jpgs/potato-planting-finished.jpg',
             location: 'potatoes',
             nextTitle: 'Harvesting',
             next: 'irrigationToHarvest',
@@ -415,7 +415,7 @@ export const anims = {
         harvest: {
             description: ' Potatoes are pulled out of the ground using a specialized harvesting machine that pulls them by their roots. They are sized and sorted on the harvester and uniform or damaged potatoes are spread back on the field. The potatoes are then transferred to large crates that are then sent to the processing facility.',
             stepNumber: 2,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/potato-jpgs/potato-harvest-finished.jpg',
             location: 'potatoes',
             nextTitle: 'Processing',
             next: 'harvestToProcessing',
@@ -443,7 +443,7 @@ export const anims = {
         processing: {
             description: 'Potatoes are pulled out of the ground using a specialized harvesting machine that pulls them by their roots. They are sized and sorted on the harvester and uniform or damaged potatoes are spread back on the field. The potatoes are then transferred to large crates that are then sent to the processing facility.',
             stepNumber: 3,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/potato-jpgs/potatoes-planting-finished.jpg',
             location: 'potatoes',
             nextTitle: 'Cooking',
             next: 'processingToCooking',
@@ -471,7 +471,7 @@ export const anims = {
         cooking: {
             description: 'We sure as hell want to talk about the cooking process, we\'re just not sure what happned!',
             stepNumber: 4,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/potato-jpgs/potato-cooking-finished.jpg',
             location: 'potatoes',
             nextTitle: 'Back to Plate',
             next: 'btp',
@@ -510,7 +510,7 @@ export const anims = {
         planting: {
             description: 'Sunflowers are planted in early spring using a similar planter to other crops. It is towed behind a tractors and plants many rows of flowers at a time. The planter also puts a precise amount of fertilizer with each seed to help the plant start growth.',
             stepNumber: 1,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/sunflowers-jpgs/sunflowers-planting-finished.jpg',
             location: 'sunflowers',
             nextTitle: 'Blooming',
             next: 'plantingToBlooming',
@@ -529,7 +529,7 @@ export const anims = {
         blooming: {
             description: 'Sunflowers in bloom - in mid august the sunflowers are in full bloom and look like the flowers we all know and recognize. They are then left until late fall to dry and be harvested.',
             stepNumber: 2,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/sunflowers-jpgs/sunflower-bloming-finished.jpg',
             location: 'sunflowers',
             nextTitle: 'Harvesting',
             next: 'bloomingToHarvest',
@@ -548,7 +548,7 @@ export const anims = {
         harvest: {
             description: 'Sunflowers in bloom - in mid august the sunflowers are in full bloom and look like the flowers we all know and recognize. They are then left until late fall to dry ',
             stepNumber: 3,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/sunflowers-jpgs/sunflower-harvest-finished.jpg',
             location: 'sunflowers',
             nextTitle: 'Cooking',
             next: 'harvestToCooking',
@@ -567,7 +567,7 @@ export const anims = {
         cooking: {
             description: 'We sure as hell want to talk about the cooking process, we\'re just not sure what happned!',
             stepNumber: 4,
-            backgroundImage: null,
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/sunflowers-jpgs/sunflower-cooking-finished.jpg',
             location: 'sunflowers',
             nextTitle: 'Back to Plate',
             next: 'btp',

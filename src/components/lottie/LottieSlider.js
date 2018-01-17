@@ -1,6 +1,12 @@
 import React from 'react';
+//Image loader to show blank image before the real ones show up on slider.
+import ImageLoader from 'react-load-image';
 
 export const LottieSlider = (props) => {
+    const Preloader = (props) => {
+        return <img src="./calving-testing.jpg" />;
+    }
+
     const sliderStyle = {
         background:'#f4f4f4',
         width: '100vw',
@@ -50,9 +56,12 @@ export const LottieSlider = (props) => {
                 </div>
 
                 <div className="image">
-                    <img src={props.sliderData && props.sliderData.backgroundImage || "./calving-testing.jpg"} />
+                    <ImageLoader src={props.sliderData && props.sliderData.backgroundImage}>
+                        <img/>
+                        <div>Error! Image not Found!</div>
+                        <Preloader />
+                    </ImageLoader>
                 </div>
-
                 <div className="content-folder">
 
                     <div className="text-holder">

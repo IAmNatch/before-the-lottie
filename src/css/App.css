@@ -647,8 +647,8 @@ div.straightLine {
 }
 
 .video-slider {
-    top: 1%;
-    bottom: 1%;
+    top: 10%;
+    bottom: 10%;
     left: 1%;
     right: 1%;
 }
@@ -1508,7 +1508,7 @@ p.donate-text {
                     div.sliderVis {
                         height: 100vh;
                     }
-        
+
     }
 
     @media only screen
@@ -1527,11 +1527,11 @@ p.donate-text {
 
             font-size: 37px;}
     }
-  
 
-    @media only screen 
-    and (min-device-width : 768px) 
-    and (max-device-width : 1024px) 
+
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
     and (orientation : landscape)  { div.sliderVis {
     height: 100%;
 }}
