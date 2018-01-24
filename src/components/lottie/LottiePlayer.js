@@ -76,7 +76,7 @@ class LottiePlayer extends Component {
                     console.log('backtoplate happened');
                     this.viewHandler('home')
                 } else {
-                    this.setState({sliderData: anims[current.location][current.nextStop]});
+                    this.setState({sliderData: anims[current.location][current.nextStop], numberOfStops: anims[current.location].numberOfStops});
                     this.viewHandler('stop')
                 }
 
@@ -147,10 +147,10 @@ class LottiePlayer extends Component {
         // Returns LottiePlayer with callable ref, so bodymovin can attach as container.
         // Also returns side-slider for use during animations and the LottieNav
         return (
-            [<LottieSlider key='lottieSlider' sliderData={this.state.sliderData} modalHandler={this.modalHandler} view={this.state.view} clickHandler={this.clickHandler}/>, <LottieNav key='lottieNav' view={this.state.view} navButtons={this.state.navButtons} navButtonsDisabled={this.props.navButtonsDisabled} clickHandler={this.clickHandler}/>,
+            [<LottieSlider key='lottieSlider' sliderData={this.state.sliderData} numberOfStops={this.state.numberOfStops} modalHandler={this.modalHandler} view={this.state.view} clickHandler={this.clickHandler}/>, <LottieNav key='lottieNav' view={this.state.view} navButtons={this.state.navButtons} navButtonsDisabled={this.props.navButtonsDisabled} clickHandler={this.clickHandler}/>,
         <div key='lottieMain' style={{gridArea: "lottie"}} className='lottie'>
                 <div style={{height: '100%'}} ref={(div) => { this.lottieContainer = div; }}></div>
-            </div>, <LottieInstructions className='LottieInstructions' key='LottieInstructions' view={this.state.view} />, <LottieModal key='lottieModal' modalStatus={this.state.modalStatus} modalHandler={this.modalHandler}/>
+            </div>, <LottieInstructions className='LottieInstructions' key='LottieInstructions' view={this.state.view} />, <LottieModal key='lottieModal' videoUrl={(this.state.sliderData)} modalStatus={this.state.modalStatus} modalHandler={this.modalHandler}/>
         ]
         );
     }

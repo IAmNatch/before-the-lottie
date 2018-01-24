@@ -669,11 +669,12 @@ div.straightLine {
 
 /* food and plate home page buttons  */
 .food-button {
-    border-right: solid thin black;
-    text-align: right;
+    border-left: solid thin black;
+    text-align: left;
 }
 .plate-button {
-    margin-right:160px;
+    text-align: right;
+    margin-left: 3vw;
 }
 
 .food-button button, .plate-button button {
@@ -688,10 +689,10 @@ div.straightLine {
 }
 
 .plate-button button {
-    cursor: e-resize;
+    cursor: pointer;
 }
 .food-button button {
-    cursor: w-resize
+    cursor: pointer;
 }
 
 .food-button p, .plate-button p {
@@ -720,9 +721,6 @@ width: 100%;
             }
         }
 
-.food-button p {
-    text-align: right;
-}
 .plate-button img {
     margin-left: 20px;
     width: 4vw;
@@ -735,17 +733,9 @@ width: 100%;
 }
 @media screen and (max-width:1200px) {
     .food-button img, .plate-button img {
-
-       display: none;
-
-
-
+            display: none;
        }
-       .plate-button {
-        margin-right:120px;
-    }
-
-    }
+   };
     button:focus {
         outline: none;
       }
@@ -1551,7 +1541,7 @@ height: 100vh;
         margin-right: auto;
         width: 15%;
     }
-  
+
 }
 
 @media screen and (max-width:1000px) {
@@ -1566,12 +1556,12 @@ height: 100vh;
         margin-right: auto;
         width: 30%;
     }
-  
+
 }
 
 @media screen and (max-width:600px) {
 
-  
+
     .button-holder .button {
         display: block;
         margin-left: auto;
@@ -1579,7 +1569,7 @@ height: 100vh;
         width: 50%;
     }
     nav.bottomNav p {
-        
+
         font-size: 20px;
     }
 

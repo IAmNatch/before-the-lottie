@@ -4,6 +4,12 @@ import { DefaultPlayer as Video } from 'react-html5video';
 import 'react-html5video/dist/styles.css';
 
 export const LottieModal = (props) => {
+    let videoUrl = 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Dairy+Barn.mp4';
+
+    if (props.modalStatus) {
+        videoUrl =  props.videoUrl.videoUrl;
+    }
+
     const modalStyle = {
         overlay : {
             zIndex: 15
@@ -23,7 +29,7 @@ export const LottieModal = (props) => {
             className='video-slider'
         >
 
-            <source src="https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Dairy+Barn.mp4" type="video/webm" />
+            <source src={videoUrl} type="video/webm" />
         </Video>
     );
 
