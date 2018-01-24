@@ -39,12 +39,11 @@ export const LottieNav = (props) => {
         props.navButtons.map((action, i) => {
             let text;
             const JSXButton = (buttonType) => {
-                console.log(buttonType);
                 if (buttonType === 'btp') {
-                    console.log('btp ran motha');
                     return ([
 
                         <p key={`journey${i}`}> Back to the</p>,
+                        <img key={`fatArrow${i}`} src="./svg/fatarrows-left.svg" />,
                         <button
                             key={i}
                             className={''}
@@ -55,15 +54,13 @@ export const LottieNav = (props) => {
                         >
                             {action.title}
                         </button>,
-                        <img key={`fatArrow${i}`} src="./svg/fatarrows-right.svg" />,
+
                     ]);
                 }
                 else if (buttonType === 'animation') {
-                    console.log('hungry AF');
                     return ([
 
                         <p key={`journey${i}`}> Begin Journey for </p>,
-                        <img key={`fatArrow${i}`} src="./svg/fatarrows-left.svg" />,
                         <button
                             key={i}
                             className={props.navButtonsDisabled ? 'disabled' : ''}
@@ -74,6 +71,7 @@ export const LottieNav = (props) => {
                         >
                             {action.title}
                         </button>,
+                        <img key={`fatArrow${i}`} src="./svg/fatarrows-right.svg" />,
                     ])
                 }
 
@@ -110,6 +108,7 @@ export const LottieNav = (props) => {
             <div className='lottieNav animated fadeInDown' style={buttonWrap} >
                 {buttons}
             </div>
+
         </div>
     );
 };
