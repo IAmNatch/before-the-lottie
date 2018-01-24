@@ -52,7 +52,7 @@ export const LottieSlider = (props) => {
                 </nav>
 
                 <div className="tracker">
-                    <h4>{props.sliderData && props.sliderData.stepNumber || 0} of 4</h4>
+                    <h4>{props.sliderData && props.sliderData.stepNumber || 0} of {props.numberOfStops || 0}</h4>
                 </div>
 
                 <div className="image">
