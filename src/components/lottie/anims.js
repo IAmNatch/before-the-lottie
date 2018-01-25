@@ -36,7 +36,7 @@ export const anims = {
             nextStop: 'boxes',
         },
         boxes: {
-            description: 'Bees fly freely to pollinate plants and collect pollen, which they return to specially created bee boxes. Bee boxes are strategically placed by farmers in areas with access to varied nutrition to allow the bee to create high quality honey. Bee boxes are designed to allow the farmer to harvest the honey, which is encased in the waxy honeycomb. In our case, the honey farmer places bee boxes on the corners of neighboring farm’s property - giving his bees a varied source of nutrition and giving his neighbours the pollination his bees provide. Each bee lives for approximately 6 weeks, and creates just 1/10th of a teaspoon of honey in his lifetime!',
+            description: 'Bees fly freely to pollinate nearby plants and collect nectar and pollen, which they return to their hives called “bee boxes”.  Bee boxes are designed to allow the beekeeper to harvest the honey without disrupting the hive, which is deposited by bees in the waxy honeycomb. In our case, the beekeeper has arrangements with other farmers to keep hives on the edges of their property, giving the bees diversity of nutrition and the farmer the useful  pollinating activity the bees provide. During the foraging season, each worker bee lives for approximately 6 weeks, and deposits just 1/10th of a teaspoon of honey in her lifetime!',
             stepNumber: 1,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/honey-jpgs/honey-beeboxes-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Honey/Bee+Boxes.mp4',
@@ -56,7 +56,7 @@ export const anims = {
             nextStop: 'processing',
         },
         processing: {
-            description: 'The honeycomb that the bees create is scraped off the panels with a machine, dripping into a carefully positioned trough. The honeycomb substance is then placed in a spinning drum that separates the wax from the honey, and allows the honey to be collected separately. This honey is then pumped into storage barrels - from there, after being pumped into the appropriately sized container, it is ready for distribution! Some honey farmers ‘pasteurize’ their product by heating it to higher temperatures. This is done by some farmers to pump the honey through the processing plant more quickly.',
+            description: 'In a commercial operation, the honey is scraped off the frames with an uncapping machine. The honey then drips into a hopper which begins moving honey along a process that helps separate it from the wax. The process includes spinning the frames in centrifugal machines called extractors and then letting honey settle in tanks to clarify further. When the honey is clear, it is pumped into storage barrels where it can be stored indefinitely without spoilage. Once barreled, the honey is ready to be shipped to chefs, bakers and for sale to retail consumers.',
             stepNumber: 2,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/honey-jpgs/honey-processing-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Honey/Honey+Processing.mp4',
@@ -76,7 +76,7 @@ export const anims = {
             nextStop: 'cooking',
         },
         cooking: {
-            description: 'Distribution comes in many flavors, and varies by product. Distributors store and sort foods until delivery to the end consumer, whether that is directly to the restaurant or to a supermarket. Distributors vary in size - some supply massive supermarket chains and deliver hundreds of thousands of kilograms of food each week. Some, like 100KM foods, are smaller and emphasize local delivery directly restaurants or specialty stores.',
+            description: 'Honey is added to a hot frying pan. The heat is then turned down to medium and reduced until honey becomes a deep golden brown colour. Cracked black pepper and lemon zest are added. The roasted carrots are then tossed in the honey caramel and seasoned as needed.',
             stepNumber: 3,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/honey-jpgs/Honey-cooking-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Honey/Honey+Cooking.mp4',
@@ -127,7 +127,7 @@ export const anims = {
             nextStop: 'btp',
         },
         calving: {
-            description: 'Beef farmers have specially selected breeding cows that give birth to young calves on pasture. The calves are kept with their mothers for approximately 8 months, as they usually roam outdoors and drink her milk. As the calves grow, they begin weaning off their mother’s milk and eating grass, on pasture. This stage of production is usually its own farm and is called a “cow calf” operation After about 8 months, the now larger cattle are moved to the next stage called a feedlot.',
+            description: ' Beef farmers have specially selected breeding cows that give birth to young calves on pasture. Theses calves are kept with their mothers for approximately 8 months, where they usually roam outdoors and drink her milk. As the calves grow, they begin weaning off their mother’s milk and eating grass, on an open pasture. This stage of production usually takes place on its own farm and is called a “cow calf” operation. After about 8 months, the now larger cattle are sold to another farm, called a feedlot.',
             stepNumber: 1,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/beef-jpgs/beef-calving-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Beef/Calving.mp4',
@@ -156,7 +156,7 @@ export const anims = {
             nextStop: 'calving',
         },
         feedlot: {
-            description: 'Feedlots take in cattle from numerous cow calf operations and house them either in large barns or outdoors in pens. Feedlots are much larger than cow calf farms as they aggregate cattle from many cow calf operations. The cattle continue growing as they are fed a diet that varies from farm to farm but usually includes a mixture of grains and forages, which contain a higher fat percentage. The cattle reach market size between 18 months and 2 years, when they are transported for the slaughter.',
+            description: ' Feedlots take in cattle from numerous cow calf operations and house them either in large barns or outdoors in pens. Feedlots are much larger than cow calf farms as they aggregate cattle from many cow calf operations. The cattle continue growing as they are fed a diet that varies from farm to farm, but usually includes a mixture of grains and forages, which contain balanced levels of energy and protein. The cattle reach the feedlot when they are about one year old and are sold usually sold before they reach 24 months. At this age, they are fully grown and sent for slaughter, weighing anywhere between 1,200 to 1,800 pounds. Towards the end of their lives, some cattle have specialized, lower energy diets that do not include grains. These are sometimes labeled grass finished and are usually sold for slaughter at 30 months of age.',
             stepNumber: 2,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/beef-jpgs/beef-feedlot-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Beef/Feedlot.mp4',
@@ -185,7 +185,7 @@ export const anims = {
             nextStop: 'feedlot',
         },
         slaughter: {
-            description: 'The cattle are loaded onto trailers that ensure the safety of the cattle while in transport. The trailers are also well ventilated to reduce stress. Once the cattle arrive at the processing facility they are herded into a specially designed lane called a chute that helps reduce stress during this stage. Modern slaughter techniques are used to ensure that the animal is unconscious immediately and feels no pain. Both of these stages have been carefully researched to ensure the most efficient and humane slaughter. People such as Temple Grandin were pioneers in this field. Butchers then cut each carcass into cuts of meat that we would recognize in a grocery store or at a restaurant.',
+            description: 'The cattle are loaded onto well ventilated trailers that are designed to reduce the stress of the cattle while in transport and ensure safety. Once the cattle arrive at the processing facility, they are herded into a specially designed lane called a chute that helps keep the cattle calm during this stage. Modern slaughter techniques are used to ensure that the animal is unconscious immediately and feels no pain. Both of these stages have been carefully researched to ensure the most efficient and humane slaughter. People such as Temple Grandin were pioneers in this field and developed the current method. Butchers then cut each carcass into cuts of meat that consumers would recognize in a grocery store or at a restaurant.',
             stepNumber: 3,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/beef-jpgs/beef-slaughtery-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Beef/Abbatoir.mp4',
@@ -214,7 +214,7 @@ export const anims = {
             nextStop: 'slaughter',
         },
         cooking: {
-            description: 'We sure as hell want to talk about the cooking process, we\'re just not sure what happned!',
+            description: 'Before cooking the beef, the fat and silver skin is removed from the tenderloin. The whole roast is cut into 8 inch segments and then sliced lengthwise 3/4s of the way through, at which point pork lard is stuffed into the meat. The larded tenderloin is then tied together, before being pan seared until golden brown. Butter is then added to the pan and basted on the beef. The beef is then finished in the oven at 375 F and roasted for 10 minutes. The beef is then left to rest and sliced to serve.',
             stepNumber: 4,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/beef-jpgs/beef-cooking-finishedtif.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Beef/Beef+Cooking.mp4',
@@ -265,7 +265,7 @@ export const anims = {
             nextStop: 'btp',
         },
         barn: {
-            description: 'Dairy cows are born and spend a few hours with their mothers while they are licked off to stimulate blood flow. Once the calf has been cleaned off it is then moved to calving pens where the calves can more closely cared for and monitored. As soon as this is done, the cow is then milked and the mother\'s milk is given to the calf that is full of the essential vitamins and nutrients the calf needs. This milk given to the calf directly after birth is called colostrum. The mother cow will be carefully monitored and then return to the milking herd. Male calves are usually sent to other farms where they can be raised for veal or breeding purposes. Female calves are kept and raised until they have their first calf at about two years of age to continue the cycle.',
+            description: ' When dairy calves are born, they spend a few hours with their mothers while they are licked off to stimulate blood flow. The mother cow’s milk (called colostrum) contains essential immunoglobulins, and is given to the calf within one hour to allow the calf to develop their own functioning immune system. Once the calf has been cleaned off it is then moved to calving hutches - individualized pens where the calves can more closely cared for and monitored. The mother cow will be carefully monitored and then return to the milking herd. Male (bull) calves are usually sent to other farms where they can be raised for veal or breeding purposes. Females (heifers) are kept and raised until they have their first calf at about two years of age to continue the dairy cycle.',
             stepNumber: 1,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/Milk-jpgs/Milk-Bran-Finished+.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Milk/Dairy+Barn.mp4',
@@ -294,7 +294,7 @@ export const anims = {
             nextStop: 'barn'
         },
         milk: {
-            description: 'On this farm, each of their 400 cows are milked three times per day to closely simulate the natural cycles of the cow and a calf. Each cow is logged in a computer system to check for vital health signs and cannot be milked if she has an infection or is on antibiotics. The milking parlour (where cows are milked) milks 24 cows at a time. The 24 cows are milked and are then released back into the herd to sleep and eat for the rest of the day.',
+            description: 'On this farm, each of their 400 cows are milked three times per day to closely simulate the natural cycles of the cow and her calf. Each cow is identified in the computer by her leg band, to allow her daily production and other daily activities to be monitored. If the cow has an infection or is being treated with antibiotics, the milk cannot be kept and is immediately routed away to a separate tank and disposed of. This milking parlour (where cows are milked) milks 24 cows at a time. The 24 cows are milked and are then released back into the herd to sleep and eat for the rest of the day.',
             stepNumber: 2,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/Milk-jpgs/Milk-Milking+Parlour-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Milk/Milking+Parlour.mp4',
@@ -323,7 +323,7 @@ export const anims = {
             nextStop: 'milk'
         },
         truck: {
-            description: 'The truck arrives at the plant and is then tested again for contaminants.  The milk is offloaded and pasteurized for safety purposes. Essential vitamins are added to the milk and it is then processed into cream, skim and other dairy products such as ice cream and butter. For the use of our dish we used buttermilk which has bacterial cultures added to it, in order to give it a unique taste.',
+            description: 'This farm produces about 16,500 liters of milk per day, which is collected by a large tanker truck on a daily basis. The driver takes a sample which is tested in a lab for antibiotic residue, bacteria levels, somatic cell levels, fat, protein, other solids, and freezing point. Every farm in Canada is tested every single day. If any farm is caught with any trace amounts of antibiotics in the milk, the milk is disposed of and the farm is fined, even for a first offence. The truck will stop at other farms depending on the size and will then go to the dairy the same day for the milk to be processed.',
             stepNumber: 3,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/Milk-jpgs/Milk+Truck+-+Milk-finished-v2.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Milk/Milk+Truck.mp4',
@@ -343,7 +343,7 @@ export const anims = {
             nextStop: 'processing'
         },
         processing: {
-            description: 'The truck arrives at the plant and is then tested again for contaminants.  The milk is offloaded and pasteurized for safety purposes. Essential vitamins are added to the milk and it is then processed into cream, skim and other dairy products such as ice cream and butter. For the use of our dish we used buttermilk which has bacterial cultures added to it, in order to give it a unique taste.',
+            description: 'The truck arrives at the processing plant and the milk is then tested once again for contaminants.  The milk is then offloaded and pasteurized for safety purposes. Essential vitamins are added to the milk and it is then processed into cream, skim and other dairy products such as ice cream and butter. Our dish contains buttermilk, which is specially processed by adding bacterial cultures, in order to give it a unique taste.',
             stepNumber: 4,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/Milk-jpgs/milk-processing-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Milk/Milk+Processing.mp4',
@@ -363,7 +363,7 @@ export const anims = {
             nextStop: 'cooking'
         },
         cooking: {
-            description: 'We sure as hell want to talk about the cooking process, we\'re just not sure what happned!',
+            description: 'The buttermilk is used to create a bread sauce to garnish our dish. The buttermilk is warmed very gently at a low temperature on the stove with equal parts buttermilk and regular milk. Spices are then added such as allspice, nutmeg, black peppercorn, cinnamon, bay leaf and clove. The mixture is then brought to 180 F and removed from heat to allow the ingredients to infuse for 20 mins. Once complete, the spices are strained off and the liquid is warmed once again. This spiced milk mixture is then blended with house made bread and blitzed until smooth.',
             stepNumber: 5,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/Milk-jpgs/+milk-Cooking-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Milk/Milk+Cooking.mp4',
@@ -414,7 +414,7 @@ export const anims = {
             nextStop: 'btp'
         },
         irrigation: {
-            description: 'At the beginning of the potato’s growth, potato farmers ‘hill’ the dirt over the potato, providing it with a much needed cover to protect it from the elements and keep the seed well buried. Farmers also use this time to monitor their fields for pests or disease, and may use pesticides as appropriate to help keep the crop healthy. Potatoes are irrigated as needed throughout the hottest parts of the summer.',
+            description: 'A potato seed is a small chunk of an existing potato which is cut into desirable size seed pieces. The pieces are then planted in the ground and partially covered with soil. After a couple of weeks, the sprouting seed begins to crack through the soil surface. At that point, the potatoes are “hilled” to have ample amount of soil for the new developing potatoes to grow and be protected from the sun and elements.',
             stepNumber: 1,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/potato-jpgs/potato-planting-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Potatoe/Potatoe+Planting.mp4',
@@ -443,7 +443,7 @@ export const anims = {
             nextStop: 'harvest'
         },
         harvest: {
-            description: ' Potatoes are pulled out of the ground using a specialized harvesting machine that pulls them by their roots. They are sized and sorted on the harvester and uniform or damaged potatoes are spread back on the field. The potatoes are then transferred to large crates that are then sent to the processing facility.',
+            description: 'When the potatoes have grown to the desired size, the potatoes are then dug out of the ground with a mechanical harvester. The process of digging includes removing dead vines and undesirable potatoes.',
             stepNumber: 2,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/potato-jpgs/potato-harvest-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Potatoe/Potatoe+Harvest.mp4',
@@ -472,7 +472,7 @@ export const anims = {
             nextStop: 'processing',
         },
         processing: {
-            description: 'Potatoes are pulled out of the ground using a specialized harvesting machine that pulls them by their roots. They are sized and sorted on the harvester and uniform or damaged potatoes are spread back on the field. The potatoes are then transferred to large crates that are then sent to the processing facility.',
+            description: 'The potatoes are then transported to a facility where they are sized to the desired specs of the customer. The Potatoes are shipped to the pack house to be washed and regraded for packing. Various packing is used depending on the type and size of the potatoes and is determined by the end users.',
             stepNumber: 3,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/potato-jpgs/potatoes-planting-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Potatoe/Potatoe+Process.mp4',
@@ -501,7 +501,7 @@ export const anims = {
             nextStop: 'cooking'
         },
         cooking: {
-            description: 'We sure as hell want to talk about the cooking process, we\'re just not sure what happned!',
+            description: 'Potatoes are peeled and run through a food processor to make small pieces.  Next, the chopped potatoes are rinsed and spread on a tray and baked at 300F until the moisture is gone and potato is semi soft. They are then dusted with powdered gelatin, and rolled into tubes, cut and fried until golden brown.',
             stepNumber: 4,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/potato-jpgs/potato-cooking-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Potatoe/Potatoe+Cooking.mp4',
@@ -544,7 +544,7 @@ export const anims = {
             nextStop: 'planting',
         },
         planting: {
-            description: 'Sunflowers are planted in early spring using a similar planter to other crops. It is towed behind a tractors and plants many rows of flowers at a time. The planter also puts a precise amount of fertilizer with each seed to help the plant start growth.',
+            description: ' Sunflowers are planted in early spring using a similar planter to other crops. The planter is towed behind a tractor and plants many rows of seed at a time. The planter also puts a precise amount of fertilizer with each seed to help the plant kickstart its growth.',
             stepNumber: 1,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/sunflowers-jpgs/sunflower-planting-finished-v2.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Sunflower/Sunflower+Planting.mp4',
@@ -564,7 +564,7 @@ export const anims = {
             nextStop: 'blooming',
         },
         blooming: {
-            description: 'Sunflowers in bloom - in mid august the sunflowers are in full bloom and look like the flowers we all know and recognize. They are then left until late fall to dry and be harvested.',
+            description: 'In mid-July the sunflowers are in full bloom and look like the flowers we all know and recognize. They are then left until late fall to dry and be harvested.',
             stepNumber: 2,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/sunflowers-jpgs/sunflower-bloming-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Sunflower/Sunflower+Blooming.mp4',
@@ -584,7 +584,7 @@ export const anims = {
             nextStop: 'harvest',
         },
         harvest: {
-            description: 'Sunflowers in bloom - in mid august the sunflowers are in full bloom and look like the flowers we all know and recognize. They are then left until late fall to dry ',
+            description: 'Once the sunflowers have dried up, they are harvested with a combine harvester, much like corn and wheat. The harvester chops the plants and strips the seed off of the flowers. It then stores the seed in a large hopper on top of the machine, to be later off loaded into large wagons and stored in silos. The rest of the plant is chopped and spread back onto the field to decompose and redeposit nutrients in the soil.',
             stepNumber: 3,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/sunflowers-jpgs/sunflower-harvest-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Sunflower/Sunflower+Harvest.mp4',
@@ -604,7 +604,7 @@ export const anims = {
             nextStop: 'processing',
         },
         processing: {
-            description: 'There will be processing text here!',
+            description: ' After the wagons have been transported to the processing plant, the seeds are offloaded. The seeds from the silo are then transferred into the processing plant where they are separated from the shell and cleaned of any impurities such as seeds from weeds in the field. The seeds then enter a press that extracts the oil out of the sunflower seed.',
             stepNumber: 4,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/sunflowers-jpgs/sunflower-processing-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Sunflower/Sunflower+Processing.mp4',
@@ -617,14 +617,14 @@ export const anims = {
         processingToCooking: {
             type: 'animation',
             location: 'sunflowers',
-            time_start: 220,
-            time_end: 226,
+            time_start: 229,
+            time_end: 238,
             shouldLoop: false,
             onComplete: true,
             nextStop: 'cooking',
         },
         cooking: {
-            description: 'We sure as hell want to talk about the cooking process, we\'re just not sure what happned!',
+            description: 'Sunflower oil is a great substitute for vegetable oil when baking bread. First, yeast and sugar are added to water. Then, flour as well as the sunflower oil are added. Next, a baking pan is rubbed with sunflower oil and the mix is added into a baking pan. Once the bread has baked, it is then cut into small cubes and blended in with the dairy to create the bread sauce. A little drizzle of sunflower oil over the plate when finished helps bring all the flavors together.',
             stepNumber: 5,
             backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/sunflowers-jpgs/sunflower-cooking-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Sunflower/Sunflower+Cooking.mp4',
