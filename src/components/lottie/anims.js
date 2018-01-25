@@ -187,7 +187,7 @@ export const anims = {
         slaughter: {
             description: 'The cattle are loaded onto well ventilated trailers that are designed to reduce the stress of the cattle while in transport and ensure safety. Once the cattle arrive at the processing facility, they are herded into a specially designed lane called a chute that helps keep the cattle calm during this stage. Modern slaughter techniques are used to ensure that the animal is unconscious immediately and feels no pain. Both of these stages have been carefully researched to ensure the most efficient and humane slaughter. People such as Temple Grandin were pioneers in this field and developed the current method. Butchers then cut each carcass into cuts of meat that consumers would recognize in a grocery store or at a restaurant.',
             stepNumber: 3,
-            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/beef-jpgs/beef-slaughtery-finished.jpg',
+            backgroundImage: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/slider-titles/beef-jpgs/Abattoir-Beef-finished.jpg',
             videoUrl: 'https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Videos/Beef/Abbatoir.mp4',
             location: 'beef',
             nextTitle: 'Cooking',
@@ -456,8 +456,8 @@ export const anims = {
         harvestToProcessing: {
             type: 'animation',
             location: 'potatoes',
-            time_start: 164,
-            time_end: 170,
+            time_start: 165.5,
+            time_end: 171,
             shouldLoop: false,
             onComplete: true,
             nextStop: 'processing',
