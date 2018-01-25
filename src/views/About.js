@@ -32,7 +32,7 @@ class About extends Component {
                 className='video-trailer'
             >
 
-                <source src="https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/Dairy+Barn.mp4" type="video/webm" />
+                <source src="https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/JAN24TRAILER_final_Encoded.mp4" type="video/webm" />
             </Video>
         );
 
