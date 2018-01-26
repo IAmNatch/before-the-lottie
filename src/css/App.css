@@ -370,7 +370,8 @@ div.sliderInvis {
 
 .wrapperLow {
     transition-delay: 1.5s;
-    z-index: -10
+    z-index: -10;
+    height: 100%;
 }
 
 /* Footer */
@@ -1499,6 +1500,7 @@ p.donate-text {
                         height: 100vh;
                     }
 
+
     }
 
     @media only screen
@@ -1531,7 +1533,18 @@ and (min-device-width : 1024px)
 and (max-device-width : 1366px)
 and (orientation : landscape)  { div.sliderVis {
 height: 100vh;
-}}
+}
+.lottie-instructions p {
+    background-color: black;
+    display: inline-block;
+    margin: 3px;
+    padding: 5px;
+    font-family: "Roboto Mono";
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+}
 
 @media screen and (max-width:1250px) {
 
@@ -1541,6 +1554,7 @@ height: 100vh;
         margin-right: auto;
         width: 15%;
     }
+
 
 }
 
@@ -1584,6 +1598,16 @@ height: 100vh;
         height: 1024px;
     }
 
+    .lottie-instructions p {
+        background-color: black;
+        display: inline-block;
+        margin: 3px;
+        padding: 5px;
+        font-family: "Roboto Mono";
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
 }
 
 @media only screen
@@ -1596,5 +1620,37 @@ height: 1024px;
     vertical-align: top;
     display: inline-block;
     padding-top: 5%;}
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+.lottie-instructions p {
+    background-color: black;
+    display: inline-block;
+    margin: 3px;
+    padding: 5px;
+    font-family: "Roboto Mono";
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)  { 
+    .lottie-instructions p {
+        background-color: black;
+        display: inline-block;
+        margin: 3px;
+        padding: 5px;
+        font-family: "Roboto Mono";
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
 
 }
