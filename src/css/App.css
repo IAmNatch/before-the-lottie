@@ -1654,3 +1654,31 @@ and (orientation : landscape)  {
     }
 
 }
+
+@media screen and (max-width: 600px){
+    .donate-now h1 {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .donate-now p {
+        font-size: 3vw;
+        margin-left: 12%;
+        line-height: 1.7;
+    }
+
+    div.donate-intro {
+    
+        font-size: 12px;
+    }
+    .donate-now {
+        float: right;
+        width: 60%;
+        position: relative;
+        top: -80px;
+    }
+}
+.hvr-bubble-float-top {
+    border: 0px;
+}
