@@ -1606,10 +1606,26 @@ height: 100vh;
         font-family: "Roboto Mono";
         font-weight: 300;
         letter-spacing: 1px;
+        font-size: 20px;
     }
 
 }
 
+
+@media only screen and (max-device-width: 1366px) and (min-device-width: 1024px) and (orientation: portrait){
+
+    .lottie-instructions p {
+        background-color: black;
+        display: inline-block;
+        margin: 3px;
+        padding: 5px;
+        font-family: "Roboto Mono";
+        font-weight: 300;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+
+}
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
@@ -1636,6 +1652,7 @@ and (orientation : portrait) {
     font-family: "Roboto Mono";
     font-weight: 300;
     letter-spacing: 1px;
+    font-size: 20px;
 }
 }
 
@@ -1651,6 +1668,7 @@ and (orientation : landscape)  {
         font-family: "Roboto Mono";
         font-weight: 300;
         letter-spacing: 1px;
+        font-size: 20px;
     }
 
 }
@@ -1681,4 +1699,19 @@ and (orientation : landscape)  {
 }
 .hvr-bubble-float-top {
     border: 0px;
+}
+
+
+@media screen and (min-width: 1000px){
+    .lottie-instructions p {
+
+        font-size: 20px;
+    
+    }
+}
+
+.lottie-instructions p {
+
+    font-weight: 300;
+
 }
