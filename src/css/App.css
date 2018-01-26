@@ -667,6 +667,10 @@ div.straightLine {
     display: none;
 }
 
+/* .ReactModal__Content span {
+    height: 90%;
+} */
+
 
 /* food and plate home page buttons  */
 .food-button {
@@ -1659,7 +1663,7 @@ and (orientation : portrait) {
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
-and (orientation : landscape)  { 
+and (orientation : landscape)  {
     .lottie-instructions p {
         background-color: black;
         display: inline-block;
@@ -1687,7 +1691,7 @@ and (orientation : landscape)  {
     }
 
     div.donate-intro {
-    
+
         font-size: 12px;
     }
     .donate-now {
@@ -1706,7 +1710,7 @@ and (orientation : landscape)  {
     .lottie-instructions p {
 
         font-size: 20px;
-    
+
     }
 }
 

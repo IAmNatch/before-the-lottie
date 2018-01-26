@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Modal from 'react-modal';
 import { DefaultPlayer as Video } from 'react-html5video';
+import ReactYoutube from 'react-youtube';
 import 'react-html5video/dist/styles.css';
 
 class About extends Component {
@@ -24,6 +25,13 @@ class About extends Component {
                 border: 'none',
             }
         };
+        const opts = {
+            height: ` 100%`,
+            width: `100%`,
+            playerVars: {
+                autoplay: 1
+            }
+        };
 
         const videoPlayer = (
             <Video autoPlay
@@ -32,9 +40,13 @@ class About extends Component {
                 className='video-trailer'
             >
 
-                <source src="https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/JAN24TRAILER_final_Miro.mp4" type="video/webm" />
+                <source src="https://s3-us-west-2.amazonaws.com/before-the-lottie-video-storage/JAN24TRAILER_final_Miro.mp4" type="video/mp4" />
             </Video>
-        );
+            /*<ReactYoutube
+               videoId="gJ7X3POmIOo"
+               opts={opts}
+               />*/
+            );
 
         return (
         [<div key='aboutPage'>
