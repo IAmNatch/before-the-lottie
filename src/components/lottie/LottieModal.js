@@ -29,7 +29,7 @@ export const LottieModal = (props) => {
             className='video-slider'
         >
 
-            <source src={videoUrl} type="video/webm" />
+            <source src={videoUrl} type="video/mp4" />
         </Video>
     );
 
