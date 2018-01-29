@@ -51,7 +51,7 @@ class About extends Component {
         return (
         [<div key='aboutPage'>
              <div className="teaser">
-            <button onClick={() => {this.modalHandler(true)}}> Watch the Teaser </button>
+            <button onClick={() => {this.modalHandler(true)}}> Watch the Trailer </button>
             </div>
                 <div className="title-holder">
                     <h1> About </h1>
