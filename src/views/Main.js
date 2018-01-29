@@ -13,7 +13,7 @@ export const Main = (props) => {
             />,
             <div className='mobile-warning'>
                 <h2 className="oops"> OOPS </h2>
-                <p>This experience is optimized for desktop and tablet displays. <br /> <br /> Please visit out about page to learn more about the movie or try again on a compatible device.</p>
+                <p>This experience is optimized for desktop and tablet displays. <br /> <br /> Please visit our about page to learn more about the movie or try again on a compatible device.</p>
             </div>,
             <div key='footer' className='footer'>
                 <div className='title'>
