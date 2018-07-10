@@ -15,7 +15,7 @@ class Contact extends Component {
             </div>
                 <div className={`contact contactAnimation ${this.state.contactOpen ? 'contactClicked' : ''}`}>
 
-                <form method="POST" action="http://formspree.io/dylansher@gmail.com">
+                <form method="POST" action="https://formspree.io/dylansher@gmail.com">
 
                     <div class="group">
                  <input id="title" type="text" name="name" required />
