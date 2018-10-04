@@ -1,6 +1,5 @@
 import React from "react";
 import LottiePlayer from "./../components/lottie/LottiePlayer";
-var mobile = require("is-mobile");
 
 export const Main = props => {
 	return [
