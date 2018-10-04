@@ -11,6 +11,8 @@ import Screenings from "./views/Screenings";
 // React Router
 import { Route } from "react-router-dom";
 
+var mobile = require("is-mobile");
+
 class App extends Component {
 	state = {
 		navButtonsDisabled: false,
@@ -38,6 +40,10 @@ class App extends Component {
 	};
 
 	render() {
+		console.log(this.props);
+		if (mobile()) {
+			this.props.push("about");
+		}
 		return (
 			<div
 				className={`App ${this.state.page !== "home" ? "notHome" : ""}`}

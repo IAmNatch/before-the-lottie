@@ -11,6 +11,7 @@ class Contact extends Component {
 	render() {
 		return (
 			<div className="form-holder">
+				<h2>Contact</h2>
 				<form
 					method="POST"
 					action="https://formspree.io/dylansher@gmail.com"

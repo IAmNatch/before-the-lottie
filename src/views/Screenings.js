@@ -20,7 +20,7 @@ class Screenings extends Component {
 						<input type="text" name="name" />
 						<span class="highlight" />
 						<span class="bar" />
-						<label>Name of Festival</label>
+						<label>Name</label>
 					</div>
 					<div class="group">
 						<input type="text" name="location" />
@@ -41,28 +41,43 @@ class Screenings extends Component {
 						<label>Type of Organization</label>
 					</div>
 					<div class="group">
-						<input type="text" name="cost" />
 						<span class="highlight" />
 						<span class="bar" />
-						<label>Paid or Free Festival?</label>
+						<label class="radio-label">Event Type</label>
+						<select name="event_type">
+							<option value="paid">Paid</option>
+							<option value="free">Free</option>
+						</select>
+						{/* Radio Button */}
 					</div>
 					<div class="group">
-						<input type="text" name="delivery" />
 						<span class="highlight" />
 						<span class="bar" />
-						<label>Preffered Media Delivery</label>
+						<label class="radio-label">
+							Preferred Media Delivery
+						</label>
+						<select name="media_delivery">
+							<option value="dcp">DCP</option>
+							<option value="digital">Digital Download</option>
+							<option value="bluray">Blu Ray</option>
+						</select>
 					</div>
 					<div class="group">
 						<input type="text" name="screenings" />
 						<span class="highlight" />
 						<span class="bar" />
-						<label>Number of Times Screened</label>
+						<label>Number of Screenings</label>
 					</div>
 					<div class="group">
-						<input type="text" name="QandA" />
 						<span class="highlight" />
 						<span class="bar" />
-						<label>Request Q&A with Director/Producer</label>
+						<label class="radio-label">Request Q&A</label>
+						<select name="qanda">
+							<option value="producer">Producer</option>
+							<option value="director">Director</option>
+							<option value="both">Both</option>
+							<option value="none">None</option>
+						</select>
 					</div>
 					<div class="group">
 						<input type="email" name="_replyto" />
