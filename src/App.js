@@ -24,6 +24,9 @@ class App extends Component {
 	};
 
 	componentWillMount() {
+		if (mobile()) {
+			this.props.push("about");
+		}
 		const location = window.location.pathname.replace(
 			/^\/([^\/]*).*$/,
 			"$1"
@@ -32,10 +35,6 @@ class App extends Component {
 			this.pageHandler("home");
 		} else {
 			this.pageHandler(location);
-		}
-
-		if (mobile()) {
-			this.props.push("about");
 		}
 	}
 
