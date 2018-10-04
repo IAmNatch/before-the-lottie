@@ -991,7 +991,7 @@ label {
 	position: absolute;
 	pointer-events: none;
 	left: 5px;
-	top: 10px;
+	top: 25px;
 	transition: 0.2s ease all;
 	-moz-transition: 0.2s ease all;
 	-webkit-transition: 0.2s ease all;
@@ -1185,9 +1185,13 @@ textarea#content {
 
 	input:focus ~ label,
 	input:valid ~ label {
-		top: -15px;
+		top: -25px;
 		font-size: 20px;
 		color: black;
+	}
+
+	h2 {
+		margin-bottom: 40px;
 	}
 }
 
@@ -1265,6 +1269,11 @@ div.donate-intro h3 {
 	}
 	p.donate-text {
 		font-size: 15px;
+	}
+
+	.form-holder {
+		left: 35%;
+		font-size: 1em;
 	}
 }
 @media screen and (max-width: 600px) {

@@ -33,6 +33,10 @@ class App extends Component {
 		} else {
 			this.pageHandler(location);
 		}
+
+		if (mobile()) {
+			this.props.push("about");
+		}
 	}
 
 	disableNavButtonsHandler = state => {
@@ -41,9 +45,7 @@ class App extends Component {
 
 	render() {
 		console.log(this.props);
-		if (mobile()) {
-			this.props.push("about");
-		}
+
 		return (
 			<div
 				className={`App ${this.state.page !== "home" ? "notHome" : ""}`}
