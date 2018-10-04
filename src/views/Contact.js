@@ -1,59 +1,67 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Contact extends Component {
-    state = {
-        contactOpen: false
-    }
+	state = {
+		contactOpen: true
+	};
 
-    contactHandler = () => {
-        this.setState({contactOpen: !this.state.contactOpen})
-    }
-    render() {
-        return (
-            <div  className="form-holder">
-                  <div onClick={() => {this.contactHandler()}} className="contact-us"> <h2> CONTACT </h2>
-            </div>
-                <div className={`contact contactAnimation ${this.state.contactOpen ? 'contactClicked' : ''}`}>
+	contactHandler = () => {
+		this.setState({ contactOpen: !this.state.contactOpen });
+	};
+	render() {
+		return (
+			<div className="form-holder">
+				<form
+					method="POST"
+					action="https://formspree.io/dylansher@gmail.com"
+				>
+					<div class="group">
+						<input id="title" type="text" name="name" required />
+						<span class="highlight" />
+						<span class="bar" />
+						<label>Title</label>
+					</div>
+					<div class="group">
+						<input id="email" type="text" name="email" required />
+						<span class="highlight" />
+						<span class="bar" />
+						<label>Email</label>
+					</div>
+					<div class="group">
+						<input
+							id="title"
+							type="subject"
+							name="subject"
+							required
+						/>
+						<span class="highlight" />
+						<span class="bar" />
+						<label>Subject</label>
+					</div>
 
-                <form method="POST" action="https://formspree.io/dylansher@gmail.com">
+					<div class="group">
+						<textarea
+							name="message"
+							id="content"
+							type="text"
+							rows="4"
+							cols="32"
+							placeholder="Message"
+							required
+						/>
+					</div>
 
-                    <div class="group">
-                 <input id="title" type="text" name="name" required />
-                    <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label>Title</label>
-                   </div>
-
-                <div class="group">
-              <input id="author" type="email" name="email" required />
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>Email</label>
-                </div>
-
-                <div class="group">
-              <input id="title" type="subject" name="subject" required />
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>Subject</label>
-                </div>
-
-                    <div class="group">
-                    <textarea  name="message" id="content" type="text" rows="4" cols="32" placeholder="Message" required></textarea>
-                    </div>
-
-                    <button type="submit" id="button1" class="hvr-bubble-float-top">Submit</button>
-                </form>
-                </div>
-
-                <div className="arrow">
-                    <img src="./svg/chat.svg" />
-
-                </div>
-
-            </div>
-        )
-    }
+					<button
+						type="submit"
+						id="button1"
+						class="hvr-bubble-float-top"
+					>
+						Submit
+					</button>
+				</form>
+			</div>
+		);
+	}
 }
 
 export default Contact;
