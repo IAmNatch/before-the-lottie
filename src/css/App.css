@@ -1189,10 +1189,6 @@ textarea#content {
 		font-size: 20px;
 		color: black;
 	}
-
-	h2 {
-		margin-bottom: 40px;
-	}
 }
 
 form.payPall-button {
@@ -1636,4 +1632,12 @@ p.donate-text {
 
 .lottie-instructions p {
 	font-weight: 300;
+}
+
+h2 {
+	margin-bottom: 40px;
+}
+.group-special.group {
+	margin-top: -20px;
+	margin-bottom: 70px;
 }

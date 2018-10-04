@@ -40,7 +40,7 @@ class Screenings extends Component {
 						<span class="bar" />
 						<label>Type of Organization</label>
 					</div>
-					<div class="group">
+					<div class="group-special group">
 						<span class="highlight" />
 						<span class="bar" />
 						<label class="radio-label">Event Type</label>
@@ -50,13 +50,13 @@ class Screenings extends Component {
 						</select>
 						{/* Radio Button */}
 					</div>
-					<div class="group">
+					<div class="group-special group">
 						<span class="highlight" />
 						<span class="bar" />
 						<label class="radio-label">
 							Preferred Media Delivery
 						</label>
-						<select name="media_delivery">
+						<select name="media_delivery group">
 							<option value="dcp">DCP</option>
 							<option value="digital">Digital Download</option>
 							<option value="bluray">Blu Ray</option>
@@ -68,7 +68,7 @@ class Screenings extends Component {
 						<span class="bar" />
 						<label>Number of Screenings</label>
 					</div>
-					<div class="group">
+					<div class="group group-special">
 						<span class="highlight" />
 						<span class="bar" />
 						<label class="radio-label">Request Q&A</label>
