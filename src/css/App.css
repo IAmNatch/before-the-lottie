@@ -1173,10 +1173,10 @@ textarea#content {
 
 @media screen and (max-width: 1400px) {
 	.form-holder {
-		width: 55%;
+		width: 100%;
 		position: relative;
-		left: 25%;
-		top: -100px;
+		left: 1%;
+		top: 0;
 	}
 
 	input {
@@ -1268,7 +1268,7 @@ div.donate-intro h3 {
 	}
 
 	.form-holder {
-		left: 35%;
+		left: 1%;
 		font-size: 1em;
 	}
 }
