@@ -35,10 +35,22 @@ class Screenings extends Component {
 						<label>Date</label>
 					</div>
 					<div class="group">
-						<input type="text" name="organization" />
+						<input type="text" name="org_name" />
 						<span class="highlight" />
 						<span class="bar" />
-						<label>Type of Organization</label>
+						<label>Name of Organization</label>
+					</div>
+					<div class="group-special group">
+						<span class="highlight" />
+						<span class="bar" />
+						<label class="radio-label">Type of Organization</label>
+						<select name="organization">
+							<option value="NFP">Not for Profit</option>
+							<option value="NGO">NGO</option>
+							<option value="EDU">Educational Institution</option>
+							<option value="Private">Private</option>
+						</select>
+						{/* Radio Button */}
 					</div>
 					<div class="group-special group">
 						<span class="highlight" />
@@ -57,7 +69,6 @@ class Screenings extends Component {
 							Preferred Media Delivery
 						</label>
 						<select name="media_delivery group">
-							<option value="dcp">DCP</option>
 							<option value="digital">Digital Download</option>
 							<option value="bluray">Blu Ray</option>
 						</select>

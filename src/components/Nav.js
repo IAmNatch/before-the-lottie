@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+var mobile = require("is-mobile");
 export const Nav = props => {
 	let nav;
 
@@ -12,14 +12,14 @@ export const Nav = props => {
 			{ link: "/about", title: "about" },
 			{ link: "/contact", title: "contact" },
 			{ link: "/donate", title: "donate" },
-			{ link: "/screenings", title: "screenings" }
+			{ link: "/screenings", title: "host a screening" }
 		];
 		const navListWithHome = [
 			{ link: "/", title: "home" },
 			{ link: "/about", title: "about" },
 			{ link: "/contact", title: "contact" },
 			{ link: "/donate", title: "donate" },
-			{ link: "/screenings", title: "screenings" }
+			{ link: "/screenings", title: "host a screening" }
 		];
 
 		nav = [];
@@ -67,6 +67,8 @@ export const Nav = props => {
 			});
 		}
 	}
-
+	if (mobile()) {
+		nav.unshift();
+	}
 	return <div className="nav animated fadeInLeft">{nav}</div>;
 };
