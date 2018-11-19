@@ -17,43 +17,49 @@ class Screenings extends Component {
 					method="POST"
 				>
 					<div class="group">
-						<input type="text" name="name" />
+						<input required type="text" name="first_name" />
 						<span class="highlight" />
 						<span class="bar" />
-						<label>Name</label>
+						<label>First Name</label>
 					</div>
 					<div class="group">
-						<input type="email" name="_replyto" />
+						<input required type="text" name="last_name" />
+						<span class="highlight" />
+						<span class="bar" />
+						<label>Last Name</label>
+					</div>
+					<div class="group">
+						<input required type="email" name="_replyto" />
 						<span class="highlight" />
 						<span class="bar" />
 						<label>Email Address</label>
 					</div>
 					<div class="group">
-						<input type="text" name="date" />
+						<input required type="text" name="date" />
 						<span class="highlight" />
 						<span class="bar" />
 						<label>Date</label>
 					</div>
 					<div class="group">
-						<input type="text" name="city" />
+						<input required type="text" name="city" />
 						<span class="highlight" />
 						<span class="bar" />
 						<label>City </label>
 					</div>
 					<div class="group">
-						<input type="text" name="province" />
+						<input required type="text" name="province" />
 						<span class="highlight" />
 						<span class="bar" />
 						<label>Province / State</label>
 					</div>
 					<div class="group">
-						<input type="text" name="country" />
+						<input required type="text" name="country" />
 						<span class="highlight" />
 						<span class="bar" />
 						<label>Country</label>
 					</div>
 					<div class="group">
-						<input type="text" name="org_name" />
+						<input required type="text" name="org_name" />
 						<span class="highlight" />
 						<span class="bar" />
 						<label>Name of Organization</label>
@@ -80,12 +86,12 @@ class Screenings extends Component {
 						{/* Radio Button */}
 					</div>
 					<div class="group">
-						<input type="text" name="screenings" />
+						<input required type="text" name="screenings" />
 						<span class="highlight" />
 						<span class="bar" />
 						<label>Number of Screenings</label>
 					</div>
-					<input type="submit" value="Send" />
+					<input required type="submit" value="Send" />
 				</form>
 			</div>
 		);

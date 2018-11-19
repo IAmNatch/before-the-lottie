@@ -17,13 +17,37 @@ class Contact extends Component {
 					action="https://formspree.io/dylansher@gmail.com"
 				>
 					<div class="group">
-						<input id="title" type="text" name="name" required />
+						<input
+							required
+							id="name"
+							type="text"
+							name="first_name"
+							required
+						/>
 						<span class="highlight" />
 						<span class="bar" />
-						<label>Title</label>
+						<label>First Name</label>
 					</div>
 					<div class="group">
-						<input id="email" type="text" name="email" required />
+						<input
+							required
+							id="last"
+							type="text"
+							name="last_name"
+							required
+						/>
+						<span class="highlight" />
+						<span class="bar" />
+						<label>Last Name</label>
+					</div>
+					<div class="group">
+						<input
+							required
+							id="email"
+							type="text"
+							name="email"
+							required
+						/>
 						<span class="highlight" />
 						<span class="bar" />
 						<label>Email</label>
