@@ -23,16 +23,34 @@ class Screenings extends Component {
 						<label>Name</label>
 					</div>
 					<div class="group">
-						<input type="text" name="location" />
+						<input type="email" name="_replyto" />
 						<span class="highlight" />
 						<span class="bar" />
-						<label>Location</label>
+						<label>Email Address</label>
 					</div>
 					<div class="group">
 						<input type="text" name="date" />
 						<span class="highlight" />
 						<span class="bar" />
 						<label>Date</label>
+					</div>
+					<div class="group">
+						<input type="text" name="city" />
+						<span class="highlight" />
+						<span class="bar" />
+						<label>City </label>
+					</div>
+					<div class="group">
+						<input type="text" name="province" />
+						<span class="highlight" />
+						<span class="bar" />
+						<label>Province / State</label>
+					</div>
+					<div class="group">
+						<input type="text" name="country" />
+						<span class="highlight" />
+						<span class="bar" />
+						<label>Country</label>
 					</div>
 					<div class="group">
 						<input type="text" name="org_name" />
@@ -46,9 +64,8 @@ class Screenings extends Component {
 						<label class="radio-label">Type of Organization</label>
 						<select name="organization">
 							<option value="NFP">Not for Profit</option>
-							<option value="NGO">NGO</option>
+							<option value="Corporate">Corporate</option>
 							<option value="EDU">Educational Institution</option>
-							<option value="Private">Private</option>
 						</select>
 						{/* Radio Button */}
 					</div>
@@ -57,44 +74,16 @@ class Screenings extends Component {
 						<span class="bar" />
 						<label class="radio-label">Event Type</label>
 						<select name="event_type">
-							<option value="paid">Paid</option>
+							<option value="ticketed">Ticketed</option>
 							<option value="free">Free</option>
 						</select>
 						{/* Radio Button */}
-					</div>
-					<div class="group-special group">
-						<span class="highlight" />
-						<span class="bar" />
-						<label class="radio-label">
-							Preferred Media Delivery
-						</label>
-						<select name="media_delivery group">
-							<option value="digital">Digital Download</option>
-							<option value="bluray">Blu Ray</option>
-						</select>
 					</div>
 					<div class="group">
 						<input type="text" name="screenings" />
 						<span class="highlight" />
 						<span class="bar" />
 						<label>Number of Screenings</label>
-					</div>
-					<div class="group group-special">
-						<span class="highlight" />
-						<span class="bar" />
-						<label class="radio-label">Request Q&A</label>
-						<select name="qanda">
-							<option value="producer">Producer</option>
-							<option value="director">Director</option>
-							<option value="both">Both</option>
-							<option value="none">None</option>
-						</select>
-					</div>
-					<div class="group">
-						<input type="email" name="_replyto" />
-						<span class="highlight" />
-						<span class="bar" />
-						<label>Email Address</label>
 					</div>
 					<input type="submit" value="Send" />
 				</form>
