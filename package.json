@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "eslint-config-airbnb": "^16.1.0",
     "is-mobile": "^2.0.0",
     "lottie-web": "^5.0.4",
@@ -26,6 +27,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "eslint-plugin-react": "^7.11.1",
     "standard": "^10.0.3"
   }
 }

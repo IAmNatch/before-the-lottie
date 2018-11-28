@@ -8,6 +8,7 @@ import { Main, Donate } from "./views/";
 import About from "./views/About";
 import Contact from "./views/Contact";
 import Screenings from "./views/Screenings";
+import Events from "./views/Events";
 // React Router
 import { Route } from "react-router-dom";
 
@@ -86,6 +87,7 @@ class App extends Component {
 				<Route path="/contact" component={Contact} />
 				<Route path="/donate" component={Donate} />
 				<Route path="/screenings" component={Screenings} />
+				<Route path="/events" component={Events} />
 			</div>
 		);
 	}

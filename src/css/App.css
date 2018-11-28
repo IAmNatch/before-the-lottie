@@ -1643,3 +1643,52 @@ h2 {
 	margin-top: -20px;
 	margin-bottom: 70px;
 }
+
+/* LIST */
+
+.list-holder {
+	/* position: relative;
+	left: 50%;
+	top: -100px;
+	transform: translateX(-50%); */
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+	.list-holder {
+		left: 50%;
+		top: 20px;
+	}
+}
+
+.list {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.list .bold {
+	font-weight: bold;
+}
+.list .item {
+	background: #d2d2d2;
+	color: black;
+	padding: 1em;
+	margin: 1em;
+	width: 100%;
+}
+
+.list .item a {
+	color: black;
+}
+
+@media screen and (max-width: 600px) {
+	.list {
+		width: 100%;
+	}
+}

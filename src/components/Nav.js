@@ -12,14 +12,16 @@ export const Nav = props => {
 			{ link: "/about", title: "about" },
 			{ link: "/contact", title: "contact" },
 			{ link: "/donate", title: "donate" },
-			{ link: "/screenings", title: "host a screening" }
+			{ link: "/screenings", title: "host a screening" },
+			{ link: "/events", title: "events" }
 		];
 		const navListWithHome = [
 			{ link: "/", title: "home" },
 			{ link: "/about", title: "about" },
 			{ link: "/contact", title: "contact" },
 			{ link: "/donate", title: "donate" },
-			{ link: "/screenings", title: "host a screening" }
+			{ link: "/screenings", title: "host a screening" },
+			{ link: "/events", title: "events" }
 		];
 
 		nav = [];
