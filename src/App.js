@@ -57,15 +57,6 @@ class App extends Component {
 					/>
 				</div>
 
-				{this.state.page === "home" ? (
-					<div className="info animated fadeInRight">
-						<h3>Film Coming</h3>
-						<h4>Summer 2018</h4>
-					</div>
-				) : (
-					""
-				)}
-
 				<Route
 					path={"/"}
 					exact
