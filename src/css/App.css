@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+
+/* Global Theme */
 body {
 	background-color: #f4f4f4;
 }
+
+h1 {
+}
+
 .App {
 	overflow: hidden;
 	background-color: #f4f4f4;
@@ -29,6 +35,8 @@ body {
 	height: 35px;
 	display: inline-block;
 	margin-top: 10px;
+	position: relative;
+	z-index: 100;
 }
 
 .nav ul {
@@ -1691,4 +1699,141 @@ h2 {
 	.list {
 		width: 100%;
 	}
+}
+
+/* NEW CSS - POST LANDING - FOR EVENTUAL CSS UPDATE */
+/* UTILS */
+.center-flex-column {
+	display: flex;
+	justify-content: center;
+}
+
+/* EMBEDLY */
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.embed-container.super-wide {
+	padding-bottom: 50%;
+}
+
+/* Vimeo (Wrap embeddly) */
+.vimeo-block {
+	width: 100%;
+}
+
+/* Social */
+.social-icons {
+	width: 100%;
+	display: flex;
+}
+.social-icons img {
+	padding: 1em;
+	display: inline;
+}
+
+.social-tag {
+	display: inline-block;
+	margin: 0em 0.5em;
+	color: #2196f3;
+}
+
+.social-tag:hover {
+	color: black;
+}
+.social-tag.large {
+	font-size: 2em;
+	margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 992px) {
+	.social-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.social-icons {
+		margin-left: 0;
+		justify-content: center;
+		/* Because of icon padding. */
+		margin-left: -2em;
+	}
+}
+/* THEME */
+h1,
+h2 {
+	font-family: Roboto;
+}
+p,
+h3 {
+	font-family: Lato;
+}
+h1 {
+	font-size: 4em;
+	font-weight: black;
+	text-align: center;
+}
+h2 {
+}
+.content-root {
+	display: flex;
+}
+h3 {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+/* Landing */
+.content-root.landing {
+	flex-direction: column;
+	/* Both */
+	align-items: center;
+
+	margin-top: -13em;
+	max-width: 60vw;
+}
+/* Tablet Sizing */
+@media only screen and (max-width: 992px) {
+	.content-root.landing {
+		margin-top: -5em;
+		max-width: 70vw;
+		margin-bottom: 1em;
+	}
+}
+/* Phone */
+@media only screen and (max-width: 772px) {
+	.content-root.landing {
+		margin-top: 0em;
+		max-width: 90vw;
+	}
+}
+
+.content-root.landing > h3 {
+	align-self: flex-start;
+}
+
+@media only screen and (max-width: 772px) {
+	.content-root.landing > h3 {
+		align-items: center;
+	}
+}
+
+h2.site-subtitle {
+	font-size: 2.5em;
+	font-weight: 300;
+	margin-bottom: 0.5em;
 }

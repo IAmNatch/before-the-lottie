@@ -8,6 +8,7 @@ import { Main, Donate } from "./views/";
 import About from "./views/About";
 import Contact from "./views/Contact";
 import Screenings from "./views/Screenings";
+import Landing from "./views/Landing";
 import Events from "./views/Events";
 // React Router
 import { Route } from "react-router-dom";
@@ -25,13 +26,21 @@ class App extends Component {
 	};
 
 	componentWillMount() {
-		if (mobile()) {
-			this.props.push("about");
-		}
+		// Used to aid in naviagtion by knowing current url. Idono why I did it like this.
+		// I was dumb, and I hope I'm less dumb now, but probably not that much.
 		const location = window.location.pathname.replace(
 			/^\/([^\/]*).*$/,
 			"$1"
 		);
+		// Home doensn't show to mobile.
+		if (mobile() && location == "") {
+			// This one alerts handlers (dumb)
+			this.pageHandler("about");
+			// This one changes page (smart, this should trigger everything.)
+			return this.props.push("about");
+		}
+
+		// Default Route
 		if (location === "") {
 			this.pageHandler("home");
 		} else {
@@ -63,6 +72,7 @@ class App extends Component {
 					component={() => {
 						return (
 							<Main
+								// WHAT IS A VIEW MIRROR? COME ON SHANE! - Shane
 								viewMirror={this.viewMirror}
 								navButtonsDisabled={
 									this.state.navButtonsDisabled
@@ -79,6 +89,7 @@ class App extends Component {
 				<Route path="/donate" component={Donate} />
 				<Route path="/screenings" component={Screenings} />
 				<Route path="/events" component={Events} />
+				<Route path="/landing" component={Landing} />
 			</div>
 		);
 	}

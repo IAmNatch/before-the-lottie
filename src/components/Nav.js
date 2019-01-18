@@ -4,6 +4,7 @@ var mobile = require("is-mobile");
 export const Nav = props => {
 	let nav;
 
+	// Check if nav should be hidden for animation.
 	if (props.view === "stop" || props.view === "map") {
 		nav = "";
 	} else {
@@ -13,7 +14,8 @@ export const Nav = props => {
 			{ link: "/contact", title: "contact" },
 			{ link: "/donate", title: "donate" },
 			{ link: "/screenings", title: "host a screening" },
-			{ link: "/events", title: "events" }
+			{ link: "/events", title: "events" },
+			{ link: "/landing", title: "watch live" }
 		];
 		const navListWithHome = [
 			{ link: "/", title: "home" },
@@ -21,7 +23,8 @@ export const Nav = props => {
 			{ link: "/contact", title: "contact" },
 			{ link: "/donate", title: "donate" },
 			{ link: "/screenings", title: "host a screening" },
-			{ link: "/events", title: "events" }
+			{ link: "/events", title: "events" },
+			{ link: "/landing", title: "watch live" }
 		];
 
 		nav = [];
