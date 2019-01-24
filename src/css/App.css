@@ -1737,8 +1737,14 @@ h2 {
 }
 
 /* Social */
+.social-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .social-icons {
-	width: 100%;
 	display: flex;
 }
 .social-icons img {
@@ -1769,8 +1775,6 @@ h2 {
 	.social-icons {
 		margin-left: 0;
 		justify-content: center;
-		/* Because of icon padding. */
-		margin-left: -2em;
 	}
 }
 /* THEME */

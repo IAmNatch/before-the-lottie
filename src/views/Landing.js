@@ -32,24 +32,20 @@ class Events extends Component {
 							/>
 						</div>
 					</div>
-					<h3>Streaming free for one week only</h3>
+					<h3>Streaming free for the month of February only!</h3>
 					<p>
-						Follow Chef John Horne of the prestigious Toronto
-						resteraunt, Canoe on his journey from ingredients bck to
-						the farms that produce them. Discover the stories and
-						the people where our food comes from and how it gets to
-						our plate.
+						The questions, the stories and the people behind where our food comes from and how it gets to our plate. Featuring John Horne, Executive Chef of the renowned Canoe resteraunt in downtown Toronto.
 					</p>
 					<div class="social-wrapper">
 						<div class="social-icons large">
-							<a href="https://twitter.com/beforetheplate">
+							<a href="https://www.facebook.com/beforetheplate">
 								<img
 									height="32"
 									width="32"
 									src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/facebook.svg"
 								/>
 							</a>
-							<a href="https://www.facebook.com/beforetheplate/">
+							<a href="https://twitter.com/beforetheplate">
 								<img
 									height="32"
 									width="32"
@@ -65,7 +61,7 @@ class Events extends Component {
 							</a>
 						</div>
 						<a href="http://instagram.com/beforetheplate/">
-							<p class="social-tag large">{"@BeforeThePlate"}</p>
+							<p class="social-tag large">{"@beforetheplate"}</p>
 						</a>
 					</div>
 				</div>
