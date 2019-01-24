@@ -12,7 +12,7 @@ import Landing from "./views/Landing";
 import Events from "./views/Events";
 // React Router
 import { Route } from "react-router-dom";
-
+// pls ignore
 var mobile = require("is-mobile");
 
 class App extends Component {
