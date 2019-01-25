@@ -10,6 +10,7 @@
     "react": "^16.2.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.2.0",
+    "react-ga": "^2.5.6",
     "react-html5video": "^2.5.1",
     "react-load-image": "^0.1.6",
     "react-lottie": "^0.2.4",

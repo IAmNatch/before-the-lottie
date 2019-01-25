@@ -12,6 +12,7 @@ import Landing from "./views/Landing";
 import Events from "./views/Events";
 // React Router
 import { Route } from "react-router-dom";
+import ReactGA from "react-ga";
 // pls ignore
 var mobile = require("is-mobile");
 
