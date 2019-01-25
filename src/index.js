@@ -11,12 +11,12 @@ import ReactGA from "react-ga";
 ReactGA.initialize("UA-133295797-1");
 const history = createHistory();
 
-ReactGA.set({ page: window.location.pathname });
-ReactGA.pageview(window.location.pathname);
+ReactGA.set({ page: window.location.pathname + window.location.search });
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 history.listen(location => {
-	ReactGA.set({ page: location.pathname });
-	ReactGA.pageview(location.pathname);
+	ReactGA.set({ page: location.pathname + location.search });
+	ReactGA.pageview(location.pathname + location.search);
 });
 
 // Location aware app...
