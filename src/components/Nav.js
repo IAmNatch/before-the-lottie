@@ -12,7 +12,7 @@ export const Nav = props => {
 			{ link: "/", title: "home" },
 			{ link: "/about", title: "about" },
 			{ link: "/contact", title: "contact" },
-			{ link: "/donate", title: "donate" },
+			// { link: "/donate", title: "donate" },
 			{ link: "/screenings", title: "host a screening" },
 			{ link: "/events", title: "events" },
 			{ link: "/landing", title: "watch now" }
@@ -21,7 +21,7 @@ export const Nav = props => {
 			{ link: "/", title: "home" },
 			{ link: "/about", title: "about" },
 			{ link: "/contact", title: "contact" },
-			{ link: "/donate", title: "donate" },
+			// { link: "/donate", title: "donate" },
 			{ link: "/screenings", title: "host a screening" },
 			{ link: "/events", title: "events" },
 			{ link: "/landing", title: "watch now" }

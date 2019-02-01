@@ -4,17 +4,10 @@ import axios from "axios";
 class Events extends Component {
 	state = {
 		keys: [],
-		data: []
+		data: [],
+		videoClicked: false
 	};
-	componentWillMount() {
-		const url =
-			"https://sheets.googleapis.com/v4/spreadsheets/1dZoIs6ZKhOFnsHIoXUZIXBY55d83XHOvr27NIhjAoZg/values:batchGet?dateTimeRenderOption=FORMATTED_STRING&majorDimension=ROWS&ranges=Sheet1&valueRenderOption=FORMATTED_VALUE&key=AIzaSyCjThkuw2dWglOqQx4MWWyhKCK5uJmfbc0";
-		axios.get(url).then((res, err) => {
-			console.log(res.data.valueRanges[0].values);
-			let data = res.data.valueRanges[0].values;
-			this.setState({ keys: data[0], data: data.slice(1) });
-		});
-	}
+	componentDidMount() {}
 	render() {
 		return (
 			<div class="center-flex-column">
@@ -24,7 +17,8 @@ class Events extends Component {
 					<div class="vimeo-block">
 						<div class="embed-container super-wide">
 							<iframe
-								src="https://player.vimeo.com/video/252743641"
+								id="vimeo-frame"
+								src="https://vimeo.com/310837849/6343d948ea"
 								frameborder="0"
 								webkitAllowFullScreen
 								mozallowfullscreen
@@ -34,7 +28,10 @@ class Events extends Component {
 					</div>
 					<h3>Streaming free for the month of February only!</h3>
 					<p>
-						The questions, the stories and the people behind where our food comes from and how it gets to our plate. Featuring John Horne, Executive Chef of the renowned Canoe resteraunt in downtown Toronto.
+						The questions, the stories and the people behind where
+						our food comes from and how it gets to our plate.
+						Featuring John Horne, Executive Chef of the renowned
+						Canoe restaurant in downtown Toronto.
 					</p>
 					<div class="social-wrapper">
 						<div class="social-icons large">
