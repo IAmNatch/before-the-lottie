@@ -57,9 +57,18 @@ class Events extends Component {
 								/>
 							</a>
 						</div>
-						<a href="http://instagram.com/beforetheplate/">
-							<p class="social-tag large">{"@beforetheplate"}</p>
-						</a>
+						<div>
+							<p class="social-tag large">
+								{"Follow the creators' continuing journeys at "}
+								<a href="http://instagram.com/beforetheplate/">
+									{"@beforetheplate"}
+								</a>
+								{" & "}
+								<a href="http://instagram.com/sagikr/">
+									{"@sagikr"}
+								</a>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -1738,10 +1738,10 @@ h2 {
 
 /* Social */
 .social-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .social-icons {
@@ -1756,14 +1756,20 @@ h2 {
 	display: inline-block;
 	margin: 0em 0.5em;
 	color: #2196f3;
+	text-align: center;
 }
 
-.social-tag:hover {
-	color: black;
-}
 .social-tag.large {
-	font-size: 2em;
+	font-size: 1.5em;
 	margin-bottom: 2em;
+}
+
+.social-tag a {
+	color: #2196f3;
+	text-decoration: none;
+}
+.social-tag a:hover {
+	color: black;
 }
 
 @media only screen and (max-width: 992px) {
