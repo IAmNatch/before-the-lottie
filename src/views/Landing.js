@@ -18,7 +18,7 @@ class Events extends Component {
 						<div class="embed-container super-wide">
 							<iframe
 								id="vimeo-frame"
-								src="https://player.vimeo.com/video/310837849"
+								src="https://player.vimeo.com/video/314529765"
 								frameborder="0"
 								webkitAllowFullScreen
 								mozallowfullscreen
