@@ -1754,14 +1754,21 @@ h2 {
 
 .social-tag {
 	display: inline-block;
-	margin: 0em 0.5em;
 	color: #2196f3;
-	text-align: center;
+    text-align: center;
+    margin: 0;
+}
+
+.social-tag.spacer {
+	margin-bottom: 2em;
 }
 
 .social-tag.large {
-	font-size: 1.5em;
-	margin-bottom: 2em;
+    font-size: 1.5em;
+}
+
+.social-tag.hover:hover {
+    color: black;
 }
 
 .social-tag a {

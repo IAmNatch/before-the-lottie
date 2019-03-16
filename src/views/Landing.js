@@ -26,6 +26,11 @@ class Events extends Component {
                             />
                         </div>
                     </div>
+                    <a href="https://vimeo.com/store/ondemand/popup/2101635?referrer=http%3A%2F%2Flocalhost%3A3001%2Flanding&ssl=1">
+                        <p class="social-tag large hover">
+                            Rent the full documentary here!
+                        </p>
+                    </a>
                     <p>
                         Before the Plate follows John Horne, one of Canada’s
                         most renowned chefs, on an epic journey as he follows
@@ -43,6 +48,16 @@ class Events extends Component {
                         Canadian food story.
                     </p>
                     <div class="social-wrapper">
+                        <p class="social-tag large spacer">
+                            {"Follow the creators' continuing journeys at "}
+                            <a href="http://instagram.com/beforetheplate/">
+                                {"@beforetheplate"}
+                            </a>
+                            {" & "}
+                            <a href="http://instagram.com/sagikr/">
+                                {"@sagikr"}
+                            </a>
+                        </p>
                         <div class="social-icons large">
                             <a href="https://www.facebook.com/beforetheplate">
                                 <img
@@ -66,18 +81,7 @@ class Events extends Component {
                                 />
                             </a>
                         </div>
-                        <div>
-                            <p class="social-tag large">
-                                {"Follow the creators' continuing journeys at "}
-                                <a href="http://instagram.com/beforetheplate/">
-                                    {"@beforetheplate"}
-                                </a>
-                                {" & "}
-                                <a href="http://instagram.com/sagikr/">
-                                    {"@sagikr"}
-                                </a>
-                            </p>
-                        </div>
+                        <div />
                     </div>
                 </div>
             </div>
