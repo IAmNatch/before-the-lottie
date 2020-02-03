@@ -3,101 +3,106 @@
 
 /* Global Theme */
 body {
-	background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
 
 h1 {
 }
 
 .App {
-	overflow: hidden;
-	background-color: #f4f4f4;
-	font-family: lato;
-	display: grid;
-	width: 100%;
-	grid-template-rows: 20vh 60vh 20vh;
-	grid-template-columns: 1fr 3fr 1fr;
-	grid-template-areas:
-		"nav lottieNav info"
-		"lottie lottie lottie"
-		"footer footer footer";
+  overflow: hidden;
+  background-color: #f4f4f4;
+  font-family: lato;
+  display: grid;
+  width: 100%;
+  grid-template-rows: 20vh 55vh 25vh;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas:
+    "nav lottieNav info"
+    "lottie lottie lottie"
+    "footer footer footer";
+}
+@media only screen and (min-width: 1000px) {
+  .App {
+    grid-template-rows: 20vh 50vh 30vh;
+  }
 }
 
 .notHome {
-	display: block;
-	/* overflow: auto; */
+  display: block;
+  /* overflow: auto; */
 }
 
 /* Nav */
 
 .nav {
-	grid-area: nav;
-	height: 35px;
-	display: inline-block;
-	margin-top: 10px;
-	position: relative;
-	z-index: 100;
+  grid-area: nav;
+  height: 35px;
+  display: inline-block;
+  margin-top: 10px;
+  position: relative;
+  z-index: 100;
 }
 
 .nav ul {
-	list-style: none;
-	margin: 0;
-	padding-left: 1vw;
+  list-style: none;
+  margin: 0;
+  padding-left: 1vw;
 }
 
 .nav-item {
-	text-decoration: none;
-	font-size: 1.7rem;
-	display: block;
-	margin: 10px 4px;
+  text-decoration: none;
+  font-size: 1.7rem;
+  display: block;
+  margin: 10px 4px;
 }
 
 .nav-item-link:hover {
-	background-position: 200%;
-	color: #333;
-	text-decoration: line-through;
-	border-right: none;
-	background-color: #f4f4f4;
+  background-position: 200%;
+  color: #333;
+  text-decoration: line-through;
+  border-right: none;
+  background-color: #f4f4f4;
 }
 
 .nav-item-active {
-	color: #333;
-	text-decoration: line-through;
-	border-right: none;
-	background-color: #f4f4f4;
+  color: #333;
+  text-decoration: line-through;
+  border-right: none;
+  background-color: #f4f4f4;
 }
 
 .nav-item-link {
-	color: white;
-	background-color: black;
-	/* padding: 3px; */
-	display: inline;
-	font-family: "Roboto";
-	font-weight: 300;
-	letter-spacing: 1px;
-	padding-left: 7px;
-	padding-right: 7px;
-	color: #f4f4f4;
-	background-image: linear-gradient(
-		to right,
-		#f4f4f4 50%,
-		#f4f4f4,
-		transparent,
-		transparent 50%
-	);
-	background-position: 100% 0;
-	background-size: 200% 100%;
-	transition: all 1s ease;
-	border-right: none;
+  color: white;
+  background-color: black;
+  /* padding: 3px; */
+  display: inline;
+  font-family: "Roboto";
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-left: 7px;
+  padding-right: 7px;
+  color: #f4f4f4;
+  background-image: linear-gradient(
+    to right,
+    #f4f4f4 50%,
+    #f4f4f4,
+    transparent,
+    transparent 50%
+  );
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 1s ease;
+  border-right: none;
 }
 
 @media screen and (max-width: 700px) {
-	.nav-item {
-		font-size: 16px;
-	}
+  .nav-item {
+    font-size: 16px;
+  }
 }
 .nav-item::before {
-	content: "";
+  content: "";
 }
 
 /* .nav-item-wrap {
@@ -125,345 +130,382 @@ h1 {
 /* Lottie Nav */
 
 .lottieNav {
-	grid-area: lottieNav;
+  grid-area: lottieNav;
 }
 
 .lottieNav path {
-	transition: 1s cubic-bezier(0.74, 0.38, 0.4, 0.93);
+  transition: 1s cubic-bezier(0.74, 0.38, 0.4, 0.93);
 }
 
 .lottieNav div {
-	padding-left: 1vw;
-	padding-right: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 .lottieNav div div svg {
-	height: 7vw;
+  height: 7vw;
 }
 @media screen and (max-width: 1000px) {
-	.lottieNav div div svg {
-		height: 9vw;
-	}
+  .lottieNav div div svg {
+    height: 9vw;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-	.lottieNav,
-	.lottie-instructions,
-	.lottie {
-		display: none !important;
-	}
+  .lottieNav,
+  .lottie-instructions,
+  .lottie {
+    display: none !important;
+  }
 }
 @media only screen and (min-width: 500px) {
-	.mobile-warning {
-		display: none;
-	}
+  .mobile-warning {
+    display: none;
+  }
 }
 
 .mobile-warning {
-	grid-area: lottie;
-	margin: 0 9vw;
-	text-align: center;
+  grid-area: lottie;
+  margin: 0 9vw;
+  text-align: center;
 }
 
 /* Lottie */
 .lottie {
-	grid-area: lottie;
-	width: 100vw;
+  grid-area: lottie;
+  width: 100vw;
 }
 
 .lottie-instructions {
-	position: absolute;
-	right: 14%;
-	top: 19%;
-	width: 180px;
-	color: white;
+  position: absolute;
+  right: 14%;
+  top: 19%;
+  width: 180px;
+  color: white;
 }
 
 @media screen and (max-width: 1250px) {
-	.lottie-instructions {
-		position: absolute;
-		right: 10%;
-		top: 20%;
-		width: 180px;
-		color: white;
-	}
+  .lottie-instructions {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    width: 180px;
+    color: white;
+  }
 }
 
 @media screen and (max-width: 900px) {
-	.lottie-instructions {
-		position: absolute;
-		right: 3%;
-		top: 22%;
-		width: 180px;
-		color: white;
-	}
-	.lottie-instructions p {
-		font-size: 0.7em;
-	}
+  .lottie-instructions {
+    position: absolute;
+    right: 3%;
+    top: 22%;
+    width: 180px;
+    color: white;
+  }
+  .lottie-instructions p {
+    font-size: 0.7em;
+  }
 }
 @media screen and (max-width: 600px) {
-	.lottie-instructions {
-		position: absolute;
-		right: -4%;
-		top: 22%;
-		width: 180px;
-		color: white;
-	}
-	.lottie-instructions p {
-		font-size: 0.7em;
-	}
+  .lottie-instructions {
+    position: absolute;
+    right: -4%;
+    top: 22%;
+    width: 180px;
+    color: white;
+  }
+  .lottie-instructions p {
+    font-size: 0.7em;
+  }
 }
 @media screen and (max-width: 500px) {
-	.lottie-instructions {
-		position: absolute;
-		right: -13%;
-		top: 22%;
-		width: 180px;
-		color: white;
-	}
-	.lottie-instructions p {
-		font-size: 0.4em;
-	}
+  .lottie-instructions {
+    position: absolute;
+    right: -13%;
+    top: 22%;
+    width: 180px;
+    color: white;
+  }
+  .lottie-instructions p {
+    font-size: 0.4em;
+  }
 }
 
 .lottie-instructions p {
-	background-color: black;
-	display: inline-block;
-	margin: 3px;
+  background-color: black;
+  display: inline-block;
+  margin: 3px;
 
-	padding: 5px;
-	font-family: "Roboto Mono";
-	font-weight: 100;
-	letter-spacing: 1px;
+  padding: 5px;
+  font-family: "Roboto Mono";
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 .lottie-instructions img {
-	left: -25%;
-	position: relative;
-	top: 25px;
-	width: 4vw;
+  left: -25%;
+  position: relative;
+  top: 25px;
+  width: 4vw;
 }
 @media screen and (max-width: 1500px) {
-	.lottie-instructions img {
-		left: -20%;
-		position: relative;
-		top: 25px;
-		width: 4vw;
-	}
+  .lottie-instructions img {
+    left: -20%;
+    position: relative;
+    top: 25px;
+    width: 4vw;
+  }
 }
 
 @media screen and (max-width: 1250px) {
-	.lottie-instructions img {
-		left: -17%;
-		position: relative;
-		top: 20px;
-		width: 4vw;
-	}
+  .lottie-instructions img {
+    left: -17%;
+    position: relative;
+    top: 20px;
+    width: 4vw;
+  }
 }
 @media screen and (max-width: 1000px) {
-	.lottie-instructions img {
-		left: -13%;
-		position: relative;
-		top: 15px;
-		width: 4vw;
-	}
+  .lottie-instructions img {
+    left: -13%;
+    position: relative;
+    top: 15px;
+    width: 4vw;
+  }
 }
 
 @media screen and (max-width: 800px) {
-	.lottie-instructions img {
-		left: -12%;
-		position: relative;
-		top: 10px;
-		width: 4vw;
-	}
+  .lottie-instructions img {
+    left: -12%;
+    position: relative;
+    top: 10px;
+    width: 4vw;
+  }
 }
 @media screen and (max-width: 600px) {
-	.lottie-instructions img {
-		left: -9%;
-		position: relative;
-		top: 10px;
-		width: 4vw;
-	}
+  .lottie-instructions img {
+    left: -9%;
+    position: relative;
+    top: 10px;
+    width: 4vw;
+  }
 }
 @media screen and (max-width: 500px) {
-	.lottie-instructions img {
-		left: -7%;
-		position: relative;
-		top: 10px;
-		width: 4vw;
-	}
+  .lottie-instructions img {
+    left: -7%;
+    position: relative;
+    top: 10px;
+    width: 4vw;
+  }
 }
 
 .test {
-	animation: MoveUpDown 1.3s linear infinite;
-	position: relative;
-	left: 0;
-	bottom: 0;
+  animation: MoveUpDown 1.3s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0;
 }
 
 @keyframes MoveUpDown {
-	0% {
-		bottom: 0;
-	}
-	50% {
-		bottom: 6px;
-	}
-	100% {
-		bottom: 0;
-	}
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 6px;
+  }
+  100% {
+    bottom: 0;
+  }
 }
 
 /* Info */
 .info {
-	grid-area: info;
-	text-align: right;
-	font-family: "Roboto";
-	text-transform: uppercase;
+  grid-area: info;
+  text-align: right;
+  font-family: "Roboto";
+  text-transform: uppercase;
 }
 
 .info h3,
 .info h4 {
-	margin: 0 1vw 0 0;
-	padding: 0;
+  margin: 0 1vw 0 0;
+  padding: 0;
 }
 .info h3 {
-	margin-top: 10px;
-	font-weight: 300;
-	font-size: 2.4vw;
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 2.4vw;
 }
 .info h4 {
-	font-weight: 100;
-	font-size: 2.3vw;
+  font-weight: 100;
+  font-size: 2.3vw;
 }
 
 @media screen and (max-width: 1000px) {
-	.info h3 {
-		font-size: 4vw;
-	}
-	.info h4 {
-		font-size: 3.7vw;
-	}
+  .info h3 {
+    font-size: 4vw;
+  }
+  .info h4 {
+    font-size: 3.7vw;
+  }
 }
 
 div.sliderVis {
-	transform: translateX(0%);
-	height: 1140px;
+  transform: translateX(0%);
+  height: 1140px;
 }
 
 div.sliderInvis {
-	transform: translateX(100%);
-	height: 100%;
+  transform: translateX(100%);
+  height: 100%;
 }
 
 .wrapperHigh {
-	z-index: 10;
+  z-index: 10;
 }
 
 .wrapperLow {
-	transition-delay: 1.5s;
-	z-index: -10;
-	height: 100%;
+  transition-delay: 1.5s;
+  z-index: -10;
+  height: 100%;
 }
 
 /* Footer */
 .footer {
-	grid-area: footer;
+  grid-area: footer;
 
-	display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: 1fr 1fr;
-	position: relative;
-	z-index: 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  z-index: 0;
 }
 
 .title {
-	font-family: "Roboto", sans-serif;
-	float: right;
-	grid-column: 1;
-	text-align: center;
+  font-family: "Roboto", sans-serif;
+  float: right;
+  grid-column: 1;
+  text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
-	.footer .title h2 {
-		margin-bottom: 10px;
-	}
+  .footer .title h2 {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 500px) {
-	.footer .title h2 {
-		margin-bottom: 15px;
-	}
+  .footer .title h2 {
+    margin-bottom: 15px;
+  }
 }
 .title h1 {
-	font-weight: 900;
-	font-size: 6vw;
-	vertical-align: bottom;
-	position: relative;
-	top: 45%;
-	transform: translateY(-45%);
+  font-weight: 900;
+  font-size: 6vw;
+  vertical-align: bottom;
+  position: relative;
+  top: 43%;
+  transform: translateY(-45%);
 }
 .title h2 {
-	font-weight: 100;
-	font-size: 3vw;
-	padding: 0;
-	margin: 0;
-	position: relative;
-	top: 20%;
-	transform: translateY(-20%);
+  font-weight: 100;
+  font-size: 3vw;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 20%;
+  transform: translateY(-20%);
 }
 
 .byline {
-	font-family: "Roboto Mono", monospace;
-	float: right;
-	grid-column: 2;
-	text-align: left;
-	font-weight: 300;
-	font-size: 1.7vw;
-	padding-bottom: 4px;
+  font-family: "Roboto Mono", monospace;
+  float: right;
+  grid-column: 2;
+  text-align: left;
+  font-weight: 300;
+  font-size: 1.7vw;
+  padding-bottom: 4px;
 }
 .byline p {
-	position: relative;
-	top: 45%;
-	transform: translateY(-45%);
-	width: 85%;
-	padding-bottom: 4px;
+  position: relative;
+  top: 45%;
+  transform: translateY(-45%);
+  width: 85%;
+  padding-bottom: 4px;
 }
+
+.release {
+  background-color: rgb(220, 220, 220);
+  grid-column: 1/3;
+  padding: 9px;
+  box-shadow: -1px -3px 4px 0px #00000033;
+}
+
+.release p {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: Roboto;
+}
+
+.release .logos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.release .logos .logo {
+  background-color: #c3c3c3;
+  padding: 10px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.release .logos .logo img {
+  /* width: 35px; */
+  height: 20px;
+}
+
 /* stop page css  */
 
 .stopNavTop img {
-	width: 100px;
+  width: 100px;
 }
 nav.bottomNav {
-	margin: auto;
-	max-width: 22%;
-	margin-bottom: 30px;
+  margin: auto;
+  max-width: 22%;
+  margin-bottom: 30px;
 }
 nav.bottomNav p {
-	color: white;
-	background-color: black;
-	font-family: "Roboto";
-	font-weight: 300;
-	text-transform: uppercase;
-	font-size: 30px;
-	letter-spacing: 1px;
-	padding: 2px;
-	margin: auto;
-	text-align: center;
-	width: 100%;
+  color: white;
+  background-color: black;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding: 2px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
 }
 
 .stopNavTop p {
-	vertical-align: top;
-	display: inline-block;
-	padding-top: 7%;
-	margin: 0;
-	text-transform: uppercase;
-	font-family: Roboto, monospace;
-	font-weight: 300;
-	letter-spacing: 2px;
+  vertical-align: top;
+  display: inline-block;
+  padding-top: 7%;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: Roboto, monospace;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 @media screen and (max-width: 500px) {
-	.stopNavTop p {
-		padding-top: 5%;
-	}
+  .stopNavTop p {
+    padding-top: 5%;
+  }
 }
 
 /* @media screen and (max-width: 1100px) {
@@ -476,24 +518,24 @@ nav.bottomNav p {
             } */
 
 .stopNavTop {
-	width: 30%;
-	display: inline-block;
-	cursor: pointer;
-	padding-left: 2%;
+  width: 30%;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 2%;
 }
 
 .stopNavTop,
 .navLeft {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 .stopNavTop img {
-	width: 20%;
+  width: 20%;
 }
 
 @media screen and (max-width: 1000px) {
-	.stopNavTop img {
-		width: 30%;
-	}
+  .stopNavTop img {
+    width: 30%;
+  }
 }
 
 /* @media screen and (max-width: 1000px) {
@@ -504,139 +546,139 @@ nav.bottomNav p {
     } */
 
 .radio-label {
-	position: static;
-	display: block;
-	color: black;
-	font-size: 20px;
-	font-weight: 100;
+  position: static;
+  display: block;
+  color: black;
+  font-size: 20px;
+  font-weight: 100;
 }
 
 select {
-	font-size: 2em;
-	width: 100%;
+  font-size: 2em;
+  width: 100%;
 }
 
 .navLeft {
-	padding-right: 2%;
+  padding-right: 2%;
 }
 .navLeft,
 .navLeft p,
 .navLeft img {
-	float: right;
+  float: right;
 }
 
 div.straightLine {
-	border-right: solid thin black;
-	height: 50px;
-	width: 20%;
-	display: inline-block;
-	vertical-align: top;
+  border-right: solid thin black;
+  height: 50px;
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .image img {
-	width: 100vw;
+  width: 100vw;
 }
 .tracker {
-	text-align: center;
-	margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .tracker h4 {
-	margin: 0;
-	font-family: "Roboto Mono", monospace;
-	font-weight: 300;
-	font-size: 30px;
-	letter-spacing: 1.1vw;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 1.1vw;
 }
 
 @media screen and (max-width: 500px) {
-	.tracker h4 {
-		font-size: 20px;
-	}
+  .tracker h4 {
+    font-size: 20px;
+  }
 }
 .text-holder {
-	width: 50%;
-	display: inline-block;
-	padding: 20px 30px 10px 30px;
-	box-sizing: border-box;
-	vertical-align: top;
-	font-family: "Roboto";
-	font-weight: 300;
-	font-size: 22px;
-	line-height: 25px;
-	padding-bottom: 10px;
+  width: 50%;
+  display: inline-block;
+  padding: 20px 30px 10px 30px;
+  box-sizing: border-box;
+  vertical-align: top;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 25px;
+  padding-bottom: 10px;
 }
 
 .button-holder {
-	width: 50%;
-	display: inline-block;
-	padding: 20px 30px 10px 30px;
-	box-sizing: border-box;
+  width: 50%;
+  display: inline-block;
+  padding: 20px 30px 10px 30px;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 800px) {
-	.text-holder {
-		width: 60%;
-		font-family: "Roboto";
-		font-weight: 400;
-		font-size: 15px;
-	}
-	.button-holder {
-		width: 40%;
-	}
+  .text-holder {
+    width: 60%;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .button-holder {
+    width: 40%;
+  }
 }
 .button-holder .button-text {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 42%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 42%;
 }
 @media screen and (max-width: 1200px) {
-	.button-holder .button-text {
-		width: 52%;
-	}
+  .button-holder .button-text {
+    width: 52%;
+  }
 }
 
 @media screen and (max-width: 800px) {
-	.button-holder .button-text {
-		width: 72%;
-	}
+  .button-holder .button-text {
+    width: 72%;
+  }
 }
 .button-holder .button {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
 }
 
 /* Video For Modal */
 .rh5v-DefaultPlayer_component {
-	position: fixed !important;
+  position: fixed !important;
 }
 
 .video-trailer {
-	bottom: 10%;
-	top: 10%;
-	left: 1%;
-	right: 1%;
+  bottom: 10%;
+  top: 10%;
+  left: 1%;
+  right: 1%;
 }
 
 .video-slider {
-	top: 10%;
-	bottom: 10%;
-	left: 1%;
-	right: 1%;
+  top: 10%;
+  bottom: 10%;
+  left: 1%;
+  right: 1%;
 }
 
 .video-x {
-	position: fixed;
-	top: 1%;
-	left: 1%;
-	font-size: 3em;
-	font-weight: 700;
-	z-index: 20;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  font-size: 3em;
+  font-weight: 700;
+  z-index: 20;
 }
 
 .invisible {
-	display: none;
+  display: none;
 }
 
 /* .ReactModal__Content span {
@@ -645,1212 +687,1212 @@ div.straightLine {
 
 /* food and plate home page buttons  */
 .food-button {
-	border-left: solid thin black;
-	text-align: left;
+  border-left: solid thin black;
+  text-align: left;
 }
 .plate-button {
-	text-align: right;
-	margin-left: 3vw;
+  text-align: right;
+  margin-left: 3vw;
 }
 
 .food-button button,
 .plate-button button {
-	background-color: #f4f4f4;
-	border: none;
-	font-family: "Roboto";
-	font-size: 3vw;
-	font-weight: 900;
-	vertical-align: top;
+  background-color: #f4f4f4;
+  border: none;
+  font-family: "Roboto";
+  font-size: 3vw;
+  font-weight: 900;
+  vertical-align: top;
 }
 
 .plate-button button {
-	cursor: pointer;
+  cursor: pointer;
 }
 .food-button button {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .food-button p,
 .plate-button p {
-	margin: 0;
-	font-family: "Roboto";
-	font-size: 24px;
-	font-weight: 100;
-	letter-spacing: 3px;
-	width: 100%;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  width: 100%;
 }
 @media screen and (max-width: 920px) {
-	.food-button p,
-	.plate-button p {
-		font-size: 14px;
-	}
+  .food-button p,
+  .plate-button p {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 450px) {
-	.food-button p,
-	.plate-button p {
-		font-size: 9px;
-	}
+  .food-button p,
+  .plate-button p {
+    font-size: 9px;
+  }
 }
 
 .plate-button img {
-	margin-left: 20px;
-	width: 4vw;
+  margin-left: 20px;
+  width: 4vw;
 }
 .food-button img {
-	margin-right: 20px;
-	width: 4vw;
+  margin-right: 20px;
+  width: 4vw;
 }
 @media screen and (max-width: 1200px) {
-	.food-button img,
-	.plate-button img {
-		display: none;
-	}
+  .food-button img,
+  .plate-button img {
+    display: none;
+  }
 }
 button:focus {
-	outline: none;
+  outline: none;
 }
 
 .button-holder img,
 .bottomNav,
 .nav-item-wrap {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /* about page css */
 
 div.block {
-	margin-top: 4%;
-	background: #83bd8a;
-	height: 100%;
-	position: relative;
-	transform: skew(6deg) rotate(-10deg);
-	-webkit-transform: skew(-10deg) rotate(-10deg);
-	-moz-transform: skew(6deg) rotate(-10deg);
-	max-width: 99.2%;
-	z-index: 10;
+  margin-top: 4%;
+  background: #83bd8a;
+  height: 100%;
+  position: relative;
+  transform: skew(6deg) rotate(-10deg);
+  -webkit-transform: skew(-10deg) rotate(-10deg);
+  -moz-transform: skew(6deg) rotate(-10deg);
+  max-width: 99.2%;
+  z-index: 10;
 }
 
 div.block-2 {
-	margin-top: 10%;
-	background: white;
-	height: 100%;
-	position: relative;
-	transform: skew(6deg) rotate(-10deg);
-	-webkit-transform: skew(-10deg) rotate(-10deg);
-	-moz-transform: skew(6deg) rotate(-10deg);
-	max-width: 99.2%;
-	z-index: 10;
+  margin-top: 10%;
+  background: white;
+  height: 100%;
+  position: relative;
+  transform: skew(6deg) rotate(-10deg);
+  -webkit-transform: skew(-10deg) rotate(-10deg);
+  -moz-transform: skew(6deg) rotate(-10deg);
+  max-width: 99.2%;
+  z-index: 10;
 }
 
 .title-holder {
-	text-align: right;
-	margin: 0;
-	margin-right: 100px;
-	z-index: 15;
-	position: absolute;
-	left: 45%;
-	top: 15%;
+  text-align: right;
+  margin: 0;
+  margin-right: 100px;
+  z-index: 15;
+  position: absolute;
+  left: 45%;
+  top: 15%;
 }
 
 .title-holder h1,
 .title-holder h2 {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .title-holder h1 {
-	font-family: "Roboto";
-	font-weight: 900;
-	text-transform: uppercase;
-	font-size: 10vw;
+  font-family: "Roboto";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 10vw;
 }
 .title-holder h2 {
-	font-family: "Roboto";
-	font-weight: 100;
-	text-transform: uppercase;
-	font-size: 5vw;
-	color: black;
-	position: relative;
+  font-family: "Roboto";
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 5vw;
+  color: black;
+  position: relative;
 
-	line-height: 90%;
+  line-height: 90%;
 }
 div.block div {
-	width: 33.3%;
-	display: inline-block;
-	margin-top: 10%;
-	margin-bottom: 10%;
-	text-align: center;
-	vertical-align: top;
+  width: 33.3%;
+  display: inline-block;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+  vertical-align: top;
 }
 div.block div p {
-	margin: 2% 8%;
-	font-size: 1.4vw;
-	font-weight: 300;
+  margin: 2% 8%;
+  font-size: 1.4vw;
+  font-weight: 300;
 }
 
 div.block div h4 {
-	font-size: 1.8vw;
-	margin: 0;
-	text-transform: uppercase;
-	font-weight: 400;
-	letter-spacing: 4px;
+  font-size: 1.8vw;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 4px;
 }
 
 div.teaser {
-	margin-left: 20%;
-	position: relative;
-	margin-top: 8%;
+  margin-left: 20%;
+  position: relative;
+  margin-top: 8%;
 }
 
 div.teaser button {
-	background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 
-	border: thin solid black;
-	padding: 4%;
-	font-size: 1.3vw;
-	font-weight: 600;
-	letter-spacing: 2px;
-	cursor: pointer;
-	border: 0;
-	transition: all 0.3s ease 0s;
-	border: 4px solid black;
-	border-radius: 20px;
-	text-decoration: none;
+  border: thin solid black;
+  padding: 4%;
+  font-size: 1.3vw;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: 0;
+  transition: all 0.3s ease 0s;
+  border: 4px solid black;
+  border-radius: 20px;
+  text-decoration: none;
 }
 
 div.teaser button:hover {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 .description img {
-	margin: auto;
-	width: 40%;
-	margin-left: 30%;
-	margin-top: 5%;
+  margin: auto;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 5%;
 }
 
 h3.doc {
-	text-align: center;
-	font-weight: 900;
-	text-transform: uppercase;
-	font-size: 3vw;
-	letter-spacing: 2px;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 3vw;
+  letter-spacing: 2px;
 }
 .description {
-	width: 90%;
-	margin: auto;
+  width: 90%;
+  margin: auto;
 }
 .description p {
-	width: 75%;
+  width: 75%;
 
-	margin: auto;
-	font-size: 19px;
-	line-height: 22px;
-	margin-top: 30px;
+  margin: auto;
+  font-size: 19px;
+  line-height: 22px;
+  margin-top: 30px;
 }
 
 div.block-2 .people {
-	margin-top: 10%;
+  margin-top: 10%;
 }
 
 div.block .people {
-	width: 100%;
-	display: inline-block;
-	margin-top: 10%;
-	margin-bottom: 3%;
-	text-align: center;
-	vertical-align: top;
-	text-align: center;
-	font-weight: 900;
-	text-transform: uppercase;
-	font-size: 3vw;
-	letter-spacing: 2px;
+  width: 100%;
+  display: inline-block;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  text-align: center;
+  vertical-align: top;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 3vw;
+  letter-spacing: 2px;
 }
 
 div.block-2 .person {
-	margin-top: 2%;
-	width: 50%;
+  margin-top: 2%;
+  width: 50%;
 }
 
 @media screen and (max-width: 600px) {
-	div.block div p {
-		margin: 2% 8%;
-		font-size: 2.8vw;
-		font-weight: 300;
-	}
-	div.block div h4 {
-		font-size: 2.3vw;
-		margin: 0;
-		text-transform: uppercase;
-		font-weight: 600;
-		letter-spacing: 4px;
-	}
-	h3.doc {
-		text-align: center;
-		font-weight: 900;
-		text-transform: uppercase;
-		font-size: 4vw;
-		letter-spacing: 2px;
-	}
-	.description p {
-		width: 75%;
-		margin: auto;
-		font-size: 15px;
-		line-height: 22px;
-		margin-top: 30px;
-	}
+  div.block div p {
+    margin: 2% 8%;
+    font-size: 2.8vw;
+    font-weight: 300;
+  }
+  div.block div h4 {
+    font-size: 2.3vw;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+  }
+  h3.doc {
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4vw;
+    letter-spacing: 2px;
+  }
+  .description p {
+    width: 75%;
+    margin: auto;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 30px;
+  }
 
-	div.teaser button {
-		font-size: 1.8vw;
-		border: 2px solid black;
-	}
-	div.teaser {
-		margin-left: 14%;
-		position: relative;
-		margin-top: 8%;
-	}
+  div.teaser button {
+    font-size: 1.8vw;
+    border: 2px solid black;
+  }
+  div.teaser {
+    margin-left: 14%;
+    position: relative;
+    margin-top: 8%;
+  }
 }
 /* Contact Form */
 
 .contact {
-	/* width: 35%; */
-	height: 0em;
-	background-color: white;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	margin: auto;
-	padding: 0 6%;
-	overflow: hidden;
-	margin-top: 0;
+  /* width: 35%; */
+  height: 0em;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+  padding: 0 6%;
+  overflow: hidden;
+  margin-top: 0;
 }
 
 .contact-us {
-	background-color: black;
-	color: #f4f4f4;
-	margin-bottom: 0;
-	/* width: 35%; */
-	height: 100%;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	margin: auto;
-	padding: 3%;
-	text-align: center;
-	letter-spacing: 3px;
+  background-color: black;
+  color: #f4f4f4;
+  margin-bottom: 0;
+  /* width: 35%; */
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: auto;
+  padding: 3%;
+  text-align: center;
+  letter-spacing: 3px;
 
-	cursor: pointer;
-	transition: 0.4s cubic-bezier(0.44, -0.02, 0.45, 0.94);
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(0.44, -0.02, 0.45, 0.94);
 }
 
 .contact-us:hover {
-	background-color: #ff5f5f;
-	color: black;
+  background-color: #ff5f5f;
+  color: black;
 }
 
 .contact-us h2 {
-	margin: 0;
-	font-family: "Roboto Mono", monospace;
-	font-weight: 100;
-	font-size: 5.4vw;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  font-size: 5.4vw;
 }
 form input,
 form button,
 form textarea {
-	display: block;
-	margin: auto;
-	width: 99%;
-	margin-top: 10px;
+  display: block;
+  margin: auto;
+  width: 99%;
+  margin-top: 10px;
 }
 
 /* form starting stylings ------------------------------- */
 .group {
-	position: relative;
-	margin-bottom: 50px;
-	box-sizing: border-box;
+  position: relative;
+  margin-bottom: 50px;
+  box-sizing: border-box;
 }
 input {
-	font-size: 40px;
-	padding: 10px 10px 10px 5px;
-	display: block;
-	width: 400px;
-	border: none;
-	border-bottom: 1px solid #757575;
-	box-sizing: border-box;
+  font-size: 40px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 400px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  box-sizing: border-box;
 }
 textarea {
-	font-size: 25px;
-	color: black;
-	background-color: white;
-	border-left: none;
-	border-right: none;
-	border-top: none;
-	border-color: #999;
+  font-size: 25px;
+  color: black;
+  background-color: white;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: #999;
 }
 
 textarea {
-	outline: none;
+  outline: none;
 }
 input:focus {
-	outline: none;
+  outline: none;
 }
 
 /* LABEL ======================================= */
 label {
-	color: #999;
-	font-size: 18px;
-	font-weight: normal;
-	position: absolute;
-	pointer-events: none;
-	left: 5px;
-	top: 25px;
-	transition: 0.2s ease all;
-	-moz-transition: 0.2s ease all;
-	-webkit-transition: 0.2s ease all;
-	box-sizing: border-box;
-	font-family: Helvetica, sans-serif;
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 25px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
 }
 
 input {
-	font-weight: 00;
+  font-weight: 00;
 
-	color: black;
+  color: black;
 }
 
 /* active state */
 input:focus ~ label,
 input:valid ~ label {
-	top: -30px;
-	font-size: 30px;
-	color: black;
-	font-weight: 100;
+  top: -30px;
+  font-size: 30px;
+  color: black;
+  font-weight: 100;
 }
 
 /* BOTTOM BARS ================================= */
 .bar {
-	position: relative;
-	display: block;
+  position: relative;
+  display: block;
 }
 .bar:before,
 .bar:after {
-	content: "";
-	height: 5px;
-	width: 0;
-	bottom: 1px;
-	position: absolute;
-	background: black;
-	transition: 0.2s ease all;
-	-moz-transition: 0.2s ease all;
-	-webkit-transition: 0.2s ease all;
+  content: "";
+  height: 5px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: black;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
 }
 .bar:before {
-	left: 50%;
+  left: 50%;
 }
 .bar:after {
-	right: 50%;
+  right: 50%;
 }
 
 /* active state */
 input:focus ~ .bar:before,
 input:focus ~ .bar:after {
-	width: 50%;
+  width: 50%;
 }
 
 /* HIGHLIGHTER ================================== */
 .highlight {
-	position: absolute;
-	height: 60%;
-	width: 100%;
-	top: 25%;
-	left: 0;
-	pointer-events: none;
-	opacity: 0.5;
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 /* active state */
 input:focus ~ .highlight {
-	-webkit-animation: inputHighlighter 0.3s ease;
-	-moz-animation: inputHighlighter 0.3s ease;
-	animation: inputHighlighter 0.3s ease;
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
 }
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-	from {
-		background: #5264ae;
-	}
-	to {
-		width: 0;
-		background: transparent;
-	}
+  from {
+    background: #5264ae;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
 }
 @-moz-keyframes inputHighlighter {
-	from {
-		background: #5264ae;
-	}
-	to {
-		width: 0;
-		background: transparent;
-	}
+  from {
+    background: #5264ae;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
 }
 @keyframes inputHighlighter {
-	from {
-		background: #5264ae;
-	}
-	to {
-		width: 0;
-		background: transparent;
-	}
+  from {
+    background: #5264ae;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
 }
 
 /* Bubble Float Top */
 .hvr-bubble-float-top {
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px transparent;
-	position: relative;
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	-webkit-transition-property: transform;
-	transition-property: transform;
-	background-color: #e1e1e1;
-	padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  background-color: #e1e1e1;
+  padding: 10px;
 
-	border-radius: 10px;
-	text-align: center;
-	text-decoration: none;
-	color: black;
-	font-family: Helvetica, sans-serif;
-	font-size: 24px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
 }
 .hvr-bubble-float-top:before {
-	position: absolute;
-	z-index: -1;
-	content: "";
-	left: calc(50% - 10px);
-	top: 0;
-	border-style: solid;
-	border-width: 0 10px 10px 10px;
-	border-color: transparent transparent #e1e1e1 transparent;
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	-webkit-transition-property: transform;
-	transition-property: transform;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  left: calc(50% - 10px);
+  top: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #e1e1e1 transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
 }
 .hvr-bubble-float-top:hover,
 .hvr-bubble-float-top:focus,
 .hvr-bubble-float-top:active {
-	-webkit-transform: translateY(10px);
-	transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
 }
 .hvr-bubble-float-top:hover:before,
 .hvr-bubble-float-top:focus:before,
 .hvr-bubble-float-top:active:before {
-	-webkit-transform: translateY(-10px);
-	transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 .clearfix {
-	display: inline-block;
+  display: inline-block;
 }
 /* start commented backslash hack \*/
 * html .clearfix {
-	height: 1%;
+  height: 1%;
 }
 .clearfix {
-	display: block;
+  display: block;
 }
 /* close commented backslash hack */
 
 textarea#content {
-	resize: none;
+  resize: none;
 }
 
 .form-holder {
-	width: 40%;
-	position: relative;
-	left: 30%;
-	top: -100px;
+  width: 40%;
+  position: relative;
+  left: 30%;
+  top: -100px;
 }
 
 @media screen and (max-width: 1400px) {
-	.form-holder {
-		width: 80%;
-		position: relative;
-		left: 1%;
-		top: 0;
-	}
+  .form-holder {
+    width: 80%;
+    position: relative;
+    left: 1%;
+    top: 0;
+  }
 
-	input {
-		font-size: 30px;
-	}
+  input {
+    font-size: 30px;
+  }
 
-	input:focus ~ label,
-	input:valid ~ label {
-		top: -25px;
-		font-size: 20px;
-		color: black;
-	}
+  input:focus ~ label,
+  input:valid ~ label {
+    top: -25px;
+    font-size: 20px;
+    color: black;
+  }
 }
 
 form.payPall-button {
-	width: 70%;
+  width: 70%;
 
-	margin: auto;
-	padding: 0;
+  margin: auto;
+  padding: 0;
 }
 form.payPall-button input {
-	border-bottom: none;
-	cursor: pointer;
+  border-bottom: none;
+  cursor: pointer;
 }
 
 div.donate-intro {
-	width: 65%;
-	border-bottom: solid black;
-	margin-left: 3%;
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	transform: rotate(-90deg);
+  width: 65%;
+  border-bottom: solid black;
+  margin-left: 3%;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 div.donate-intro h3 {
-	letter-spacing: 1.5px;
-	padding-bottom: 7px;
+  letter-spacing: 1.5px;
+  padding-bottom: 7px;
 }
 
 .donate-now {
-	float: right;
-	width: 60%;
-	position: relative;
-	top: -120px;
+  float: right;
+  width: 60%;
+  position: relative;
+  top: -120px;
 }
 .donate-now h1 {
-	text-align: left;
-	font-size: 9vw;
-	font-family: "Roboto";
-	font-weight: 900;
+  text-align: left;
+  font-size: 9vw;
+  font-family: "Roboto";
+  font-weight: 900;
 }
 .donate-now p {
-	text-align: center;
-	letter-spacing: 10px;
-	font-size: 2vw;
-	width: 70%;
-	text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 2vw;
+  width: 70%;
+  text-transform: uppercase;
 }
 
 .payPall-button {
-	position: relative;
-	top: -70px;
+  position: relative;
+  top: -70px;
 }
 @media screen and (max-width: 1500px) {
-	.payPall-button {
-		position: relative;
-		top: -60px;
-	}
+  .payPall-button {
+    position: relative;
+    top: -60px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
-	.payPall-button {
-		position: relative;
-		top: -40px;
-	}
+  .payPall-button {
+    position: relative;
+    top: -40px;
+  }
 }
 @media screen and (max-width: 800px) {
-	.payPall-button {
-		position: relative;
-		top: -50px;
-	}
-	.donate-now p {
-		font-size: 3vw;
-	}
-	p.donate-text {
-		font-size: 15px;
-	}
+  .payPall-button {
+    position: relative;
+    top: -50px;
+  }
+  .donate-now p {
+    font-size: 3vw;
+  }
+  p.donate-text {
+    font-size: 15px;
+  }
 
-	.form-holder {
-		font-size: 1em;
-		transform: translateX(-50%);
-		left: 50%;
-	}
+  .form-holder {
+    font-size: 1em;
+    transform: translateX(-50%);
+    left: 50%;
+  }
 }
 @media screen and (max-width: 600px) {
-	.donate-now h1 {
-		margin-left: 10px;
-	}
+  .donate-now h1 {
+    margin-left: 10px;
+  }
 }
 @media screen and (max-width: 500px) {
-	.payPall-button {
-		position: relative;
-		top: -30px;
-	}
-	.donate-now p {
-		font-size: 3vw;
-	}
+  .payPall-button {
+    position: relative;
+    top: -30px;
+  }
+  .donate-now p {
+    font-size: 3vw;
+  }
 }
 p.donate-text {
-	width: 90%;
-	margin: auto;
-	font-size: 20px;
-	letter-spacing: 1px;
-	line-height: 117%;
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 117%;
 }
 
 /*Animation*/
 
 .contactAnimation {
-	transition: 500ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+  transition: 500ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
 }
 
 .contactClicked {
-	padding: 6%;
-	height: 36em;
+  padding: 6%;
+  height: 36em;
 }
 
 .arrow {
-	width: 35%;
-	position: absolute;
-	left: 98%;
-	top: 40px;
+  width: 35%;
+  position: absolute;
+  left: 98%;
+  top: 40px;
 }
 
 @media screen and (max-width: 1000px) {
-	.arrow {
-		width: 35%;
-		position: absolute;
-		left: 98%;
-		top: 20px;
-	}
+  .arrow {
+    width: 35%;
+    position: absolute;
+    left: 98%;
+    top: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-	label,
-	textarea {
-		font-size: 15px;
-	}
+  label,
+  textarea {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-	.title h2 {
-		top: 34%;
-	}
+  .title h2 {
+    top: 34%;
+  }
 
-	.mobile-warning {
-		margin-top: 10%;
-	}
-	.mobile-warning p {
-		font-family: "Roboto";
-		font-weight: 300;
-		font-size: 6vw;
-		margin: 0;
-		padding: 0;
-	}
-	.byline p {
-		width: 89%;
-	}
-	.mobile-warning h2 {
-		font-family: "Roboto";
-		font-weight: 900;
-		font-size: 50px;
-		letter-spacing: 6px;
-		margin: 0;
-		padding: 0;
-		text-align: center;
-	}
-	.byline p {
-		font-size: 2.4vw;
-		padding-bottom: 30px;
-	}
+  .mobile-warning {
+    margin-top: 10%;
+  }
+  .mobile-warning p {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 6vw;
+    margin: 0;
+    padding: 0;
+  }
+  .byline p {
+    width: 89%;
+  }
+  .mobile-warning h2 {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 6px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .byline p {
+    font-size: 2.4vw;
+    padding-bottom: 30px;
+  }
 
-	p.donate-text {
-		font-size: 16px;
-	}
-	.contactClicked {
-		padding: 4%;
-		height: 33em;
-	}
+  p.donate-text {
+    font-size: 16px;
+  }
+  .contactClicked {
+    padding: 4%;
+    height: 33em;
+  }
 }
 /* responsiveness for portrait ipad here*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-	.title h2 {
-		top: 30%;
-	}
+  .title h2 {
+    top: 30%;
+  }
 
-	.lottie-instructions {
-		top: 15%;
-	}
-	.lottieNav div div svg {
-		height: 9.3vw;
-	}
-	.plate-button {
-		margin-right: 0px;
-	}
+  .lottie-instructions {
+    top: 15%;
+  }
+  .lottieNav div div svg {
+    height: 9.3vw;
+  }
+  .plate-button {
+    margin-right: 0px;
+  }
 
-	.food-button p,
-	.plate-button p {
-		font-size: 24px;
-	}
+  .food-button p,
+  .plate-button p {
+    font-size: 24px;
+  }
 
-	div.block div p {
-		font-size: 2vw;
-	}
+  div.block div p {
+    font-size: 2vw;
+  }
 
-	div.block div h4 {
-		font-size: 2.4vw;
-	}
+  div.block div h4 {
+    font-size: 2.4vw;
+  }
 
-	div.teaser button {
-		font-size: 1.8vw;
-	}
+  div.teaser button {
+    font-size: 1.8vw;
+  }
 
-	.stopNavTop p {
-		font-size: 1.6vw;
-		padding-top: 1.8vh;
-	}
-	.navLeft,
-	.tracker {
-		margin-top: 20px;
-		box-sizing: border-box;
-		font-size: 2vw;
-	}
+  .stopNavTop p {
+    font-size: 1.6vw;
+    padding-top: 1.8vh;
+  }
+  .navLeft,
+  .tracker {
+    margin-top: 20px;
+    box-sizing: border-box;
+    font-size: 2vw;
+  }
 
-	.info h4 {
-		font-weight: 100;
-		font-size: 2.7vw;
-	}
-	.info h3 {
-		margin-top: 10px;
-		font-weight: 300;
-		font-size: 2.9vw;
-	}
-	.lottieNav div div svg {
-		height: 10vw;
-	}
-	div.teaser {
-		margin-left: 15%;
-	}
+  .info h4 {
+    font-weight: 100;
+    font-size: 2.7vw;
+  }
+  .info h3 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2.9vw;
+  }
+  .lottieNav div div svg {
+    height: 10vw;
+  }
+  div.teaser {
+    margin-left: 15%;
+  }
 
-	.byline p {
-		font-size: 2vw;
-		width: 90%;
-		padding-bottom: 7px;
-	}
+  .byline p {
+    font-size: 2vw;
+    width: 90%;
+    padding-bottom: 7px;
+  }
 
-	.food-button button,
-	.plate-button button {
-		font-size: 4vw;
-	}
+  .food-button button,
+  .plate-button button {
+    font-size: 4vw;
+  }
 
-	div.sliderVis {
-		height: 100vh;
-	}
-	.tracker h4 {
-		margin-top: 90px;
-	}
-	nav.bottomNav {
-		margin: auto;
-		max-width: 25%;
-	}
-	.text-holder {
-		font-size: 18px;
-		line-height: 112%;
-	}
-	div.sliderVis {
-		height: 100vh;
-	}
+  div.sliderVis {
+    height: 100vh;
+  }
+  .tracker h4 {
+    margin-top: 90px;
+  }
+  nav.bottomNav {
+    margin: auto;
+    max-width: 25%;
+  }
+  .text-holder {
+    font-size: 18px;
+    line-height: 112%;
+  }
+  div.sliderVis {
+    height: 100vh;
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
-	.stopNavTop p {
-		font-size: 2vw;
-		padding-top: 0.8vh;
-	}
-	.text-holder {
-		font-size: 22px;
-		line-height: 110%;
-	}
-	nav.bottomNav p {
-		font-size: 37px;
-	}
+  .stopNavTop p {
+    font-size: 2vw;
+    padding-top: 0.8vh;
+  }
+  .text-holder {
+    font-size: 22px;
+    line-height: 110%;
+  }
+  nav.bottomNav p {
+    font-size: 37px;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-	div.sliderVis {
-		height: 100%;
-	}
+  div.sliderVis {
+    height: 100%;
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
-	div.sliderVis {
-		height: 100vh;
-	}
-	.lottie-instructions p {
-		background-color: black;
-		display: inline-block;
-		margin: 3px;
-		padding: 5px;
-		font-family: "Roboto Mono";
-		font-weight: 300;
-		letter-spacing: 1px;
-	}
+  div.sliderVis {
+    height: 100vh;
+  }
+  .lottie-instructions p {
+    background-color: black;
+    display: inline-block;
+    margin: 3px;
+    padding: 5px;
+    font-family: "Roboto Mono";
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
 }
 
 @media screen and (max-width: 1250px) {
-	.button-holder .button {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 15%;
-	}
+  .button-holder .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-	.text-holder {
-		font-size: 17px;
-		line-height: 20px;
-	}
-	.button-holder .button {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 30%;
-	}
+  .text-holder {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .button-holder .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 600px) {
-	.button-holder .button {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
-	}
-	nav.bottomNav p {
-		font-size: 20px;
-	}
+  .button-holder .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  nav.bottomNav p {
+    font-size: 20px;
+  }
 
-	.text-holder p {
-		font-size: 14px;
-		line-height: 16px;
-	}
+  .text-holder p {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 @media only screen and (max-device-width: 1366px) and (min-device-width: 1024px) and (orientation: landscape) {
-	div.sliderVis {
-		height: 1024px;
-	}
+  div.sliderVis {
+    height: 1024px;
+  }
 
-	.lottie-instructions p {
-		background-color: black;
-		display: inline-block;
-		margin: 3px;
-		padding: 5px;
-		font-family: "Roboto Mono";
-		font-weight: 300;
-		letter-spacing: 1px;
-		font-size: 20px;
-	}
+  .lottie-instructions p {
+    background-color: black;
+    display: inline-block;
+    margin: 3px;
+    padding: 5px;
+    font-family: "Roboto Mono";
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-device-width: 1366px) and (min-device-width: 1024px) and (orientation: portrait) {
-	.lottie-instructions p {
-		background-color: black;
-		display: inline-block;
-		margin: 3px;
-		padding: 5px;
-		font-family: "Roboto Mono";
-		font-weight: 300;
-		letter-spacing: 1px;
-		font-size: 20px;
-	}
+  .lottie-instructions p {
+    background-color: black;
+    display: inline-block;
+    margin: 3px;
+    padding: 5px;
+    font-family: "Roboto Mono";
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-	div.sliderVis {
-		height: 1024px;
-	}
-	.stopNavTop p {
-		vertical-align: top;
-		display: inline-block;
-		padding-top: 5%;
-	}
+  div.sliderVis {
+    height: 1024px;
+  }
+  .stopNavTop p {
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 5%;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-	.lottie-instructions p {
-		background-color: black;
-		display: inline-block;
-		margin: 3px;
-		padding: 5px;
-		font-family: "Roboto Mono";
-		font-weight: 300;
-		letter-spacing: 1px;
-		font-size: 20px;
-	}
+  .lottie-instructions p {
+    background-color: black;
+    display: inline-block;
+    margin: 3px;
+    padding: 5px;
+    font-family: "Roboto Mono";
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-	.lottie-instructions p {
-		background-color: black;
-		display: inline-block;
-		margin: 3px;
-		padding: 5px;
-		font-family: "Roboto Mono";
-		font-weight: 300;
-		letter-spacing: 1px;
-		font-size: 20px;
-	}
+  .lottie-instructions p {
+    background-color: black;
+    display: inline-block;
+    margin: 3px;
+    padding: 5px;
+    font-family: "Roboto Mono";
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-	.donate-now h1 {
-		margin-left: 20px;
-	}
+  .donate-now h1 {
+    margin-left: 20px;
+  }
 }
 @media screen and (max-width: 500px) {
-	.donate-now p {
-		font-size: 3vw;
-		margin-left: 12%;
-		line-height: 1.7;
-	}
+  .donate-now p {
+    font-size: 3vw;
+    margin-left: 12%;
+    line-height: 1.7;
+  }
 
-	div.donate-intro {
-		font-size: 12px;
-	}
-	.donate-now {
-		float: right;
-		width: 60%;
-		position: relative;
-		top: -80px;
-	}
+  div.donate-intro {
+    font-size: 12px;
+  }
+  .donate-now {
+    float: right;
+    width: 60%;
+    position: relative;
+    top: -80px;
+  }
 }
 .hvr-bubble-float-top {
-	border: 0px;
+  border: 0px;
 }
 
 @media screen and (min-width: 1000px) {
-	.lottie-instructions p {
-		font-size: 20px;
-	}
+  .lottie-instructions p {
+    font-size: 20px;
+  }
 }
 
 .lottie-instructions p {
-	font-weight: 300;
+  font-weight: 300;
 }
 
 h2 {
-	margin-bottom: 40px;
-	text-align: center;
+  margin-bottom: 40px;
+  text-align: center;
 }
 .group-special.group {
-	margin-top: -20px;
-	margin-bottom: 70px;
+  margin-top: -20px;
+  margin-bottom: 70px;
 }
 
 /* LIST */
 
 .list-holder {
-	/* position: relative;
+  /* position: relative;
 	left: 50%;
 	top: -100px;
 	transform: translateX(-50%); */
 
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (max-width: 1000px) {
-	.list-holder {
-		left: 50%;
-		top: 20px;
-	}
+  .list-holder {
+    left: 50%;
+    top: 20px;
+  }
 }
 
 .list {
-	width: 80%;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .list .bold {
-	font-weight: bold;
+  font-weight: bold;
 }
 .list .item {
-	background: #d2d2d2;
-	color: black;
-	padding: 1em;
-	margin: 1em;
-	width: 100%;
+  background: #d2d2d2;
+  color: black;
+  padding: 1em;
+  margin: 1em;
+  width: 100%;
 }
 
 .list .item a {
-	color: black;
+  color: black;
 }
 
 @media screen and (max-width: 600px) {
-	.list {
-		width: 100%;
-	}
+  .list {
+    width: 100%;
+  }
 }
 
 /* NEW CSS - POST LANDING - FOR EVENTUAL CSS UPDATE */
 /* UTILS */
 .center-flex-column {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* EMBEDLY */
 .embed-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-	max-width: 100%;
-	height: auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
 }
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .embed-container.super-wide {
-	padding-bottom: 50%;
+  padding-bottom: 50%;
 }
 
 /* Vimeo (Wrap embeddly) */
 .vimeo-block {
-	width: 100%;
+  width: 100%;
 }
 
 /* Social */
 .social-wrapper {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .social-icons {
-	display: flex;
+  display: flex;
 }
 .social-icons img {
-	padding: 1em;
-	display: inline;
+  padding: 1em;
+  display: inline;
 }
 
 .social-tag {
-	display: inline-block;
-	color: #2196f3;
-    text-align: center;
-    margin: 0;
+  display: inline-block;
+  color: #2196f3;
+  text-align: center;
+  margin: 0;
 }
 
 .social-tag.spacer {
-	margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .social-tag.large {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .social-tag.hover:hover {
-    color: black;
+  color: black;
 }
 
 .social-tag a {
-	color: #2196f3;
-	text-decoration: none;
+  color: #2196f3;
+  text-decoration: none;
 }
 .social-tag a:hover {
-	color: black;
+  color: black;
 }
 
 @media only screen and (max-width: 992px) {
-	.social-wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.social-icons {
-		margin-left: 0;
-		justify-content: center;
-	}
+  .social-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icons {
+    margin-left: 0;
+    justify-content: center;
+  }
 }
 /* THEME */
 h1,
 h2 {
-	font-family: Roboto;
+  font-family: Roboto;
 }
 p,
 h3 {
-	font-family: Lato;
+  font-family: Lato;
 }
 h1 {
-	font-size: 4em;
-	font-weight: black;
-	text-align: center;
+  font-size: 4em;
+  font-weight: black;
+  text-align: center;
 }
 h2 {
 }
 .content-root {
-	display: flex;
+  display: flex;
 }
 h3 {
-	font-size: 1.5em;
-	font-weight: 600;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 /* Landing */
 .content-root.landing {
-	flex-direction: column;
-	/* Both */
-	align-items: center;
+  flex-direction: column;
+  /* Both */
+  align-items: center;
 
-	margin-top: -13em;
-	max-width: 60vw;
+  margin-top: -13em;
+  max-width: 60vw;
 }
 /* Tablet Sizing */
 @media only screen and (max-width: 992px) {
-	.content-root.landing {
-		margin-top: -5em;
-		max-width: 70vw;
-		margin-bottom: 1em;
-	}
+  .content-root.landing {
+    margin-top: -5em;
+    max-width: 70vw;
+    margin-bottom: 1em;
+  }
 }
 /* Phone */
 @media only screen and (max-width: 772px) {
-	.content-root.landing {
-		margin-top: 0em;
-		max-width: 90vw;
-	}
+  .content-root.landing {
+    margin-top: 0em;
+    max-width: 90vw;
+  }
 }
 
 .content-root.landing > h3 {
-	align-self: flex-start;
+  align-self: flex-start;
 }
 
 @media only screen and (max-width: 772px) {
-	.content-root.landing > h3 {
-		align-items: center;
-	}
+  .content-root.landing > h3 {
+    align-items: center;
+  }
 }
 
 h2.site-subtitle {
-	font-size: 2.5em;
-	font-weight: 300;
-	margin-bottom: 0.5em;
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-bottom: 0.5em;
 }
