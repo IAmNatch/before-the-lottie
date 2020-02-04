@@ -14,7 +14,7 @@ export const Nav = props => {
 			{ link: "/contact", title: "contact" },
 			// { link: "/donate", title: "donate" },
 			// { link: "/screenings", title: "host a screening" },
-			{ link: "/events", title: "events" },
+			// { link: "/events", title: "events" },
 			// { link: "/landing", title: "watch now" }
 		];
 		const navListWithHome = [
@@ -23,7 +23,7 @@ export const Nav = props => {
 			{ link: "/contact", title: "contact" },
 			// { link: "/donate", title: "donate" },
 			// { link: "/screenings", title: "host a screening" },
-			{ link: "/events", title: "events" },
+			// { link: "/events", title: "events" },
 			// { link: "/landing", title: "watch now" }
 		];
 

@@ -87,7 +87,7 @@ class App extends Component {
 				<Route path="/contact" component={Contact} />
 				{/* <Route path="/donate" component={Donate} /> */}
 				{/* <Route path="/screenings" component={Screenings} /> */}
-				<Route path="/events" component={Events} />
+				{/* <Route path="/events" component={Events} /> */}
 				{/* <Route path="/landing" component={Landing} /> */}
 			</div>
 		);
